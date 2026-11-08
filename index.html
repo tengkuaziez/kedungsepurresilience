@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- KEDUNGSEPUR RESILIENCE - WebGIS Cuaca & Mitigasi Bencana Hidrometeorologi -->
+<!-- KEDUNGSEPUR RESILIENCE - WebGIS Cuaca & Mitigasi Bencana (Replika Windy) -->
 <html lang="id">
 <head>
   <meta charset="utf-8">
@@ -8,7 +8,7 @@
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
   <title>KEDUNGSEPUR RESILIENCE</title>
-  <meta name="description" content="KEDUNGSEPUR RESILIENCE - Sistem Pendukung Keputusan Mitigasi Bencana Hidrometeorologi Kedungsepur">
+  <meta name="description" content="KEDUNGSEPUR RESILIENCE - WebGIS Cuaca Interaktif & Mitigasi Bencana Hidrometeorologi Kawasan Kedungsepur">
   <link rel="icon" type="image/png" href="assets/logo.png">
 
   <!-- Leaflet & Chart.js CDN (Versi Terkunci) -->
@@ -23,136 +23,147 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css?v=4.0">
+  <link rel="stylesheet" href="style.css?v=5.0">
 </head>
-<body class="radar-app">
+<body class="windy-app">
 
-  <!-- Peta Utama Layar Penuh -->
-  <div id="peta" aria-label="Peta WebGIS Cuaca Kedungsepur"></div>
+  <!-- Kanvas Peta Leaflet Layar Penuh -->
+  <div id="peta" aria-label="Peta Radar Cuaca Kedungsepur"></div>
 
-  <!-- 1. Top Bar Terpadu (Header Ramping, Tingkat Wilayah, & Aksi Cepat) -->
-  <header class="topbar-terpadu">
+  <!-- Kanvas Partikel Angin Mengambang (Windy Streamlines) -->
+  <canvas id="canvas-partikel-angin" class="canvas-partikel-overlay"></canvas>
+
+  <!-- Top Bar Terpadu (Header Ramping ala Windy) -->
+  <header class="topbar-windy">
     <div class="topbar-kiri">
       <img src="assets/logo.png" alt="Logo Kedungsepur" class="logo-app">
-      <div class="topbar-judul">
+      <div class="topbar-title-block">
         <h1>KEDUNGSEPUR RESILIENCE</h1>
         <p class="tagline">Sistem Pendukung Keputusan Mitigasi Bencana Hidrometeorologi</p>
       </div>
     </div>
 
-    <!-- Tingkat Wilayah di Tengah Top Bar -->
+    <!-- Pemilih Tingkat Wilayah Terintegrasi di Header -->
     <div class="topbar-tengah">
       <div class="segmen-wilayah" role="group" aria-label="Tingkat Wilayah">
         <button type="button" class="btn-segmen-w aktif" data-level="kabkot">🏛️ Kab/Kota (6)</button>
         <button type="button" class="btn-segmen-w" data-level="kecamatan">🏢 Kecamatan (92)</button>
         <button type="button" class="btn-segmen-w" data-level="desa">🏘️ Desa (1.250)</button>
+        <button type="button" class="btn-segmen-w" data-level="none">❌ Nonaktif</button>
       </div>
     </div>
 
-    <!-- Opsi & Tabel di Kanan Top Bar -->
+    <!-- Opsi Cepat & Tabel di Kanan -->
     <div class="topbar-kanan">
-      <label class="saklar-topbar" title="Tampilkan pewarnaan cuaca pada poligon">
-        <input type="checkbox" id="saklar-choropleth-bmkg" checked>
-        <span>Warna Cuaca</span>
+      <label class="saklar-topbar" title="Tampilkan batas & label wilayah di atas kanvas cuaca">
+        <input type="checkbox" id="saklar-batas" checked>
+        <span>Batas Wilayah</span>
       </label>
-      <label class="saklar-topbar" title="Tampilkan titik-titik pos & stasiun BMKG">
+      <label class="saklar-topbar" title="Tampilkan aliran partikel angin meliuk-liuk">
+        <input type="checkbox" id="saklar-partikel-angin" checked>
+        <span>Aliran Angin</span>
+      </label>
+      <label class="saklar-topbar" title="Tampilkan titik-titik pos & stasiun pengamatan BMKG">
         <input type="checkbox" id="saklar-stasiun-bmkg" checked>
         <span>Pos BMKG</span>
       </label>
-      <button type="button" id="btn-toggle-tabel" class="btn-tabel-topbar" title="Buka Tabel Pantauan Wilayah">
+      <button type="button" id="btn-toggle-tabel" class="btn-tabel-topbar" title="Buka Tabel Pantauan 1.250 Desa">
         📋 Tabel Desa
       </button>
     </div>
   </header>
 
-  <!-- 2. Sidebar Kanan Ramping (Parameter Cuaca & Basemap Menyatu Rapi) -->
-  <aside class="sidebar-kanan-terpadu" aria-label="Toolbar Parameter Cuaca & Peta">
-    <div class="grup-tool-header">PARAMETER</div>
-    <div class="grup-tool-vertikal" id="toolbar-parameter-cuaca">
-      <button type="button" class="btn-tool-param aktif" data-var="temperature" title="Suhu Udara (°C)">
-        <span class="icon-tool">🌡️</span>
-        <span class="label-tool">Suhu</span>
+  <!-- Sidebar Kanan Ramping (Parameter Cuaca & Basemap ala Windy) -->
+  <aside class="sidebar-windy" aria-label="Menu Parameter Cuaca">
+    <div class="sidebar-judul-grup">CUACA</div>
+    <div class="sidebar-grup-btn">
+      <button type="button" class="btn-windy-layer aktif" data-var="temperature" title="Suhu Udara Permukaan">
+        <span class="icon-layer">🌡️</span>
+        <span class="text-layer">Suhu</span>
       </button>
-      <button type="button" class="btn-tool-param" data-var="precipitation" title="Prakiraan Hujan & Intensitas">
-        <span class="icon-tool">🌧️</span>
-        <span class="label-tool">Hujan</span>
+      <button type="button" class="btn-windy-layer" data-var="wind_speed" title="Kecepatan & Aliran Angin">
+        <span class="icon-layer">💨</span>
+        <span class="text-layer">Angin</span>
       </button>
-      <button type="button" class="btn-tool-param" data-var="wind" title="Kecepatan Angin (km/j)">
-        <span class="icon-tool">💨</span>
-        <span class="label-tool">Angin</span>
+      <button type="button" class="btn-windy-layer" data-var="precipitation" title="Radar Intensitas Hujan">
+        <span class="icon-layer">🌧️</span>
+        <span class="text-layer">Hujan</span>
       </button>
-      <button type="button" class="btn-tool-param" data-var="relative_humidity" title="Kelembapan Udara (%)">
-        <span class="icon-tool">💧</span>
-        <span class="label-tool">Lembap</span>
+      <button type="button" class="btn-windy-layer" data-var="cloud_cover" title="Tutupan Awan Satelit">
+        <span class="icon-layer">☁️</span>
+        <span class="text-layer">Awan</span>
       </button>
-      <button type="button" class="btn-tool-param" data-var="cloud_cover" title="Tutupan Awan (%)">
-        <span class="icon-tool">☁️</span>
-        <span class="label-tool">Awan</span>
+      <button type="button" class="btn-windy-layer" data-var="relative_humidity" title="Kelembapan Udara">
+        <span class="icon-layer">💧</span>
+        <span class="text-layer">Lembap</span>
       </button>
     </div>
 
-    <div class="garis-pemisah-tool"></div>
+    <div class="sidebar-separator"></div>
 
-    <div class="grup-tool-header">BASEMAP</div>
-    <div class="grup-tool-vertikal" id="toolbar-basemap">
-      <button type="button" class="btn-tool-base aktif" data-base="satellite" title="Citra Google Satellite Resolusi Tinggi">
-        <span class="icon-tool">🛰️</span>
-        <span class="label-tool">Satelit</span>
+    <div class="sidebar-judul-grup">BASEMAP</div>
+    <div class="sidebar-grup-btn">
+      <button type="button" class="btn-windy-base aktif" data-base="satellite" title="Citra Google Satellite Resolusi Tinggi">
+        <span class="icon-layer">🛰️</span>
+        <span class="text-layer">Satelit</span>
       </button>
-      <button type="button" class="btn-tool-base" data-base="dark" title="Peta Gelap Esri Canvas (Resmi Tanpa Watermark)">
-        <span class="icon-tool">🌙</span>
-        <span class="label-tool">Gelap</span>
+      <button type="button" class="btn-windy-base" data-base="dark" title="Peta Gelap Esri Canvas (100% Bebas Watermark)">
+        <span class="icon-layer">🌙</span>
+        <span class="text-layer">Gelap</span>
       </button>
-      <button type="button" class="btn-tool-base" data-base="osm" title="Peta Jalan Standar OpenStreetMap">
-        <span class="icon-tool">🗺️</span>
-        <span class="label-tool">Peta</span>
+      <button type="button" class="btn-windy-base" data-base="osm" title="Peta Jalan Standar OpenStreetMap">
+        <span class="icon-layer">🗺️</span>
+        <span class="text-layer">Peta</span>
       </button>
     </div>
   </aside>
 
-  <!-- 3. Drawer Detail Wilayah Terpadu (Sisi Kiri, Muncul Saat Poligon Diklik) -->
-  <aside id="drawer-detail" class="drawer-kiri-terpadu" hidden>
+  <!-- Drawer Detail Wilayah (Sisi Kiri, Muncul Saat Wilayah Diklik) -->
+  <aside id="drawer-detail" class="drawer-windy" hidden>
     <button type="button" id="tutup-drawer" class="btn-tutup-drawer" title="Tutup Detail">&times;</button>
     <div class="drawer-isi">
       <div class="drawer-badge-bar">
         <span id="drawer-tingkat" class="badge-tingkat">KABUPATEN/KOTA</span>
-        <span class="badge-bmkg-resmi">BMKG Resmi</span>
+        <button type="button" id="btn-zoom-drawer" class="btn-zoom-layer" title="Zoom ke Wilayah Ini">🔍 Zoom to Layer</button>
       </div>
       <h2 id="drawer-nama">Kota Semarang</h2>
       <p id="drawer-wilayah" class="drawer-sub">Kawasan Kedungsepur, Jawa Tengah</p>
 
-      <!-- Metrik Cuaca Utama -->
+      <!-- Metrik Utama Cuaca -->
       <div class="kartu-cuaca-box">
         <div class="row-suhu-cuaca">
-          <span id="drawer-temp" class="suhu-angka-besar">27.9°C</span>
+          <span id="drawer-temp" class="suhu-angka-besar">28.5°C</span>
           <div class="suhu-teks-status">
-            <strong id="drawer-kondisi">Cerah</strong>
+            <strong id="drawer-kondisi">Cerah Berawan</strong>
             <span id="drawer-kelas-hujan" class="tag-hujan">Tidak hujan</span>
           </div>
         </div>
         <div class="grid-parameter-box">
           <div class="param-item">
             <span class="param-label">Kelembapan</span>
-            <strong id="drawer-hu">76%</strong>
+            <strong id="drawer-hu">72%</strong>
           </div>
           <div class="param-item">
             <span class="param-label">Angin</span>
-            <strong id="drawer-ws">4.3 km/j</strong>
+            <strong id="drawer-ws">12.5 km/j</strong>
           </div>
           <div class="param-item">
             <span class="param-label">Tutupan Awan</span>
-            <strong id="drawer-tcc">32%</strong>
+            <strong id="drawer-tcc">25%</strong>
           </div>
           <div class="param-item">
-            <span class="param-label">Wilayah Hujan</span>
-            <strong id="drawer-hujan-hari">0 desa</strong>
+            <span class="param-label">Curah Hujan</span>
+            <strong id="drawer-curah-hujan">0.0 mm</strong>
           </div>
         </div>
       </div>
 
-      <!-- Grafik Tren 3 Hari per 3 Jam -->
+      <!-- Grafik Tren Per Jam / Per 3 Jam -->
       <div class="wadah-grafik-box">
-        <h3>TREN CUACA 3 HARI (SUHU & KELEMBAPAN PER 3 JAM)</h3>
+        <div class="kepala-grafik">
+          <h3>FLUKTUASI SUHU & KELEMBAPAN</h3>
+          <span id="label-grafik-jam" class="label-jam-kecil">Prakiraan 4 Hari</span>
+        </div>
         <div class="canvas-grafik-holder">
           <canvas id="grafik-drawer"></canvas>
         </div>
@@ -160,40 +171,50 @@
 
       <div class="drawer-kaki-info">
         <span id="drawer-cakupan">Cakupan: 177 Desa Teragregasi</span>
-        <span>Analisis BMKG: <strong id="drawer-analisis">2026-11-08 12:00 UTC</strong></span>
+        <span>Sumber: <strong>BMKG & Model Grid Numerik</strong></span>
       </div>
     </div>
   </aside>
 
-  <!-- 4. Bottom Bar Terpadu (Legenda, Kontrol Hari, & Slot Jam BMKG Dinamis) -->
-  <footer class="bottombar-terpadu">
-    <!-- Legenda Parameter Cuaca (Kiri) -->
-    <div class="bottombar-legenda" id="legenda-wadah"></div>
+  <!-- Timeline Bar Bawah ala Windy (Play/Pause, Slider Waktu Jam Kontinu, & Skala Warna) -->
+  <footer class="bottombar-windy">
+    <!-- Tombol Play / Pause ala Windy -->
+    <button type="button" id="btn-play-windy" class="btn-play-windy" title="Putar Animasi Waktu Otomatis">
+      <span id="ikon-play">▶</span>
+    </button>
 
-    <!-- Kontrol Waktu Dinamis BMKG (Tengah) -->
-    <div class="bottombar-waktu">
-      <div class="baris-pilih-hari-bmkg" id="wadah-tombol-hari" role="group" aria-label="Pilih Hari Prakiraan">
-        <!-- Dirender dinamis oleh JS berdasarkan tanggal aktual BMKG -->
+    <!-- Bar Timeline Per Jam -->
+    <div class="windy-timeline-container">
+      <div class="windy-days-header" id="windy-days-header">
+        <!-- Render dinamis tanggal & hari -->
       </div>
-      <div class="baris-pilih-jam-bmkg" id="wadah-tombol-jam" role="group" aria-label="Pilih Jam Prakiraan (per 3 Jam)">
-        <!-- Dirender dinamis oleh JS berdasarkan slot aktual BMKG -->
+      <div class="windy-slider-track">
+        <input type="range" id="windy-time-slider" min="0" max="95" step="1" value="0" aria-label="Slider Waktu Cuaca">
+      </div>
+      <div class="windy-hours-ticks" id="windy-hours-ticks">
+        <!-- Render dinamis jam-jam -->
       </div>
     </div>
 
-    <!-- Info Waktu Aktif Terpilih (Kanan) -->
-    <div class="bottombar-info-waktu">
-      <span class="info-label-kecil">WAKTU TERPILIH:</span>
-      <strong id="badge-waktu-aktif" class="badge-waktu-teks">Memuat jadwal BMKG…</strong>
+    <!-- Info Waktu Aktif & Skala Legenda Warna Windy (Kanan Bawah) -->
+    <div class="windy-legend-container">
+      <div class="windy-waktu-display" id="windy-waktu-display">
+        Sen, 9 Nov 2026 • 13:00 WIB
+      </div>
+      <div class="windy-color-bar" id="windy-color-bar">
+        <div class="gradient-strip" id="windy-gradient-strip"></div>
+        <div class="gradient-labels" id="windy-gradient-labels"></div>
+      </div>
     </div>
   </footer>
 
-  <!-- 5. Modal Tabel Pantauan 1.250 Desa -->
+  <!-- Modal Tabel Pantauan 1.250 Desa -->
   <div id="modal-tabel" class="modal-tabel" hidden>
     <div class="modal-konten">
       <div class="modal-header">
         <div class="modal-header-teks">
-          <h2>Tabel Pantauan Cuaca BMKG Kedungsepur (1.250 Desa)</h2>
-          <p>Klik salah satu baris desa untuk langsung menyorot dan melihat detail pada peta.</p>
+          <h2>Tabel Pantauan Cuaca Kedungsepur (1.250 Desa)</h2>
+          <p>Klik baris desa mana pun untuk otomatis terbang (Zoom to Layer) ke lokasi.</p>
         </div>
         <button type="button" id="tutup-modal-tabel" class="btn-tutup-drawer">&times;</button>
       </div>
@@ -225,7 +246,7 @@
               <th class="angka">Kelembapan (%)</th>
               <th class="angka">Angin (km/j)</th>
               <th>Kondisi Cuaca</th>
-              <th>Status Hujan</th>
+              <th>Aksi</th>
             </tr>
           </thead>
           <tbody>
@@ -236,6 +257,6 @@
     </div>
   </div>
 
-  <script src="app.js?v=4.0"></script>
+  <script src="app.js?v=5.0"></script>
 </body>
 </html>

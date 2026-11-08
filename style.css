@@ -1,17 +1,17 @@
 /*
  * KEDUNGSEPUR RESILIENCE - WebGIS Cuaca & Mitigasi Bencana
- * Tata Letak Terpadu (Unified Layout) - Rapi, Simetris, Profesional, & Super Cepat
+ * Desain Replika Windy: Permukaan Cuaca Halus, Partikel Angin Mengalir, & Timeline Interaktif
  */
 
 :root {
   --bg-gelap: #090d16;
-  --bar-bg: rgba(15, 23, 42, 0.92);
+  --bar-bg: rgba(15, 23, 42, 0.90);
   --bar-border: rgba(255, 255, 255, 0.12);
-  --bar-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  --bar-shadow: 0 8px 24px rgba(0, 0, 0, 0.55);
+  --aksen-orange: #f97316;
   --aksen-biru: #0284c7;
   --aksen-cyan: #38bdf8;
   --aksen-kuning: #facc15;
-  --aksen-merah: #ef4444;
   --teks-terang: #f8fafc;
   --teks-redup: #94a3b8;
   --font-app: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
@@ -51,15 +51,26 @@ html, body {
   background: #0b1120;
 }
 
+/* Kanvas Partikel Angin Mengalir (Windy Streamlines) */
+.canvas-partikel-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 400;
+  pointer-events: none;
+}
+
 /* =============================================================================
-   1. TOP BAR TERPADU (Satu Bilah Atas Menyatu)
+   1. TOPBAR TERPADU
    ============================================================================= */
-.topbar-terpadu {
+.topbar-windy {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  height: 54px;
+  height: 52px;
   z-index: 1000;
   background: var(--bar-bg);
   backdrop-filter: blur(12px);
@@ -80,16 +91,16 @@ html, body {
 }
 
 .logo-app {
-  width: 36px;
-  height: 36px;
+  width: 34px;
+  height: 34px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
   padding: 2px;
   border: 1px solid rgba(255, 255, 255, 0.25);
-  box-shadow: 0 0 10px rgba(6, 182, 212, 0.3);
+  box-shadow: 0 0 10px rgba(6, 182, 212, 0.35);
 }
 
-.topbar-judul h1 {
+.topbar-title-block h1 {
   font-size: 1.05rem;
   font-weight: 800;
   letter-spacing: 0.03em;
@@ -99,13 +110,12 @@ html, body {
   line-height: 1.15;
 }
 
-.topbar-judul .tagline {
-  font-size: 0.68rem;
+.topbar-title-block .tagline {
+  font-size: 0.66rem;
   color: var(--teks-redup);
   font-weight: 500;
 }
 
-/* Tingkat Wilayah di Tengah Topbar */
 .topbar-tengah {
   display: flex;
   align-items: center;
@@ -113,11 +123,11 @@ html, body {
 
 .segmen-wilayah {
   display: inline-flex;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.45);
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 8px;
-  padding: 3px;
-  gap: 4px;
+  padding: 2px;
+  gap: 3px;
 }
 
 .btn-segmen-w {
@@ -125,9 +135,9 @@ html, body {
   background: transparent;
   color: var(--teks-redup);
   font: inherit;
-  font-size: 0.74rem;
+  font-size: 0.72rem;
   font-weight: 700;
-  padding: 5px 12px;
+  padding: 5px 11px;
   border-radius: 6px;
   cursor: pointer;
   transition: var(--transisi);
@@ -144,7 +154,6 @@ html, body {
   box-shadow: 0 2px 8px rgba(2, 132, 199, 0.45);
 }
 
-/* Opsi & Aksi di Kanan Topbar */
 .topbar-kanan {
   display: flex;
   align-items: center;
@@ -185,11 +194,11 @@ html, body {
 }
 
 /* =============================================================================
-   2. SIDEBAR KANAN TERPADU (Parameter & Basemap Strip)
+   2. SIDEBAR KANAN ALA WINDY (Layer Menu)
    ============================================================================= */
-.sidebar-kanan-terpadu {
+.sidebar-windy {
   position: absolute;
-  top: 64px;
+  top: 62px;
   right: 12px;
   z-index: 1000;
   background: var(--bar-bg);
@@ -207,7 +216,7 @@ html, body {
   pointer-events: auto;
 }
 
-.grup-tool-header {
+.sidebar-judul-grup {
   font-size: 0.55rem;
   font-weight: 800;
   letter-spacing: 0.08em;
@@ -216,14 +225,14 @@ html, body {
   margin: 2px 0;
 }
 
-.grup-tool-vertikal {
+.sidebar-grup-btn {
   display: flex;
   flex-direction: column;
   gap: 4px;
   width: 100%;
 }
 
-.btn-tool-param, .btn-tool-base {
+.btn-windy-layer, .btn-windy-base {
   border: 1px solid transparent;
   background: transparent;
   color: var(--teks-redup);
@@ -239,31 +248,31 @@ html, body {
   width: 100%;
 }
 
-.btn-tool-param:hover, .btn-tool-base:hover {
+.btn-windy-layer:hover, .btn-windy-base:hover {
   background: rgba(255, 255, 255, 0.1);
   color: #fff;
 }
 
-.btn-tool-param.aktif, .btn-tool-base.aktif {
-  background: linear-gradient(135deg, rgba(2, 132, 199, 0.85) 0%, rgba(14, 165, 233, 0.85) 100%);
+.btn-windy-layer.aktif, .btn-windy-base.aktif {
+  background: linear-gradient(135deg, rgba(2, 132, 199, 0.9) 0%, rgba(14, 165, 233, 0.9) 100%);
   border-color: rgba(56, 189, 248, 0.6);
   color: #fff;
-  box-shadow: 0 2px 8px rgba(2, 132, 199, 0.4);
+  box-shadow: 0 2px 8px rgba(2, 132, 199, 0.45);
 }
 
-.icon-tool {
+.icon-layer {
   font-size: 1.15rem;
   line-height: 1;
 }
 
-.label-tool {
+.text-layer {
   font-size: 0.62rem;
   font-weight: 700;
   line-height: 1.1;
   text-align: center;
 }
 
-.garis-pemisah-tool {
+.sidebar-separator {
   width: 80%;
   height: 1px;
   background: rgba(255, 255, 255, 0.12);
@@ -271,167 +280,13 @@ html, body {
 }
 
 /* =============================================================================
-   3. BOTTOM BAR TERPADU (Satu Bilah Bawah Menyatu)
+   3. DRAWER DETAIL WILAYAH ALA WINDY (Sisi Kiri)
    ============================================================================= */
-.bottombar-terpadu {
+.drawer-windy {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 68px;
-  z-index: 1000;
-  background: var(--bar-bg);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border-top: 1px solid var(--bar-border);
-  box-shadow: var(--bar-shadow);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 16px;
-  pointer-events: auto;
-}
-
-/* Legenda di Kiri Bottombar */
-.bottombar-legenda {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  min-width: 170px;
-}
-
-.legenda-judul-inline {
-  font-size: 0.62rem;
-  font-weight: 800;
-  letter-spacing: 0.05em;
-  color: #7dd3fc;
-  text-transform: uppercase;
-}
-
-.legenda-item-row {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-
-.legenda-chip {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  font-size: 0.65rem;
-  color: #cbd5e1;
-}
-
-.legenda-chip span {
-  width: 9px;
-  height: 9px;
-  border-radius: 2px;
-  flex-shrink: 0;
-}
-
-/* Kontrol Waktu Slot di Tengah Bottombar */
-.bottombar-waktu {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
-}
-
-.baris-pilih-hari-bmkg {
-  display: inline-flex;
-  background: rgba(0, 0, 0, 0.45);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 6px;
-  padding: 2px;
-  gap: 3px;
-}
-
-.btn-hari-bmkg {
-  border: 0;
-  background: transparent;
-  color: var(--teks-redup);
-  font: inherit;
-  font-size: 0.72rem;
-  font-weight: 700;
-  padding: 3px 10px;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: var(--transisi);
-  white-space: nowrap;
-}
-
-.btn-hari-bmkg:hover {
-  color: #fff;
-}
-
-.btn-hari-bmkg.aktif {
-  background: var(--aksen-biru);
-  color: #fff;
-}
-
-.baris-pilih-jam-bmkg {
-  display: inline-flex;
-  gap: 4px;
-  align-items: center;
-}
-
-.btn-jam-bmkg {
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  background: rgba(255, 255, 255, 0.05);
-  color: var(--teks-redup);
-  font: inherit;
-  font-size: 0.72rem;
-  font-weight: 700;
-  padding: 4px 8px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: var(--transisi);
-  white-space: nowrap;
-}
-
-.btn-jam-bmkg:hover {
-  background: rgba(255, 255, 255, 0.15);
-  color: #fff;
-}
-
-.btn-jam-bmkg.aktif {
-  background: linear-gradient(135deg, #0284c7 0%, #38bdf8 100%);
-  border-color: #38bdf8;
-  color: #fff;
-  box-shadow: 0 2px 8px rgba(2, 132, 199, 0.5);
-}
-
-/* Info Waktu di Kanan Bottombar */
-.bottombar-info-waktu {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 1px;
-  min-width: 170px;
-}
-
-.info-label-kecil {
-  font-size: 0.58rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  color: var(--teks-redup);
-}
-
-.badge-waktu-teks {
-  font-size: 0.8rem;
-  color: #38bdf8;
-  font-weight: 800;
-}
-
-/* =============================================================================
-   4. DRAWER DETAIL WILAYAH TERPADU (Sisi Kiri)
-   ============================================================================= */
-.drawer-kiri-terpadu {
-  position: absolute;
-  top: 64px;
+  top: 62px;
   left: 12px;
-  bottom: 78px;
+  bottom: 84px;
   width: 330px;
   z-index: 1001;
   background: var(--bar-bg);
@@ -480,8 +335,9 @@ html, body {
 .drawer-badge-bar {
   display: flex;
   align-items: center;
-  gap: 6px;
+  justify-content: space-between;
   margin-bottom: 4px;
+  padding-right: 28px;
 }
 
 .badge-tingkat {
@@ -495,14 +351,21 @@ html, body {
   border-radius: 4px;
 }
 
-.badge-bmkg-resmi {
-  font-size: 0.6rem;
-  font-weight: 600;
-  color: #86efac;
-  background: rgba(22, 163, 74, 0.2);
-  border: 1px solid rgba(74, 222, 128, 0.3);
-  padding: 2px 6px;
+.btn-zoom-layer {
+  background: rgba(16, 185, 129, 0.2);
+  border: 1px solid rgba(16, 185, 129, 0.5);
+  color: #6ee7b7;
+  font-size: 0.64rem;
+  font-weight: 700;
+  padding: 2px 8px;
   border-radius: 4px;
+  cursor: pointer;
+  transition: var(--transisi);
+}
+
+.btn-zoom-layer:hover {
+  background: rgba(16, 185, 129, 0.4);
+  transform: scale(1.05);
 }
 
 .drawer-isi h2 {
@@ -535,7 +398,7 @@ html, body {
 }
 
 .suhu-angka-besar {
-  font-size: 2rem;
+  font-size: 2.1rem;
   font-weight: 800;
   color: #fff;
   line-height: 1;
@@ -594,12 +457,23 @@ html, body {
   margin-bottom: 8px;
 }
 
-.wadah-grafik-box h3 {
-  font-size: 0.64rem;
+.kepala-grafik {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.kepala-grafik h3 {
+  font-size: 0.62rem;
   font-weight: 700;
   letter-spacing: 0.04em;
   color: #7dd3fc;
-  margin-bottom: 6px;
+}
+
+.label-jam-kecil {
+  font-size: 0.58rem;
+  color: var(--teks-redup);
 }
 
 .canvas-grafik-holder {
@@ -619,7 +493,145 @@ html, body {
 }
 
 /* =============================================================================
-   5. LABEL POLIGON & MARKER STASIUN BMKG
+   4. TIMELINE BAR ALA WINDY (Bawah)
+   ============================================================================= */
+.bottombar-windy {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 74px;
+  z-index: 1000;
+  background: var(--bar-bg);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-top: 1px solid var(--bar-border);
+  box-shadow: var(--bar-shadow);
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  gap: 14px;
+  pointer-events: auto;
+}
+
+/* Tombol Play / Pause Oranye Windy */
+.btn-play-windy {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 0;
+  background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+  color: #fff;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 4px 14px rgba(249, 115, 22, 0.5);
+  transition: var(--transisi);
+}
+
+.btn-play-windy:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 18px rgba(249, 115, 22, 0.7);
+}
+
+/* Track Slider Windy */
+.windy-timeline-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  overflow: hidden;
+}
+
+.windy-days-header {
+  display: flex;
+  width: 100%;
+  font-size: 0.68rem;
+  font-weight: 800;
+  color: var(--teks-redup);
+}
+
+.windy-day-pill {
+  flex: 1;
+  text-align: center;
+  padding: 2px 0;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  color: #94a3b8;
+}
+
+.windy-day-pill.hari-ini {
+  color: #38bdf8;
+  font-weight: 800;
+}
+
+.windy-slider-track {
+  width: 100%;
+}
+
+.windy-slider-track input[type="range"] {
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.15);
+  accent-color: #f97316;
+  cursor: pointer;
+}
+
+.windy-hours-ticks {
+  display: flex;
+  width: 100%;
+  font-size: 0.60rem;
+  color: var(--teks-redup);
+  justify-content: space-between;
+  padding: 0 4px;
+}
+
+/* Display Waktu & Color Bar Legenda Windy */
+.windy-legend-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 3px;
+  min-width: 170px;
+  flex-shrink: 0;
+}
+
+.windy-waktu-display {
+  font-size: 0.76rem;
+  font-weight: 800;
+  color: #f8fafc;
+  letter-spacing: 0.02em;
+}
+
+.windy-color-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1px;
+  width: 160px;
+}
+
+.gradient-strip {
+  width: 100%;
+  height: 8px;
+  border-radius: 4px;
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.4);
+}
+
+.gradient-labels {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 0.58rem;
+  color: var(--teks-redup);
+  font-weight: 700;
+}
+
+/* =============================================================================
+   5. LABEL POLIGON & MARKER POS BMKG
    ============================================================================= */
 .label-kabkot {
   background: rgba(15, 23, 42, 0.88) !important;
@@ -647,13 +659,13 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 26px;
-  height: 26px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
   background: rgba(15, 23, 42, 0.9);
   border: 2px solid #38bdf8;
   color: #fff;
-  font-size: 0.72rem;
+  font-size: 0.70rem;
   box-shadow: 0 0 8px rgba(56, 189, 248, 0.6);
   cursor: pointer;
   transition: var(--transisi);
@@ -783,42 +795,40 @@ html, body {
    7. RESPONSIF MOBILE
    ============================================================================= */
 @media (max-width: 820px) {
-  .topbar-terpadu {
+  .topbar-windy {
     height: auto;
     flex-wrap: wrap;
     padding: 6px 10px;
     gap: 6px;
   }
-  .topbar-judul .tagline { display: none; }
-  .topbar-kanan { gap: 8px; }
+  .topbar-title-block .tagline { display: none; }
+  .topbar-kanan { gap: 6px; }
   .saklar-topbar span { display: none; }
 
-  .sidebar-kanan-terpadu {
-    top: 90px;
+  .sidebar-windy {
+    top: 86px;
     right: 8px;
-    width: 52px;
-    padding: 6px 3px;
+    width: 50px;
+    padding: 5px 2px;
   }
-  .icon-tool { font-size: 1rem; }
-  .label-tool { font-size: 0.55rem; }
+  .icon-layer { font-size: 1rem; }
+  .text-layer { font-size: 0.55rem; }
 
-  .bottombar-terpadu {
+  .bottombar-windy {
     height: auto;
     flex-direction: column;
     padding: 8px 10px;
-    gap: 6px;
+    gap: 8px;
   }
-  .bottombar-legenda { display: none; }
-  .bottombar-info-waktu { align-items: center; }
-  .baris-pilih-jam-bmkg { flex-wrap: wrap; justify-content: center; }
-  .btn-jam-bmkg { padding: 3px 6px; font-size: 0.68rem; }
+  .windy-legend-container { align-items: center; width: 100%; }
+  .windy-hours-ticks { display: none; }
 
-  .drawer-kiri-terpadu {
-    top: 90px;
+  .drawer-windy {
+    top: 86px;
     left: 8px;
-    right: 68px;
+    right: 64px;
     width: auto;
-    bottom: 96px;
+    bottom: 110px;
     padding: 10px;
   }
 }
