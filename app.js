@@ -1,10 +1,10 @@
 /*
  * KEDUNGSEPUR RESILIENCE - WebGIS Cuaca & Mitigasi Bencana
- * Agregasi BMKG Otomatis (Kab/Kota, Kecamatan, Desa) & Basemap Bebas Watermark
+ * Tata Letak Terpadu (Unified Layout) & Sinkronisasi Slot BMKG Real-Time
  */
 'use strict';
 
-const CB = '?v=3.0';
+const CB = '?v=4.0';
 const KONFIG = {
   batasDesa: 'data/batas_keldes.geojson' + CB,
   batasKecamatan: 'data/batas_kecamatan.geojson' + CB,
@@ -22,7 +22,7 @@ const KELAS_HUJAN = [
   { nama: 'Hujan lebat/petir', warna: '#dc2626' },
 ];
 
-// Stasiun & Pos Pengamatan Cuaca BMKG Resmi di Kedungsepur
+// Stasiun & Pos Pengamatan BMKG Resmi
 const STASIUN_BMKG = [
   { nama: 'Stasiun Meteorologi Ahmad Yani', kab: 'Kota Semarang', lat: -6.974, lon: 110.375, jenis: 'Stasiun Meteorologi Bandara' },
   { nama: 'Stasiun Meteorologi Maritim Tanjung Emas', kab: 'Kota Semarang', lat: -6.954, lon: 110.422, jenis: 'Stasiun Meteorologi Maritim' },
@@ -41,20 +41,21 @@ const state = {
   dataKabkotGeo: null,
   bmkgData: null,
 
-  // Agregasi Data
+  // Agregasi BMKG
   aggKabkot: {},
   aggKecamatan: {},
 
-  variabelAktif: 'temperature', // 'temperature' | 'precipitation' | 'wind' | 'relative_humidity' | 'cloud_cover' | 'cuaca'
-  levelBatas: 'kabkot',         // 'kabkot' | 'kecamatan' | 'desa' | 'none'
+  // Struktur Hari & Slot BMKG Dinamis
+  jadwalHari: [],    // [{ tanggal: '2026-11-08', label: 'Hari Ini (8 Nov)', slots: [{ idx: 0, jam: '22:00', waktu: '...' }] }]
+  hariAktifIdx: 0,   // Index hari aktif dalam jadwalHari
+  slotAktifIdx: 0,   // Index slot mutlak (0 .. 16) yang sedang aktif
+
+  variabelAktif: 'temperature', // 'temperature' | 'precipitation' | 'wind' | 'relative_humidity' | 'cloud_cover'
+  levelBatas: 'kabkot',         // 'kabkot' | 'kecamatan' | 'desa'
   choroplethBMKG: true,
   tampilkanStasiun: true,
-  animasiAngin: false,
 
-  hariIdx: 0,
-  jamIdx: 22, // default diatur otomatis ke jam lokal terdekat
-
-  wilayahTerpilih: null, // { tipe: 'kabkot'|'kecamatan'|'desa', kode: string, nama: string }
+  wilayahTerpilih: null, // { tipe: 'kabkot'|'kecamatan'|'desa', kode: string, props: object }
   grafikChart: null,
 };
 
@@ -62,7 +63,7 @@ const $ = (s) => document.querySelector(s);
 const $$ = (s) => document.querySelectorAll(s);
 
 // ---------------------------------------------------------------------------
-// 1. Inisialisasi Peta & Basemap Bebas Watermark (Tanpa API Key)
+// 1. Inisialisasi Peta & Basemap Bebas Watermark
 // ---------------------------------------------------------------------------
 const peta = L.map('peta', {
   zoomControl: false,
@@ -70,16 +71,13 @@ const peta = L.map('peta', {
   attributionControl: false,
 }).setView(KONFIG.pusatPeta, KONFIG.zoomAwal);
 
-L.control.zoom({ position: 'topright' }).addTo(peta);
+L.control.zoom({ position: 'topleft' }).addTo(peta);
 
-// Pilihan Basemap Resmi & Bebas Watermark
 const basemaps = {
-  // Google Satellite Hybrid (Stabil & Jernih)
   satellite: L.tileLayer('https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}', {
     maxZoom: 20,
     subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
   }),
-  // Esri Dark Gray Canvas Resmi (100% Bebas Watermark & Tanpa API Key)
   dark: L.layerGroup([
     L.tileLayer('https://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
       maxZoom: 16,
@@ -88,7 +86,6 @@ const basemaps = {
       maxZoom: 16,
     }),
   ]),
-  // OpenStreetMap Standar
   osm: L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
   }),
@@ -100,78 +97,131 @@ function gantiBasemap(tipe) {
   if (basemapAktif) peta.removeLayer(basemapAktif);
   basemapAktif = basemaps[tipe];
   basemapAktif.addTo(peta);
-  $$('.btn-basemap').forEach((btn) => {
+  $$('.btn-tool-base').forEach((btn) => {
     btn.classList.toggle('aktif', btn.dataset.base === tipe);
   });
 }
 
-$$('.btn-basemap').forEach((b) => {
-  b.addEventListener('click', () => gantiBasemap(b.dataset.base));
-});
-
 const canvasRenderer = L.canvas({ padding: 0.5 });
 let layerBatasAktif = null;
 let layerStasiunBMKG = null;
-let layerPartikelCanvas = null;
 
 // ---------------------------------------------------------------------------
-// 2. Deteksi Waktu Terkini & Sinkronisasi Slot BMKG
+// 2. Mesin Penjadwalan Slot BMKG Dinamis
 // ---------------------------------------------------------------------------
-function aturWaktuKeSekarang() {
-  const sekarang = new Date();
-  const jam = sekarang.getHours();
-  // Slot BMKG: 1, 4, 7, 10, 13, 16, 19, 22
-  const slotJams = [1, 4, 7, 10, 13, 16, 19, 22];
-  let jamTerdekat = slotJams[0];
-  let minDiff = Infinity;
-  for (const sj of slotJams) {
-    const diff = Math.abs(sj - jam);
-    if (diff < minDiff) {
-      minDiff = diff;
-      jamTerdekat = sj;
+function susunJadwalBMKG(slots) {
+  if (!slots || !slots.length) return [];
+  const hariMap = {};
+
+  const namaHari = ['Min', 'Sen', 'Sel', 'Rab', 'Kam', 'Jum', 'Sab'];
+  const namaBulan = ['Jan', 'Feb', 'Mar', 'Apr', 'Mei', 'Jun', 'Jul', 'Agu', 'Sep', 'Okt', 'Nov', 'Des'];
+
+  slots.forEach((s, idx) => {
+    const parts = s.split(' ');
+    const tgl = parts[0];
+    const jam = parts[1].substring(0, 5);
+
+    if (!hariMap[tgl]) {
+      const dObj = new Date(tgl + 'T00:00:00');
+      const hariKe = Object.keys(hariMap).length;
+      let labelHari = `${dObj.getDate()} ${namaBulan[dObj.getMonth()]}`;
+      if (hariKe === 0) labelHari = `Hari Ini (${labelHari})`;
+      else if (hariKe === 1) labelHari = `Besok (${labelHari})`;
+      else if (hariKe === 2) labelHari = `Lusa (${labelHari})`;
+
+      hariMap[tgl] = {
+        tanggal: tgl,
+        label: labelHari,
+        slots: [],
+      };
     }
-  }
-  state.hariIdx = 0;
-  state.jamIdx = jamTerdekat;
-}
-
-aturWaktuKeSekarang();
-
-function getWaktuTarget() {
-  const d = new Date();
-  d.setDate(d.getDate() + state.hariIdx);
-  d.setHours(state.jamIdx, 0, 0, 0);
-  return d;
-}
-
-function cariSlotBMKGTerdekat(slots) {
-  if (!slots || !slots.length) return 0;
-  const target = getWaktuTarget().getTime();
-  let best = 0, minDiff = Infinity;
-  for (let i = 0; i < slots.length; i++) {
-    const sTime = new Date(slots[i].replace(' ', 'T') + '+07:00').getTime();
-    const diff = Math.abs(sTime - target);
-    if (diff < minDiff) { minDiff = diff; best = i; }
-  }
-  return best;
-}
-
-function updateLabelWaktuUI() {
-  const d = getWaktuTarget();
-  const tglTeks = d.toLocaleDateString('id-ID', {
-    weekday: 'long', day: 'numeric', month: 'short', year: 'numeric'
+    hariMap[tgl].slots.push({ idx, jam, s });
   });
-  const jamTeks = String(state.jamIdx).padStart(2, '0') + ':00 WIB';
 
-  const lblTgl = $('#label-tanggal-slot');
-  const lblJam = $('#label-jam-slot');
-  if (lblTgl) lblTgl.textContent = tglTeks;
-  if (lblJam) lblJam.textContent = jamTeks;
+  return Object.values(hariMap);
+}
 
-  $$('.btn-slot-hari').forEach((b, i) => b.classList.toggle('aktif', i === state.hariIdx));
-  $$('.btn-jam-slot').forEach((b) => {
-    b.classList.toggle('aktif', parseInt(b.dataset.jam, 10) === state.jamIdx);
+function renderUIWaktuBMKG() {
+  const wadahHari = $('#wadah-tombol-hari');
+  const wadahJam = $('#wadah-tombol-jam');
+  if (!wadahHari || !wadahJam || !state.jadwalHari.length) return;
+
+  // Render Tombol Hari
+  wadahHari.innerHTML = state.jadwalHari.map((h, hIdx) => `
+    <button type="button" class="btn-hari-bmkg ${hIdx === state.hariAktifIdx ? 'aktif' : ''}" data-hidx="${hIdx}">
+      ${h.label}
+    </button>
+  `).join('');
+
+  wadahHari.querySelectorAll('.btn-hari-bmkg').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const hIdx = parseInt(btn.dataset.hidx, 10);
+      state.hariAktifIdx = hIdx;
+      // Default pilih slot pertama di hari tersebut
+      const hariData = state.jadwalHari[hIdx];
+      if (hariData && hariData.slots.length) {
+        pilihSlot(hariData.slots[0].idx);
+      }
+    });
   });
+
+  renderTombolJam();
+}
+
+function renderTombolJam() {
+  const wadahJam = $('#wadah-tombol-jam');
+  const hariData = state.jadwalHari[state.hariAktifIdx];
+  if (!wadahJam || !hariData) return;
+
+  wadahJam.innerHTML = hariData.slots.map((item) => `
+    <button type="button" class="btn-jam-bmkg ${item.idx === state.slotAktifIdx ? 'aktif' : ''}" data-sidx="${item.idx}">
+      ${item.jam} WIB
+    </button>
+  `).join('');
+
+  wadahJam.querySelectorAll('.btn-jam-bmkg').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const sIdx = parseInt(btn.dataset.sidx, 10);
+      pilihSlot(sIdx);
+    });
+  });
+
+  updateBadgeWaktuAktif();
+}
+
+function pilihSlot(sIdx) {
+  state.slotAktifIdx = sIdx;
+
+  // Pastikan hariAktifIdx selaras dengan slot yang dipilih
+  state.jadwalHari.forEach((h, hIdx) => {
+    if (h.slots.some((it) => it.idx === sIdx)) {
+      state.hariAktifIdx = hIdx;
+    }
+  });
+
+  // Update UI Tombol
+  $$('.btn-hari-bmkg').forEach((b, i) => b.classList.toggle('aktif', i === state.hariAktifIdx));
+  renderTombolJam();
+
+  // Update Peta & Drawer Secara Seketika
+  renderBatasWilayah();
+  if (state.wilayahTerpilih) {
+    bukaDetailWilayah(state.wilayahTerpilih.tipe, state.wilayahTerpilih.kode, state.wilayahTerpilih.props);
+  }
+}
+
+function updateBadgeWaktuAktif() {
+  const badge = $('#badge-waktu-aktif');
+  if (!badge || !state.bmkgData || !state.bmkgData.slots) return;
+  const sStr = state.bmkgData.slots[state.slotAktifIdx];
+  if (!sStr) return;
+
+  const d = new Date(sStr.replace(' ', 'T') + '+07:00');
+  const teksTgl = d.toLocaleDateString('id-ID', {
+    weekday: 'short', day: 'numeric', month: 'short', year: 'numeric'
+  });
+  const jamTeks = sStr.split(' ')[1].substring(0, 5) + ' WIB';
+  badge.textContent = `${teksTgl} • ${jamTeks}`;
 }
 
 // ---------------------------------------------------------------------------
@@ -190,7 +240,6 @@ function bangunAgregasiBMKG(bmkg) {
     const kabKode = kode.substring(0, 5); // 33.xx
     const kecKode = kode.substring(0, 8); // 33.xx.yy
 
-    // Agregasi Kabkot
     if (!state.aggKabkot[kabKode]) {
       state.aggKabkot[kabKode] = {
         kode: kabKode,
@@ -207,7 +256,6 @@ function bangunAgregasiBMKG(bmkg) {
     const kab = state.aggKabkot[kabKode];
     kab.count++;
 
-    // Agregasi Kecamatan
     if (!state.aggKecamatan[kecKode]) {
       state.aggKecamatan[kecKode] = {
         kode: kecKode,
@@ -249,7 +297,6 @@ function bangunAgregasiBMKG(bmkg) {
     }
   }
 
-  // Normalisasi Nilai Rata-rata & Modus Cuaca
   function selesaikan(aggObj) {
     for (const item of Object.values(aggObj)) {
       const c = item.count || 1;
@@ -267,9 +314,9 @@ function bangunAgregasiBMKG(bmkg) {
       item.kelas = item.hujanCount.map((hc) => {
         if (hc === 0) return 0;
         const rasio = hc / c;
-        if (rasio < 0.2) return 1; // Hujan ringan
-        if (rasio < 0.5) return 2; // Hujan sedang
-        return 3; // Hujan lebat
+        if (rasio < 0.2) return 1;
+        if (rasio < 0.5) return 2;
+        return 3;
       });
     }
   }
@@ -279,7 +326,7 @@ function bangunAgregasiBMKG(bmkg) {
 }
 
 // ---------------------------------------------------------------------------
-// 4. Pewarnaan & Poligon Batas Wilayah (Kabkot, Kecamatan, Desa)
+// 4. Skema Warna Cuaca Berdasarkan Parameter
 // ---------------------------------------------------------------------------
 function getWarnaCuacaNilai(param, val, kelasHujan) {
   if (param === 'precipitation') {
@@ -305,19 +352,18 @@ function getWarnaCuacaNilai(param, val, kelasHujan) {
     if (val < 60) return '#93c5fd';
     if (val < 85) return '#64748b';
     return '#334155';
-  } else {
-    // Cuaca deskriptif
-    return kelasHujan > 0 ? '#38bdf8' : '#f59e0b';
   }
+  return '#38bdf8';
 }
 
+// ---------------------------------------------------------------------------
+// 5. Render Poligon Batas Wilayah (Kabkot, Kecamatan, Desa)
+// ---------------------------------------------------------------------------
 function renderBatasWilayah() {
   if (layerBatasAktif) {
     peta.removeLayer(layerBatasAktif);
     layerBatasAktif = null;
   }
-
-  if (state.levelBatas === 'none') return;
 
   let geojson = null;
   if (state.levelBatas === 'kabkot') geojson = state.dataKabkotGeo;
@@ -326,7 +372,7 @@ function renderBatasWilayah() {
 
   if (!geojson) return;
 
-  const sBMKG = state.bmkgData ? cariSlotBMKGTerdekat(state.bmkgData.slots) : 0;
+  const sBMKG = state.slotAktifIdx;
 
   layerBatasAktif = L.geoJSON(geojson, {
     renderer: canvasRenderer,
@@ -340,7 +386,6 @@ function renderBatasWilayah() {
       let strokeColor = '#38bdf8';
       let weight = 1.0;
 
-      // Ambil data agregat atau data desa sesuai level
       if (state.levelBatas === 'kabkot') {
         weight = 2.4;
         strokeColor = '#38bdf8';
@@ -351,7 +396,7 @@ function renderBatasWilayah() {
                       state.variabelAktif === 'wind' ? d.rata_ws[sBMKG] :
                       state.variabelAktif === 'cloud_cover' ? d.rata_tcc[sBMKG] : d.rata_t[sBMKG];
           fill = getWarnaCuacaNilai(state.variabelAktif, val, d.kelas[sBMKG]);
-          fillOp = 0.38;
+          fillOp = 0.45;
         }
       } else if (state.levelBatas === 'kecamatan') {
         weight = 1.4;
@@ -363,7 +408,7 @@ function renderBatasWilayah() {
                       state.variabelAktif === 'wind' ? d.rata_ws[sBMKG] :
                       state.variabelAktif === 'cloud_cover' ? d.rata_tcc[sBMKG] : d.rata_t[sBMKG];
           fill = getWarnaCuacaNilai(state.variabelAktif, val, d.kelas[sBMKG]);
-          fillOp = 0.42;
+          fillOp = 0.48;
         }
       } else if (state.levelBatas === 'desa') {
         weight = 0.6;
@@ -376,7 +421,7 @@ function renderBatasWilayah() {
                         state.variabelAktif === 'wind' ? d.ws[sBMKG] :
                         state.variabelAktif === 'cloud_cover' ? d.tcc[sBMKG] : d.t[sBMKG];
             fill = getWarnaCuacaNilai(state.variabelAktif, val, d.kelas[sBMKG]);
-            fillOp = 0.48;
+            fillOp = 0.52;
           }
         }
       }
@@ -384,7 +429,7 @@ function renderBatasWilayah() {
       if (isSelected) {
         strokeColor = '#facc15';
         weight = 3.6;
-        fillOp = 0.75;
+        fillOp = 0.8;
       }
 
       return {
@@ -397,13 +442,19 @@ function renderBatasWilayah() {
     onEachFeature: (feature, layer) => {
       const p = feature.properties;
       const kode = p.kode_adm4 || p.kode;
-      const nama = p.desa || p.kecamatan || p.kabupaten;
 
-      // Label Permanen untuk Kabupaten/Kota
       if (state.levelBatas === 'kabkot' && p.kabupaten) {
         const d = state.aggKabkot[kode];
-        const suhuStr = d ? ` • ${d.rata_t[sBMKG]}°C` : '';
-        layer.bindTooltip(`🏛️ ${p.kabupaten.toUpperCase()}${suhuStr}`, {
+        let infoNilai = '';
+        if (d) {
+          if (state.variabelAktif === 'temperature') infoNilai = ` • ${d.rata_t[sBMKG]}°C`;
+          else if (state.variabelAktif === 'precipitation') infoNilai = ` • ${KELAS_HUJAN[d.kelas[sBMKG]]?.nama}`;
+          else if (state.variabelAktif === 'wind') infoNilai = ` • ${d.rata_ws[sBMKG]} km/j`;
+          else if (state.variabelAktif === 'relative_humidity') infoNilai = ` • ${d.rata_hu[sBMKG]}%`;
+          else if (state.variabelAktif === 'cloud_cover') infoNilai = ` • ${d.rata_tcc[sBMKG]}%`;
+        }
+
+        layer.bindTooltip(`🏛️ ${p.kabupaten.toUpperCase()}${infoNilai}`, {
           permanent: true,
           direction: 'center',
           className: 'label-kabkot'
@@ -415,7 +466,7 @@ function renderBatasWilayah() {
           bukaDetailWilayah(state.levelBatas, kode, p);
         },
         mouseover: () => {
-          layer.setStyle({ weight: 3.2, color: '#facc15', fillOpacity: 0.6 });
+          layer.setStyle({ weight: 3.2, color: '#facc15', fillOpacity: 0.65 });
         },
         mouseout: () => {
           if (layerBatasAktif) layerBatasAktif.resetStyle(layer);
@@ -426,7 +477,7 @@ function renderBatasWilayah() {
 }
 
 // ---------------------------------------------------------------------------
-// 5. Layer Titik Pos & Stasiun Pengamatan BMKG
+// 6. Layer Titik Pos & Stasiun BMKG
 // ---------------------------------------------------------------------------
 function renderStasiunBMKG() {
   if (layerStasiunBMKG) {
@@ -442,8 +493,8 @@ function renderStasiunBMKG() {
     const icon = L.divIcon({
       className: 'custom-div-icon',
       html: `<div class="marker-pos-bmkg" title="${st.nama}">📡</div>`,
-      iconSize: [28, 28],
-      iconAnchor: [14, 14],
+      iconSize: [26, 26],
+      iconAnchor: [13, 13],
     });
 
     const m = L.marker([st.lat, st.lon], { icon: icon });
@@ -453,7 +504,7 @@ function renderStasiunBMKG() {
         <h4 style="margin:2px 0 4px; font-size:13px; color:#0f172a;">${st.nama}</h4>
         <p style="margin:0; font-size:11px; color:#64748b;">Wilayah: ${st.kab}</p>
         <div style="margin-top:6px; padding:4px 6px; background:#f1f5f9; border-radius:4px; font-size:11px; color:#334155;">
-          Stasiun Pemantau Aktif BMKG Kedungsepur
+          Pos Pemantau Resmi BMKG Kedungsepur
         </div>
       </div>
     `);
@@ -464,18 +515,18 @@ function renderStasiunBMKG() {
 }
 
 // ---------------------------------------------------------------------------
-// 6. Drawer Detail Cuaca Wilayah (Kabkot, Kecamatan, atau Desa)
+// 7. Drawer Detail Wilayah (Kabkot, Kecamatan, atau Desa)
 // ---------------------------------------------------------------------------
 function bukaDetailWilayah(tipe, kode, p) {
-  state.wilayahTerpilih = { tipe, kode, nama: p.desa || p.kecamatan || p.kabupaten };
-  const sBMKG = state.bmkgData ? cariSlotBMKGTerdekat(state.bmkgData.slots) : 0;
+  state.wilayahTerpilih = { tipe, kode, props: p };
+  const sBMKG = state.slotAktifIdx;
   const drawer = $('#drawer-detail');
 
   let namaJudul = '';
   let subWilayah = '';
   let tempTeks = '--°C';
-  let cuacaTeks = 'Cerah Berawan';
-  let tagTeks = 'Rata-rata';
+  let cuacaTeks = 'Cerah';
+  let tagTeks = 'Tidak hujan';
   let huTeks = '--%';
   let wsTeks = '-- km/j';
   let tccTeks = '--%';
@@ -493,11 +544,11 @@ function bukaDetailWilayah(tipe, kode, p) {
     namaJudul = p.kabupaten || 'Kabupaten/Kota';
     subWilayah = 'Kawasan Kedungsepur, Jawa Tengah';
     $('#drawer-tingkat').textContent = 'KABUPATEN/KOTA';
-    cakupanTeks = `${d ? d.count : 0} Desa / Kelurahan Teragregasi`;
+    cakupanTeks = `Cakupan: ${d ? d.count : 0} Desa Teragregasi`;
 
     if (d) {
       tempTeks = `${d.rata_t[sBMKG]}°C`;
-      cuacaTeks = d.cuaca_dominan[sBMKG] || 'Cerah Berawan';
+      cuacaTeks = d.cuaca_dominan[sBMKG] || 'Cerah';
       tagTeks = KELAS_HUJAN[d.kelas[sBMKG]]?.nama || 'Rata-rata';
       huTeks = `${d.rata_hu[sBMKG]}%`;
       wsTeks = `${d.rata_ws[sBMKG]} km/j`;
@@ -508,14 +559,14 @@ function bukaDetailWilayah(tipe, kode, p) {
     }
   } else if (tipe === 'kecamatan') {
     const d = state.aggKecamatan[kode];
-    namaJudul = `Kecamatan ${p.kecamatan || ''}`;
+    namaJudul = `Kec. ${p.kecamatan || ''}`;
     subWilayah = `Kabupaten/Kota: ${p.kabupaten || ''}`;
     $('#drawer-tingkat').textContent = 'KECAMATAN';
-    cakupanTeks = `${d ? d.count : 0} Desa / Kelurahan`;
+    cakupanTeks = `Cakupan: ${d ? d.count : 0} Desa Teragregasi`;
 
     if (d) {
       tempTeks = `${d.rata_t[sBMKG]}°C`;
-      cuacaTeks = d.cuaca_dominan[sBMKG] || 'Cerah Berawan';
+      cuacaTeks = d.cuaca_dominan[sBMKG] || 'Cerah';
       tagTeks = KELAS_HUJAN[d.kelas[sBMKG]]?.nama || 'Rata-rata';
       huTeks = `${d.rata_hu[sBMKG]}%`;
       wsTeks = `${d.rata_ws[sBMKG]} km/j`;
@@ -539,8 +590,7 @@ function bukaDetailWilayah(tipe, kode, p) {
       huTeks = `${d.hu[sBMKG]}%`;
       wsTeks = `${d.ws[sBMKG]} km/j (${d.wd ? d.wd[sBMKG] : ''})`;
       tccTeks = `${d.tcc ? d.tcc[sBMKG] : 0}%`;
-      const hariData = d.harian && d.harian[state.hariIdx];
-      hujanTeks = hariData ? `${hariData.slot_hujan} slot hujan` : '--';
+      hujanTeks = d.kelas[sBMKG] > 0 ? 'Potensi hujan' : 'Tidak hujan';
       chartTemp = d.t;
       chartHu = d.hu;
     }
@@ -556,20 +606,24 @@ function bukaDetailWilayah(tipe, kode, p) {
   $('#drawer-tcc').textContent = tccTeks;
   $('#drawer-hujan-hari').textContent = hujanTeks;
   $('#drawer-cakupan').textContent = cakupanTeks;
-  $('#drawer-analisis').textContent = (state.bmkgData && state.bmkgData.analysis_date) || '2026-11-08 12:00';
+  $('#drawer-analisis').textContent = (state.bmkgData && state.bmkgData.analysis_date) || '2026-11-08 12:00 UTC';
 
   drawer.hidden = false;
-  renderGrafikDrawer(chartLabels, chartTemp, chartHu);
+  renderGrafikDrawer(chartLabels, chartTemp, chartHu, sBMKG);
   renderBatasWilayah();
 }
 
-function renderGrafikDrawer(labels, suhu, hu) {
+function renderGrafikDrawer(labels, suhu, hu, activeIdx) {
   const ctx = document.getElementById('grafik-drawer');
   if (!ctx) return;
   if (state.grafikChart) {
     state.grafikChart.destroy();
     state.grafikChart = null;
   }
+
+  // Highlight point pada slot aktif
+  const pointBgSuhu = suhu.map((_, i) => i === activeIdx ? '#fff' : '#ef4444');
+  const pointRadiusSuhu = suhu.map((_, i) => i === activeIdx ? 5 : 2);
 
   state.grafikChart = new Chart(ctx, {
     type: 'line',
@@ -581,18 +635,19 @@ function renderGrafikDrawer(labels, suhu, hu) {
           data: suhu,
           borderColor: '#ef4444',
           backgroundColor: 'rgba(239, 68, 68, 0.1)',
+          pointBackgroundColor: pointBgSuhu,
+          pointRadius: pointRadiusSuhu,
           tension: 0.35,
           yAxisID: 'ySuhu',
-          pointRadius: 2,
         },
         {
           label: 'Kelembapan (%)',
           data: hu,
           borderColor: '#38bdf8',
           backgroundColor: 'rgba(56, 189, 248, 0.1)',
+          pointRadius: 2,
           tension: 0.35,
           yAxisID: 'yHu',
-          pointRadius: 2,
         },
       ],
     },
@@ -621,7 +676,7 @@ function renderGrafikDrawer(labels, suhu, hu) {
 }
 
 // ---------------------------------------------------------------------------
-// 7. Legenda Parameter Mengambang
+// 8. Legenda Parameter Cuaca (Menyatu di Kiri Bottom Bar)
 // ---------------------------------------------------------------------------
 function updateLegenda() {
   const wadah = $('#legenda-wadah');
@@ -629,48 +684,60 @@ function updateLegenda() {
 
   if (state.variabelAktif === 'precipitation') {
     wadah.innerHTML = `
-      <div class="legenda-judul">Kelas Hujan BMKG</div>
-      <div class="legenda-item"><span class="legenda-warna" style="background:#64748b"></span> Tidak hujan</div>
-      <div class="legenda-item"><span class="legenda-warna" style="background:#38bdf8"></span> Hujan ringan</div>
-      <div class="legenda-item"><span class="legenda-warna" style="background:#2563eb"></span> Hujan sedang</div>
-      <div class="legenda-item"><span class="legenda-warna" style="background:#dc2626"></span> Hujan lebat/petir</div>
+      <div class="legenda-judul-inline">Kelas Hujan BMKG</div>
+      <div class="legenda-item-row">
+        <span class="legenda-chip"><span style="background:#64748b"></span> Tdk hujan</span>
+        <span class="legenda-chip"><span style="background:#38bdf8"></span> Ringan</span>
+        <span class="legenda-chip"><span style="background:#2563eb"></span> Sedang</span>
+        <span class="legenda-chip"><span style="background:#dc2626"></span> Lebat</span>
+      </div>
     `;
   } else if (state.variabelAktif === 'temperature') {
     wadah.innerHTML = `
-      <div class="legenda-judul">Suhu Udara (°C)</div>
-      <div class="legenda-item"><span class="legenda-warna" style="background:#38bdf8"></span> &lt; 22°C (Sejuk)</div>
-      <div class="legenda-item"><span class="legenda-warna" style="background:#34d399"></span> 22 - 25°C (Nyaman)</div>
-      <div class="legenda-item"><span class="legenda-warna" style="background:#facc15"></span> 26 - 28°C (Hangat)</div>
-      <div class="legenda-item"><span class="legenda-warna" style="background:#fb923c"></span> 29 - 32°C (Panas)</div>
-      <div class="legenda-item"><span class="legenda-warna" style="background:#ef4444"></span> &gt; 32°C (Sangat Panas)</div>
+      <div class="legenda-judul-inline">Suhu Udara (°C)</div>
+      <div class="legenda-item-row">
+        <span class="legenda-chip"><span style="background:#38bdf8"></span> &lt;22°</span>
+        <span class="legenda-chip"><span style="background:#34d399"></span> 22-25°</span>
+        <span class="legenda-chip"><span style="background:#facc15"></span> 26-28°</span>
+        <span class="legenda-chip"><span style="background:#fb923c"></span> 29-32°</span>
+        <span class="legenda-chip"><span style="background:#ef4444"></span> &gt;32°</span>
+      </div>
     `;
   } else if (state.variabelAktif === 'wind') {
     wadah.innerHTML = `
-      <div class="legenda-judul">Kecepatan Angin</div>
-      <div class="legenda-item"><span class="legenda-warna" style="background:#94a3b8"></span> &lt; 5 km/j (Tenang)</div>
-      <div class="legenda-item"><span class="legenda-warna" style="background:#38bdf8"></span> 5 - 10 km/j (Sedang)</div>
-      <div class="legenda-item"><span class="legenda-warna" style="background:#0284c7"></span> 10 - 15 km/j (Kencang)</div>
-      <div class="legenda-item"><span class="legenda-warna" style="background:#a855f7"></span> &gt; 15 km/j (Sangat Kencang)</div>
+      <div class="legenda-judul-inline">Kecepatan Angin (km/j)</div>
+      <div class="legenda-item-row">
+        <span class="legenda-chip"><span style="background:#94a3b8"></span> &lt;5</span>
+        <span class="legenda-chip"><span style="background:#38bdf8"></span> 5-10</span>
+        <span class="legenda-chip"><span style="background:#0284c7"></span> 10-15</span>
+        <span class="legenda-chip"><span style="background:#a855f7"></span> &gt;15</span>
+      </div>
     `;
   } else if (state.variabelAktif === 'relative_humidity') {
     wadah.innerHTML = `
-      <div class="legenda-judul">Kelembapan Udara</div>
-      <div class="legenda-item"><span class="legenda-warna" style="background:#fdba74"></span> &lt; 65% (Kering)</div>
-      <div class="legenda-item"><span class="legenda-warna" style="background:#67e8f9"></span> 65 - 75% (Ideal)</div>
-      <div class="legenda-item"><span class="legenda-warna" style="background:#38bdf8"></span> 76 - 85% (Lembap)</div>
-      <div class="legenda-item"><span class="legenda-warna" style="background:#1d4ed8"></span> &gt; 85% (Sangat Lembap)</div>
+      <div class="legenda-judul-inline">Kelembapan Udara (%)</div>
+      <div class="legenda-item-row">
+        <span class="legenda-chip"><span style="background:#fdba74"></span> &lt;65%</span>
+        <span class="legenda-chip"><span style="background:#67e8f9"></span> 65-75%</span>
+        <span class="legenda-chip"><span style="background:#38bdf8"></span> 76-85%</span>
+        <span class="legenda-chip"><span style="background:#1d4ed8"></span> &gt;85%</span>
+      </div>
     `;
-  } else {
+  } else if (state.variabelAktif === 'cloud_cover') {
     wadah.innerHTML = `
-      <div class="legenda-judul">Kondisi Cuaca BMKG</div>
-      <div class="legenda-item"><span class="legenda-warna" style="background:#f59e0b"></span> Cerah / Berawan</div>
-      <div class="legenda-item"><span class="legenda-warna" style="background:#38bdf8"></span> Potensi Hujan</div>
+      <div class="legenda-judul-inline">Tutupan Awan (%)</div>
+      <div class="legenda-item-row">
+        <span class="legenda-chip"><span style="background:#fde047"></span> 0-30%</span>
+        <span class="legenda-chip"><span style="background:#93c5fd"></span> 31-60%</span>
+        <span class="legenda-chip"><span style="background:#64748b"></span> 61-85%</span>
+        <span class="legenda-chip"><span style="background:#334155"></span> &gt;85%</span>
+      </div>
     `;
   }
 }
 
 // ---------------------------------------------------------------------------
-// 8. Modal Tabel Pantauan Desa
+// 9. Modal Tabel Pantauan 1.250 Desa
 // ---------------------------------------------------------------------------
 function setupModalTabel() {
   $('#btn-toggle-tabel').addEventListener('click', () => {
@@ -688,7 +755,7 @@ function setupModalTabel() {
 
 function renderTabelDesa() {
   if (!state.bmkgData || !state.bmkgData.desa) return;
-  const sBMKG = cariSlotBMKGTerdekat(state.bmkgData.slots);
+  const sBMKG = state.slotAktifIdx;
   const fKab = $('#modal-filter-kab').value.toLowerCase();
   const fCari = $('#modal-cari-desa').value.toLowerCase();
   const tbody = $('#tabel-desa-modal tbody');
@@ -714,11 +781,11 @@ function renderTabelDesa() {
         <td><strong>${desa}</strong></td>
         <td>${kec}</td>
         <td>${kab}</td>
-        <td class="angka">${t}°</td>
+        <td class="angka">${t}°C</td>
         <td class="angka">${hu}%</td>
         <td class="angka">${ws}</td>
         <td>${cuaca}</td>
-        <td><span class="tag-kelas-hujan" style="background:${KELAS_HUJAN[kelasIdx]?.warna || '#64748b'}; color:#fff; border:0;">${kelasNama}</span></td>
+        <td><span class="tag-hujan" style="background:${KELAS_HUJAN[kelasIdx]?.warna || '#64748b'}; color:#fff; border:0;">${kelasNama}</span></td>
       </tr>
     `);
   }
@@ -740,54 +807,38 @@ function renderTabelDesa() {
 }
 
 // ---------------------------------------------------------------------------
-// 9. Event Listeners UI & Kontrol Cepat
+// 10. Event Listeners & Kontrol Terpadu
 // ---------------------------------------------------------------------------
 function setupEventHandlers() {
-  // Tombol Parameter Cuaca
-  $$('.btn-cuaca-kartu').forEach((btn) => {
+  // Tingkat Wilayah di Topbar (Kab/Kota, Kecamatan, Desa)
+  $$('.btn-segmen-w').forEach((btn) => {
     btn.addEventListener('click', () => {
-      $$('.btn-cuaca-kartu').forEach((b) => b.classList.remove('aktif'));
-      btn.classList.add('aktif');
-      state.variabelAktif = btn.dataset.var;
-
-      const triggerLabel = $('#label-trigger-cuaca');
-      const triggerIcon = $('#btn-trigger-cuaca .icon-cuaca');
-      if (triggerLabel) triggerLabel.textContent = btn.querySelector('strong').textContent;
-      if (triggerIcon) triggerIcon.textContent = btn.querySelector('.icon-cuaca').textContent;
-
-      renderBatasWilayah();
-      updateLegenda();
-    });
-  });
-
-  // Tombol Minimize & Restore Menu Cuaca
-  const btnTutupKartu = $('#btn-tutup-kartu-cuaca');
-  const btnTriggerCuaca = $('#btn-trigger-cuaca');
-  const panelKartuCuaca = $('#panel-kartu-cuaca');
-
-  if (btnTutupKartu && btnTriggerCuaca && panelKartuCuaca) {
-    btnTutupKartu.addEventListener('click', () => {
-      panelKartuCuaca.classList.add('tersembunyi');
-      btnTriggerCuaca.classList.remove('tersembunyi');
-    });
-
-    btnTriggerCuaca.addEventListener('click', () => {
-      btnTriggerCuaca.classList.add('tersembunyi');
-      panelKartuCuaca.classList.remove('tersembunyi');
-    });
-  }
-
-  // Tingkat Batas Wilayah (Kab/Kota, Kecamatan, Desa, Nonaktif)
-  $$('.btn-segmen').forEach((btn) => {
-    btn.addEventListener('click', () => {
-      $$('.btn-segmen').forEach((b) => b.classList.remove('aktif'));
+      $$('.btn-segmen-w').forEach((b) => b.classList.remove('aktif'));
       btn.classList.add('aktif');
       state.levelBatas = btn.dataset.level;
       renderBatasWilayah();
     });
   });
 
-  // Saklar Choropleth BMKG
+  // Parameter Cuaca di Sidebar Kanan
+  $$('.btn-tool-param').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      $$('.btn-tool-param').forEach((b) => b.classList.remove('aktif'));
+      btn.classList.add('aktif');
+      state.variabelAktif = btn.dataset.var;
+      renderBatasWilayah();
+      updateLegenda();
+    });
+  });
+
+  // Basemap di Sidebar Kanan
+  $$('.btn-tool-base').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      gantiBasemap(btn.dataset.base);
+    });
+  });
+
+  // Saklar Warna Cuaca
   $('#saklar-choropleth-bmkg').addEventListener('change', (e) => {
     state.choroplethBMKG = e.target.checked;
     renderBatasWilayah();
@@ -799,33 +850,7 @@ function setupEventHandlers() {
     renderStasiunBMKG();
   });
 
-  // Saklar Animasi Angin
-  $('#saklar-angin-anim').addEventListener('change', (e) => {
-    state.animasiAngin = e.target.checked;
-    // Animasi angin ringan opsional
-  });
-
-  // Pemilih Hari Slot
-  $$('.btn-slot-hari').forEach((btn) => {
-    btn.addEventListener('click', () => {
-      $$('.btn-slot-hari').forEach((b) => b.classList.remove('aktif'));
-      btn.classList.add('aktif');
-      state.hariIdx = parseInt(btn.dataset.hari, 10);
-      refreshWaktu();
-    });
-  });
-
-  // Pemilih Jam Slot (per 3 jam BMKG)
-  $$('.btn-jam-slot').forEach((btn) => {
-    btn.addEventListener('click', () => {
-      $$('.btn-jam-slot').forEach((b) => b.classList.remove('aktif'));
-      btn.classList.add('aktif');
-      state.jamIdx = parseInt(btn.dataset.jam, 10);
-      refreshWaktu();
-    });
-  });
-
-  // Tutup Drawer
+  // Tutup Drawer Kiri
   $('#tutup-drawer').addEventListener('click', () => {
     $('#drawer-detail').hidden = true;
     state.wilayahTerpilih = null;
@@ -833,35 +858,27 @@ function setupEventHandlers() {
   });
 }
 
-function refreshWaktu() {
-  updateLabelWaktuUI();
-  renderBatasWilayah();
-  if (state.wilayahTerpilih) {
-    bukaDetailWilayah(state.wilayahTerpilih.tipe, state.wilayahTerpilih.kode, {
-      desa: state.wilayahTerpilih.nama,
-      kecamatan: state.wilayahTerpilih.nama,
-      kabupaten: state.wilayahTerpilih.nama,
-    });
-  }
-}
-
 // ---------------------------------------------------------------------------
-// 10. Inisialisasi Data Cepat & Ringan
+// 11. Inisialisasi Data Cepat & Sinkron
 // ---------------------------------------------------------------------------
 async function init() {
   setupEventHandlers();
   setupModalTabel();
-  updateLabelWaktuUI();
   updateLegenda();
   renderStasiunBMKG();
 
-  // 1. Muat Data BMKG 1.250 Desa Terlebih Dahulu
+  // 1. Muat Data BMKG 1.250 Desa
   try {
     const resBMKG = await fetch(KONFIG.cuacaBMKG);
     if (resBMKG.ok) {
       state.bmkgData = await resBMKG.json();
       bangunAgregasiBMKG(state.bmkgData);
-      $('#label-update-status').textContent = `BMKG: 1.250 Wilayah Aktif`;
+
+      // Susun Jadwal Slot Dinamis
+      state.jadwalHari = susunJadwalBMKG(state.bmkgData.slots);
+      state.hariAktifIdx = 0;
+      state.slotAktifIdx = 0;
+      renderUIWaktuBMKG();
     }
   } catch (err) {
     console.warn('Data BMKG gagal dimuat:', err);
