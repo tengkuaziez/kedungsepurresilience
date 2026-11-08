@@ -901,3 +901,98 @@ html, body {
     padding: 12px;
   }
 }
+
+/* Tombol Tutup Bulat & Trigger Cuaca (GoWeatherRadar style) */
+.header-menu-cuaca {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.btn-tutup-bulat {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transisi);
+}
+
+.btn-tutup-bulat:hover {
+  background: rgba(239, 68, 68, 0.8);
+  border-color: rgba(239, 68, 68, 1);
+  transform: scale(1.1);
+}
+
+.btn-trigger-cuaca {
+  position: absolute;
+  top: 82px;
+  right: 14px;
+  z-index: 1000;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--glass-bg);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(56, 189, 248, 0.5);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: var(--transisi);
+  pointer-events: auto;
+}
+
+.btn-trigger-cuaca:hover {
+  background: rgba(2, 132, 199, 0.85);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(2, 132, 199, 0.5);
+}
+
+.btn-trigger-cuaca.tersembunyi {
+  display: none !important;
+}
+
+.kartu-cuaca-mengambang.tersembunyi {
+  display: none !important;
+}
+
+/* Label Neon Kabupaten/Kota di Peta */
+.label-kabkot {
+  background: rgba(15, 23, 42, 0.75) !important;
+  backdrop-filter: blur(6px) !important;
+  -webkit-backdrop-filter: blur(6px) !important;
+  border: 1px solid rgba(56, 189, 248, 0.6) !important;
+  border-radius: 6px !important;
+  color: #38bdf8 !important;
+  font-family: var(--font-app) !important;
+  font-size: 0.75rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.04em !important;
+  padding: 3px 8px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5) !important;
+  pointer-events: none !important;
+}
+
+.label-kabkot::before {
+  display: none !important;
+}
+
+/* Poligon Glow Hover */
+.leaflet-interactive:focus {
+  outline: none;
+}

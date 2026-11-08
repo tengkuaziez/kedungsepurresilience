@@ -20,7 +20,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <link rel="stylesheet" href="style.css?v=2.2">
 </head>
 <body class="radar-app">
 
@@ -49,9 +52,18 @@
   </header>
 
   <!-- Panel Tombol Cuaca Mengambang (Floating Quick Weather Cards seperti Aplikasi Contoh) -->
+  <!-- Tombol Pemicu Panel Cuaca saat Diminimize -->
+  <button type="button" id="btn-trigger-cuaca" class="btn-trigger-cuaca tersembunyi" title="Tampilkan Menu Cuaca">
+    <span class="icon-cuaca">💨</span>
+    <span id="label-trigger-cuaca">Angin</span>
+    <span class="panah-trigger">▾</span>
+  </button>
+
+  <!-- Panel Tombol Cuaca Mengambang (Floating Quick Weather Cards seperti GoWeatherRadar) -->
   <div class="kartu-cuaca-mengambang" id="panel-kartu-cuaca">
     <div class="header-menu-cuaca">
       <span class="label-menu">PARAMETER CUACA</span>
+      <button type="button" id="btn-tutup-kartu-cuaca" class="btn-tutup-bulat" title="Sembunyikan Menu Parameter">✕</button>
     </div>
     <div class="grid-tombol-cuaca">
       <button type="button" class="btn-cuaca-kartu aktif" data-var="wind">
@@ -109,9 +121,9 @@
     <div class="grup-batas-level">
       <span class="label-batas">BATAS WILAYAH KEDUNGSEPUR:</span>
       <div class="segmen-tombol" role="group" aria-label="Tingkat Batas Wilayah">
-        <button type="button" class="btn-segmen" data-level="kabkot">🏛️ Kabupaten/Kota</button>
+        <button type="button" class="btn-segmen aktif" data-level="kabkot">🏛️ Kab/Kota</button>
         <button type="button" class="btn-segmen" data-level="kecamatan">🏢 Kecamatan</button>
-        <button type="button" class="btn-segmen aktif" data-level="desa">🏘️ Desa/Kelurahan</button>
+        <button type="button" class="btn-segmen" data-level="desa">🏘️ Desa/Kel (1.250)</button>
         <button type="button" class="btn-segmen" data-level="none">❌ Nonaktif</button>
       </div>
     </div>
@@ -289,6 +301,6 @@
     <span>Sumber: <strong>BMKG</strong> &bull; Model Grid: <strong>Open-Meteo (CC BY 4.0)</strong> &bull; Citra: <strong>Google / OSM</strong></span>
   </footer>
 
-  <script src="app.js"></script>
+  <script src="app.js?v=2.2"></script>
 </body>
 </html>

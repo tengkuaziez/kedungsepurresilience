@@ -4,7 +4,7 @@
  */
 'use strict';
 
-const CB = '?v=' + Date.now();
+const CB = '?v=2.2';
 const KONFIG = {
   batasDesa: 'data/batas_keldes.geojson' + CB,
   batasKecamatan: 'data/batas_kecamatan.geojson' + CB,
@@ -34,7 +34,7 @@ const state = {
   marineData: null,
 
   variabelAktif: 'wind', // 'wind' | 'temperature' | 'precipitation' | 'pressure' | 'relative_humidity' | 'cloud_cover'
-  levelBatas: 'desa',    // 'kabkot' | 'kecamatan' | 'desa' | 'none'
+  levelBatas: 'kabkot',    // 'kabkot' | 'kecamatan' | 'desa' | 'none'
   choroplethBMKG: true,
   animasiAngin: true,
   tampilkanLaut: true,
@@ -425,16 +425,20 @@ function renderBatasWilayah() {
         }
       }
 
-      // Warna garis batas outline futuristik
+      // Warna garis batas outline & fill wilayah futuristik
       let strokeColor = 'rgba(255, 255, 255, 0.45)';
       let weight = 0.8;
 
       if (state.levelBatas === 'kabkot') {
         strokeColor = '#38bdf8';
-        weight = 2.4;
+        weight = 2.6;
+        fill = '#0284c7';
+        fillOp = 0.15;
       } else if (state.levelBatas === 'kecamatan') {
-        strokeColor = 'rgba(255, 255, 255, 0.7)';
-        weight = 1.3;
+        strokeColor = 'rgba(56, 189, 248, 0.8)';
+        weight = 1.4;
+        fill = '#0369a1';
+        fillOp = 0.10;
       }
 
       if (isSelected) {
@@ -455,16 +459,25 @@ function renderBatasWilayah() {
       const nama = p.desa || p.kecamatan || p.kabupaten;
       const sub = p.kecamatan ? `Kec. ${p.kecamatan}, ${p.kabupaten}` : p.kabupaten;
 
+      // Label nama Kabupaten/Kota otomatis di peta jika level kabkot
+      if (state.levelBatas === 'kabkot' && p.kabupaten) {
+        layer.bindTooltip(`🏛️ ${p.kabupaten.toUpperCase()}`, {
+          permanent: true,
+          direction: 'center',
+          className: 'label-kabkot'
+        });
+      }
+
       layer.on({
         click: () => {
           if (p.kode_adm4) {
             bukaDetailDesa(p.kode_adm4, false);
           } else {
-            layer.bindPopup(`<strong>${nama}</strong><br><small>${sub}</small>`).openPopup();
+            layer.bindPopup(`<div style="font-family:sans-serif; min-width:140px;"><strong>${nama}</strong><br><small style="color:#64748b;">${sub}</small><br><span style="display:inline-block; margin-top:6px; font-size:11px; background:#0284c7; color:#fff; padding:2px 6px; border-radius:4px;">Wilayah Kedungsepur</span></div>`).openPopup();
           }
         },
         mouseover: () => {
-          layer.setStyle({ weight: 2.5, color: '#facc15' });
+          layer.setStyle({ weight: 3.2, color: '#facc15', fillOpacity: 0.35 });
         },
         mouseout: () => {
           if (layerBatasAktif) layerBatasAktif.resetStyle(layer);
@@ -696,10 +709,33 @@ function setupEventHandlers() {
       $$('.btn-cuaca-kartu').forEach((b) => b.classList.remove('aktif'));
       btn.classList.add('aktif');
       state.variabelAktif = btn.dataset.var;
+
+      const triggerLabel = $('#label-trigger-cuaca');
+      const triggerIcon = $('#btn-trigger-cuaca .icon-cuaca');
+      if (triggerLabel) triggerLabel.textContent = btn.querySelector('strong').textContent;
+      if (triggerIcon) triggerIcon.textContent = btn.querySelector('.icon-cuaca').textContent;
+
       renderGridHalus();
       updateLegenda();
     });
   });
+
+  // Tombol Minimize & Restore Menu Cuaca (GoWeatherRadar style)
+  const btnTutupKartu = $('#btn-tutup-kartu-cuaca');
+  const btnTriggerCuaca = $('#btn-trigger-cuaca');
+  const panelKartuCuaca = $('#panel-kartu-cuaca');
+
+  if (btnTutupKartu && btnTriggerCuaca && panelKartuCuaca) {
+    btnTutupKartu.addEventListener('click', () => {
+      panelKartuCuaca.classList.add('tersembunyi');
+      btnTriggerCuaca.classList.remove('tersembunyi');
+    });
+
+    btnTriggerCuaca.addEventListener('click', () => {
+      btnTriggerCuaca.classList.add('tersembunyi');
+      panelKartuCuaca.classList.remove('tersembunyi');
+    });
+  }
 
   // Tingkat Batas Wilayah (Kab/Kota, Kecamatan, Desa, Nonaktif)
   $$('.btn-segmen').forEach((btn) => {
