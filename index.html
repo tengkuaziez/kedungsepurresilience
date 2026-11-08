@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<!-- KEDUNGSEPUR RESILIENCE - WebGIS Radar Cuaca & Mitigasi Bencana -->
+<!-- KEDUNGSEPUR RESILIENCE - WebGIS Cuaca & Mitigasi Bencana Hidrometeorologi -->
 <html lang="id">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
   <title>KEDUNGSEPUR RESILIENCE</title>
   <meta name="description" content="KEDUNGSEPUR RESILIENCE - Sistem Pendukung Keputusan Mitigasi Bencana Hidrometeorologi Kedungsepur">
   <link rel="icon" type="image/png" href="assets/logo.png">
@@ -15,22 +18,19 @@
           integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 
-  <!-- Google Fonts: Inter -->
+  <!-- Google Fonts: Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-  <meta http-equiv="Pragma" content="no-cache">
-  <meta http-equiv="Expires" content="0">
-  <link rel="stylesheet" href="style.css?v=2.2">
+  <link rel="stylesheet" href="style.css?v=3.0">
 </head>
 <body class="radar-app">
 
   <!-- Peta Utama (Layar Penuh / Fullscreen) -->
   <div id="peta" aria-label="Peta Radar Cuaca Kedungsepur"></div>
 
-  <!-- Header Mengambang (Floating Glass Header) -->
+  <!-- Header Mengambang Ramping (Floating Glass Header) -->
   <header class="header-mengambang">
     <div class="brand-wadah">
       <img src="assets/logo.png" alt="Logo Kedungsepur" class="logo-app">
@@ -43,42 +43,33 @@
     <div class="header-kanan">
       <div class="badge-status-update">
         <span class="titik-live"></span>
-        <span id="label-update-status">Data BMKG: memuat…</span>
+        <span id="label-update-status">Data BMKG: 1.250 Wilayah Aktif</span>
       </div>
-      <button type="button" id="btn-toggle-tabel" class="tombol-kaca" title="Buka Tabel Wilayah">
+      <button type="button" id="btn-toggle-tabel" class="tombol-kaca" title="Buka Tabel Pantauan Wilayah">
         📋 Tabel Desa
       </button>
     </div>
   </header>
 
-  <!-- Panel Tombol Cuaca Mengambang (Floating Quick Weather Cards seperti Aplikasi Contoh) -->
   <!-- Tombol Pemicu Panel Cuaca saat Diminimize -->
   <button type="button" id="btn-trigger-cuaca" class="btn-trigger-cuaca tersembunyi" title="Tampilkan Menu Cuaca">
-    <span class="icon-cuaca">💨</span>
-    <span id="label-trigger-cuaca">Angin</span>
+    <span class="icon-cuaca">🌡️</span>
+    <span id="label-trigger-cuaca">Suhu</span>
     <span class="panah-trigger">▾</span>
   </button>
 
-  <!-- Panel Tombol Cuaca Mengambang (Floating Quick Weather Cards seperti GoWeatherRadar) -->
+  <!-- Panel Tombol Cuaca Mengambang (Floating Quick Weather Cards) -->
   <div class="kartu-cuaca-mengambang" id="panel-kartu-cuaca">
     <div class="header-menu-cuaca">
-      <span class="label-menu">PARAMETER CUACA</span>
+      <span class="label-menu">PARAMETER CUACA BMKG</span>
       <button type="button" id="btn-tutup-kartu-cuaca" class="btn-tutup-bulat" title="Sembunyikan Menu Parameter">✕</button>
     </div>
     <div class="grid-tombol-cuaca">
-      <button type="button" class="btn-cuaca-kartu aktif" data-var="wind">
-        <span class="icon-cuaca">💨</span>
-        <div class="teks-btn">
-          <strong>Angin</strong>
-          <small id="sub-angin">Aliran Partikel</small>
-        </div>
-      </button>
-
-      <button type="button" class="btn-cuaca-kartu" data-var="temperature">
+      <button type="button" class="btn-cuaca-kartu aktif" data-var="temperature">
         <span class="icon-cuaca">🌡️</span>
         <div class="teks-btn">
           <strong>Suhu</strong>
-          <small id="sub-suhu">Termal Permukaan</small>
+          <small id="sub-suhu">Derajat (°C)</small>
         </div>
       </button>
 
@@ -86,22 +77,22 @@
         <span class="icon-cuaca">🌧️</span>
         <div class="teks-btn">
           <strong>Hujan</strong>
-          <small id="sub-hujan">Intensitas & Radar</small>
+          <small id="sub-hujan">Kelas Intensitas</small>
         </div>
       </button>
 
-      <button type="button" class="btn-cuaca-kartu" data-var="pressure">
-        <span class="icon-cuaca">⏱️</span>
+      <button type="button" class="btn-cuaca-kartu" data-var="wind">
+        <span class="icon-cuaca">💨</span>
         <div class="teks-btn">
-          <strong>Tekanan</strong>
-          <small id="sub-tekanan">Isobar Atmosfer</small>
+          <strong>Angin</strong>
+          <small id="sub-angin">Kecepatan (km/j)</small>
         </div>
       </button>
 
       <button type="button" class="btn-cuaca-kartu" data-var="relative_humidity">
         <span class="icon-cuaca">💧</span>
         <div class="teks-btn">
-          <strong>Kelembaban</strong>
+          <strong>Kelembapan</strong>
           <small id="sub-lembab">Uap Air (%)</small>
         </div>
       </button>
@@ -110,7 +101,15 @@
         <span class="icon-cuaca">☁️</span>
         <div class="teks-btn">
           <strong>Awan</strong>
-          <small id="sub-awan">Tutupan Langit</small>
+          <small id="sub-awan">Tutupan (%)</small>
+        </div>
+      </button>
+
+      <button type="button" class="btn-cuaca-kartu" data-var="cuaca">
+        <span class="icon-cuaca">☀️</span>
+        <div class="teks-btn">
+          <strong>Kondisi</strong>
+          <small id="sub-kondisi">Simbol Cuaca</small>
         </div>
       </button>
     </div>
@@ -119,68 +118,68 @@
   <!-- Pengatur Tingkat Batas Wilayah Mengambang (Kab/Kota, Kecamatan, Desa) -->
   <div class="panel-kontrol-wilayah">
     <div class="grup-batas-level">
-      <span class="label-batas">BATAS WILAYAH KEDUNGSEPUR:</span>
+      <span class="label-batas">TINGKAT WILAYAH:</span>
       <div class="segmen-tombol" role="group" aria-label="Tingkat Batas Wilayah">
-        <button type="button" class="btn-segmen aktif" data-level="kabkot">🏛️ Kab/Kota</button>
-        <button type="button" class="btn-segmen" data-level="kecamatan">🏢 Kecamatan</button>
+        <button type="button" class="btn-segmen aktif" data-level="kabkot">🏛️ Kab/Kota (6)</button>
+        <button type="button" class="btn-segmen" data-level="kecamatan">🏢 Kecamatan (92)</button>
         <button type="button" class="btn-segmen" data-level="desa">🏘️ Desa/Kel (1.250)</button>
         <button type="button" class="btn-segmen" data-level="none">❌ Nonaktif</button>
       </div>
     </div>
 
-    <!-- Opsi Tampilan Kedungsepur (Choropleth BMKG vs Garis Batas) -->
+    <!-- Opsi Tampilan Tambahan -->
     <div class="baris-opsi-bmkg">
-      <label class="saklar-opsi" title="Warnai poligon desa sesuai data BMKG">
+      <label class="saklar-opsi" title="Warnai poligon sesuai nilai parameter cuaca BMKG">
         <input type="checkbox" id="saklar-choropleth-bmkg" checked>
-        <span>Data Cuaca BMKG (Choropleth)</span>
+        <span>Warna Cuaca BMKG</span>
       </label>
-      <label class="saklar-opsi" title="Tampilkan aliran partikel angin">
-        <input type="checkbox" id="saklar-angin-anim" checked>
-        <span>Animasi Angin</span>
+      <label class="saklar-opsi" title="Tampilkan titik-titik pos & stasiun pengamatan BMKG di peta">
+        <input type="checkbox" id="saklar-stasiun-bmkg" checked>
+        <span>Titik Pos BMKG</span>
       </label>
-      <label class="saklar-opsi" title="Gelombang & arus Laut Jawa">
-        <input type="checkbox" id="saklar-laut-anim" checked>
-        <span>Gelombang Laut</span>
+      <label class="saklar-opsi" title="Tampilkan partikel aliran angin ringan">
+        <input type="checkbox" id="saklar-angin-anim">
+        <span>Aliran Angin</span>
       </label>
     </div>
   </div>
 
-  <!-- Panel Detail Cuaca Desa Mengambang (Drawer Kartu Detail) -->
+  <!-- Panel Detail Cuaca Wilayah Mengambang (Drawer Kartu Detail) -->
   <aside id="drawer-detail" class="drawer-detail" hidden>
     <button type="button" id="tutup-drawer" class="btn-tutup-kaca" aria-label="Tutup Panel">&times;</button>
     <div class="drawer-konten">
       <div class="drawer-header-badge">
-        <span id="drawer-kab" class="badge-kab">Kota Semarang</span>
-        <span id="drawer-status" class="badge-status-bmkg">BMKG Terverifikasi</span>
+        <span id="drawer-tingkat" class="badge-kab">Kabupaten/Kota</span>
+        <span id="drawer-status" class="badge-status-bmkg">BMKG Resmi</span>
       </div>
-      <h2 id="drawer-nama">Tanjung Mas</h2>
-      <p id="drawer-wilayah" class="drawer-subwilayah">Kecamatan Semarang Utara, Kota Semarang</p>
+      <h2 id="drawer-nama">Kota Semarang</h2>
+      <p id="drawer-wilayah" class="drawer-subwilayah">Kawasan Kedungsepur, Jawa Tengah</p>
       
       <!-- Kartu Metrik Cuaca Utama -->
       <div class="kartu-metrik-utama">
         <div class="metrik-suhu-cuaca">
-          <span id="drawer-temp" class="angka-suhu-besar">31°C</span>
+          <span id="drawer-temp" class="angka-suhu-besar">28.0°C</span>
           <div class="teks-kondisi-cuaca">
             <strong id="drawer-kondisi">Cerah Berawan</strong>
-            <span id="drawer-kelas-hujan" class="tag-kelas-hujan">Tidak hujan</span>
+            <span id="drawer-kelas-hujan" class="tag-kelas-hujan">Rata-rata Wilayah</span>
           </div>
         </div>
         <div class="grid-metrik-kecil">
           <div class="item-metrik">
             <span class="label-m">Kelembapan</span>
-            <strong id="drawer-hu">78%</strong>
+            <strong id="drawer-hu">76%</strong>
           </div>
           <div class="item-metrik">
-            <span class="label-m">Angin</span>
-            <strong id="drawer-ws">12 km/j (T)</strong>
+            <span class="label-m">Angin Rata-rata</span>
+            <strong id="drawer-ws">8.5 km/j</strong>
           </div>
           <div class="item-metrik">
-            <span class="label-m">Awan</span>
-            <strong id="drawer-tcc">45%</strong>
+            <span class="label-m">Tutupan Awan</span>
+            <strong id="drawer-tcc">42%</strong>
           </div>
           <div class="item-metrik">
-            <span class="label-m">Hujan Harian</span>
-            <strong id="drawer-hujan-hari">0 slot</strong>
+            <span class="label-m">Wilayah Hujan</span>
+            <strong id="drawer-hujan-hari">0 desa</strong>
           </div>
         </div>
       </div>
@@ -188,7 +187,7 @@
       <!-- Grafik Dinamis Fluktuasi 3 Hari -->
       <div class="wadah-grafik-drawer">
         <div class="kepala-grafik">
-          <h3>Prakiraan 3 Hari (Suhu & Kelembapan per 3 Jam)</h3>
+          <h3 id="judul-grafik-drawer">Tren Cuaca 3 Hari (Suhu & Kelembapan per 3 Jam)</h3>
         </div>
         <div class="grafik-canvas-wadah">
           <canvas id="grafik-drawer"></canvas>
@@ -196,8 +195,8 @@
       </div>
 
       <div class="drawer-meta-info">
-        <span>Kode Adm4: <strong id="drawer-kode">33.74.02.1008</strong></span>
-        <span>Analisis BMKG: <span id="drawer-analisis">2026-11-08 12:00</span></span>
+        <span>Cakupan: <strong id="drawer-cakupan">177 Desa / Kelurahan</strong></span>
+        <span>Pembaruan: <span id="drawer-analisis">2026-11-08 12:00 UTC</span></span>
       </div>
     </div>
   </aside>
@@ -207,8 +206,8 @@
     <div class="modal-konten">
       <div class="modal-header">
         <div class="modal-header-teks">
-          <h2>Tabel Pantauan Cuaca Desa Kedungsepur (1.250 Wilayah)</h2>
-          <p>Klik salah satu desa untuk langsung menyorot dan melihat detail pada peta.</p>
+          <h2>Tabel Pantauan Cuaca BMKG Kedungsepur (1.250 Wilayah)</h2>
+          <p>Pilih salah satu baris untuk langsung menyorot wilayah pada peta satelit.</p>
         </div>
         <button type="button" id="tutup-modal-tabel" class="btn-tutup-kaca">&times;</button>
       </div>
@@ -217,16 +216,16 @@
         <label>Kabupaten/Kota:
           <select id="modal-filter-kab">
             <option value="">Semua Wilayah</option>
-            <option value="Kota Semarang">Kota Semarang</option>
-            <option value="Demak">Kab. Demak</option>
-            <option value="Kendal">Kab. Kendal</option>
-            <option value="Semarang">Kab. Semarang</option>
-            <option value="Grobogan">Kab. Grobogan</option>
-            <option value="Kota Salatiga">Kota Salatiga</option>
+            <option value="Kota Semarang">Kota Semarang (177)</option>
+            <option value="Demak">Kab. Demak (249)</option>
+            <option value="Kendal">Kab. Kendal (286)</option>
+            <option value="Semarang">Kab. Semarang (235)</option>
+            <option value="Grobogan">Kab. Grobogan (280)</option>
+            <option value="Kota Salatiga">Kota Salatiga (23)</option>
           </select>
         </label>
         <input type="search" id="modal-cari-desa" placeholder="Cari desa atau kecamatan…">
-        <span id="modal-info-total" class="badge-total-desa">Memuat desa…</span>
+        <span id="modal-info-total" class="badge-total-desa">1.250 Desa</span>
       </div>
 
       <div class="modal-body-tabel">
@@ -251,56 +250,53 @@
     </div>
   </div>
 
-  <!-- Timeline Kontrol Waktu Mengambang di Bawah (Floating Bottom Time Bar) -->
-  <div class="timeline-bawah-mengambang">
-    <div class="timeline-kiri">
-      <button type="button" id="btn-play-waktu" class="btn-play" title="Putar Animasi Waktu">
-        <span id="ikon-play">▶</span>
-      </button>
-      <div class="pemilih-hari-modern" role="group" aria-label="Pilih Hari Prakiraan">
-        <button type="button" data-hari="0" class="btn-hari aktif">Hari 1</button>
-        <button type="button" data-hari="1" class="btn-hari">Hari 2</button>
-        <button type="button" data-hari="2" class="btn-hari">Hari 3</button>
+  <!-- Kontrol Waktu Slot BMKG Bersih & Cepat (Monoton Tombol Pencet-Pencet) -->
+  <div class="panel-waktu-slot">
+    <div class="baris-waktu-atas">
+      <div class="grup-pilih-hari" role="group" aria-label="Pilih Hari">
+        <button type="button" data-hari="0" class="btn-slot-hari aktif">Hari Ini</button>
+        <button type="button" data-hari="1" class="btn-slot-hari">Besok</button>
+        <button type="button" data-hari="2" class="btn-slot-hari">Lusa</button>
+      </div>
+      <div class="info-waktu-saat-ini">
+        <span id="label-tanggal-slot">Minggu, 8 Nov 2026</span>
+        <strong id="label-jam-slot">22:00 WIB</strong>
       </div>
     </div>
-
-    <div class="timeline-tengah">
-      <div class="slider-waktu-baris">
-        <input type="range" id="slider-jam" min="0" max="23" step="1" value="20" aria-label="Pilih Jam">
-      </div>
-      <div class="slider-jam-ticks">
-        <span>00:00</span><span>03:00</span><span>06:00</span><span>09:00</span>
-        <span>12:00</span><span>15:00</span><span>18:00</span><span>21:00</span>
-      </div>
-    </div>
-
-    <div class="timeline-kanan">
-      <div class="label-jam-besar" id="badge-jam-aktif">20:00 WIB</div>
-      <div class="label-tanggal-kecil" id="label-tanggal-aktif">Minggu, 8 Nov 2026</div>
+    
+    <div class="baris-slot-jam" role="group" aria-label="Pilih Jam Prakiraan BMKG (per 3 Jam)">
+      <button type="button" class="btn-jam-slot" data-jam="1">01:00</button>
+      <button type="button" class="btn-jam-slot" data-jam="4">04:00</button>
+      <button type="button" class="btn-jam-slot" data-jam="7">07:00</button>
+      <button type="button" class="btn-jam-slot" data-jam="10">10:00</button>
+      <button type="button" class="btn-jam-slot" data-jam="13">13:00</button>
+      <button type="button" class="btn-jam-slot" data-jam="16">16:00</button>
+      <button type="button" class="btn-jam-slot" data-jam="19">19:00</button>
+      <button type="button" class="btn-jam-slot aktif" data-jam="22">22:00</button>
     </div>
   </div>
 
-  <!-- Pemilih Basemap Mengambang (Google Satellite, Dark Matter, OSM) -->
+  <!-- Pemilih Basemap Mengambang (Bebas API Key & Tanpa Watermark) -->
   <div class="selector-basemap-mengambang">
-    <button type="button" class="btn-basemap aktif" data-base="satellite" title="Citra Satelit Google">
-      🛰️ Satelit
+    <button type="button" class="btn-basemap aktif" data-base="satellite" title="Citra Google Satellite Resolusi Tinggi">
+      🛰️ Google Satelit
     </button>
-    <button type="button" class="btn-basemap" data-base="dark" title="Peta Gelap / Dark Mode (Radar Sangat Jelas)">
-      🌙 Gelap
+    <button type="button" class="btn-basemap" data-base="dark" title="Peta Gelap Esri Canvas (Resmi Tanpa API Key & Tanpa Watermark)">
+      🌙 Peta Gelap
     </button>
     <button type="button" class="btn-basemap" data-base="osm" title="Peta Jalan Standar OpenStreetMap">
-      🗺️ Peta
+      🗺️ OpenStreetMap
     </button>
   </div>
 
-  <!-- Legenda Mengambang -->
+  <!-- Legenda Parameter Mengambang -->
   <div class="legenda-mengambang-wadah" id="legenda-wadah"></div>
 
   <!-- Footer Minimalis Transparan -->
   <footer class="footer-minimalis">
-    <span>Sumber: <strong>BMKG</strong> &bull; Model Grid: <strong>Open-Meteo (CC BY 4.0)</strong> &bull; Citra: <strong>Google / OSM</strong></span>
+    <span>Sumber: <strong>BMKG (api.bmkg.go.id)</strong> &bull; Wilayah Studi: <strong>Kawasan Kedungsepur</strong> &bull; Basemap: <strong>Google / Esri</strong></span>
   </footer>
 
-  <script src="app.js?v=2.2"></script>
+  <script src="app.js?v=3.0"></script>
 </body>
 </html>
