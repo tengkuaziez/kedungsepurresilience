@@ -1,0 +1,19 @@
+# KEDUNGSEPUR RESILIENCE - berkas yang tidak ikut di-commit
+
+# Progres sementara skrip penarik data (bisa dilanjutkan secara lokal)
+data/.progres_cuaca.json
+*.tmp
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Editor / sistem operasi
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini

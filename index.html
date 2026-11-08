@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- KEDUNGSEPUR RESILIENCE - halaman utama WebGIS (situs statis, tanpa build step) -->
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KEDUNGSEPUR RESILIENCE</title>
+  <link rel="icon" href="data:,">
+  <meta name="description" content="KEDUNGSEPUR RESILIENCE - Sistem pendukung keputusan mitigasi bencana hidrometeorologi wilayah Kedungsepur">
+
+  <!-- Pustaka dari CDN -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+
+  <!-- Path relatif (situs tayang di sub-path GitHub Pages) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-judul">
+      <h1>KEDUNGSEPUR RESILIENCE</h1>
+      <p class="subjudul">Sistem pendukung keputusan mitigasi bencana hidrometeorologi</p>
+    </div>
+    <div class="header-info">
+      <span class="label-prototipe">Prototipe uji data</span>
+      <span id="waktu-update">Data diperbarui: memuat…</span>
+    </div>
+  </header>
+
+  <main class="tata-letak">
+    <!-- Kontrol hari -->
+    <section class="bilah-kontrol" aria-label="Pemilih hari">
+      <span class="bilah-label">Prakiraan:</span>
+      <div id="pemilih-hari" class="pemilih-hari" role="group" aria-label="Pilih hari prakiraan">
+        <button type="button" data-hari="0" class="aktif">Hari 1</button>
+        <button type="button" data-hari="1">Hari 2</button>
+        <button type="button" data-hari="2">Hari 3</button>
+      </div>
+      <span id="info-hari" class="info-hari"></span>
+    </section>
+
+    <!-- Peta + panel detail -->
+    <section class="area-peta">
+      <div id="peta" aria-label="Peta prakiraan cuaca"></div>
+      <aside id="panel-detail" class="panel-detail">
+        <div id="detail-kosong" class="detail-kosong">
+          <p><strong>Klik titik di peta</strong> atau baris tabel untuk melihat ringkasan cuaca harian dan grafik per 3 jam.</p>
+        </div>
+        <div id="detail-isi" hidden>
+          <button type="button" id="tutup-detail" class="tutup-detail" aria-label="Tutup panel">×</button>
+          <h2 id="detail-nama"></h2>
+          <p id="detail-wilayah" class="detail-wilayah"></p>
+          <p id="detail-tanggal" class="detail-tanggal"></p>
+          <dl id="detail-ringkasan" class="ringkasan"></dl>
+          <h3>Suhu &amp; kelembapan per 3 jam</h3>
+          <div class="wadah-grafik"><canvas id="grafik"></canvas></div>
+          <p class="catatan-kecil">Kode adm4: <span id="detail-kode"></span> · Analisis BMKG: <span id="detail-analisis"></span></p>
+        </div>
+      </aside>
+    </section>
+
+    <!-- Tabel ringkas -->
+    <section class="area-tabel" aria-label="Tabel ringkasan">
+      <div class="kepala-tabel">
+        <h2>Ringkasan per kelurahan/desa</h2>
+        <label class="filter">Kecamatan:
+          <select id="filter-kecamatan">
+            <option value="">Semua kecamatan</option>
+          </select>
+        </label>
+      </div>
+      <div class="gulir-tabel">
+        <table id="tabel">
+          <thead>
+            <tr>
+              <th data-kolom="nama" aria-sort="none">Nama</th>
+              <th data-kolom="kecamatan" aria-sort="none">Kecamatan</th>
+              <th data-kolom="suhu_max" aria-sort="none" class="angka">Suhu maks (°C)</th>
+              <th data-kolom="jumlah_slot_hujan" aria-sort="none" class="angka">Slot hujan</th>
+              <th data-kolom="kelas_tingkat" aria-sort="none">Kelas hujan</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <p id="pesan-status" class="pesan-status" hidden></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>Sumber data cuaca: BMKG (<a href="https://data.bmkg.go.id" target="_blank" rel="noopener">data.bmkg.go.id</a>)</span>
+    <span class="footer-catatan">KEDUNGSEPUR RESILIENCE · Prakiraan titik per kelurahan/desa, bukan grid · Intensitas hujan diturunkan dari deskripsi cuaca</span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
