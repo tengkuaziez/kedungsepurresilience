@@ -1,98 +1,199 @@
 <!DOCTYPE html>
-<!-- KEDUNGSEPUR RESILIENCE - halaman utama WebGIS (situs statis, tanpa build step) -->
+<!-- KEDUNGSEPUR RESILIENCE - WebGIS Cuaca & Ketahanan Bencana Kedungsepur -->
 <html lang="id">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>KEDUNGSEPUR RESILIENCE</title>
-  <link rel="icon" href="data:,">
   <meta name="description" content="KEDUNGSEPUR RESILIENCE - Sistem pendukung keputusan mitigasi bencana hidrometeorologi wilayah Kedungsepur">
+  <link rel="icon" type="image/png" href="assets/logo.png">
 
-  <!-- Pustaka dari CDN -->
+  <!-- Pustaka Leaflet & Chart.js dari CDN (Versi Terkunci) -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
           integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 
-  <!-- Path relatif (situs tayang di sub-path GitHub Pages) -->
+  <!-- Path relatif (GitHub Pages sub-path aman) -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Header Aplikasi -->
   <header class="header">
-    <div class="header-judul">
-      <h1>KEDUNGSEPUR RESILIENCE</h1>
-      <p class="subjudul">Sistem pendukung keputusan mitigasi bencana hidrometeorologi</p>
+    <div class="header-brand">
+      <img src="assets/logo.png" alt="Logo Kedungsepur Resilience" class="header-logo">
+      <div class="header-judul">
+        <h1>KEDUNGSEPUR RESILIENCE</h1>
+        <p class="subjudul">Sistem pendukung keputusan mitigasi bencana hidrometeorologi</p>
+      </div>
     </div>
     <div class="header-info">
-      <span class="label-prototipe">Prototipe uji data</span>
+      <span class="label-prototipe">Peta Cuaca Lengkap 1.250 Desa</span>
       <span id="waktu-update">Data diperbarui: memuat…</span>
     </div>
   </header>
 
-  <main class="tata-letak">
-    <!-- Kontrol hari -->
-    <section class="bilah-kontrol" aria-label="Pemilih hari">
-      <span class="bilah-label">Prakiraan:</span>
-      <div id="pemilih-hari" class="pemilih-hari" role="group" aria-label="Pilih hari prakiraan">
-        <button type="button" data-hari="0" class="aktif">Hari 1</button>
-        <button type="button" data-hari="1">Hari 2</button>
-        <button type="button" data-hari="2">Hari 3</button>
+  <!-- Kontrol Utama Waktu & Variabel -->
+  <nav class="bilah-kontrol-cuaca" aria-label="Kontrol Waktu dan Variabel">
+    <!-- Pemilih Mode Tampilan & Variabel -->
+    <div class="grup-variabel">
+      <div class="kontrol-item">
+        <label for="pilih-layer-mode"><strong>Layer Utama:</strong></label>
+        <select id="pilih-layer-mode">
+          <option value="desa">Desa/Kelurahan (BMKG)</option>
+          <option value="grid">Model Grid Halus (Open-Meteo)</option>
+        </select>
       </div>
-      <span id="info-hari" class="info-hari"></span>
-    </section>
 
-    <!-- Peta + panel detail -->
+      <div class="kontrol-item" id="wadah-var-desa">
+        <label for="var-desa"><strong>Variabel Desa:</strong></label>
+        <select id="var-desa">
+          <option value="kelas">Kelas Hujan (Dominan/Ekstrem)</option>
+          <option value="suhu">Suhu Udara (°C)</option>
+          <option value="kelembapan">Kelembapan (%)</option>
+          <option value="awan">Tutupan Awan (%)</option>
+          <option value="angin">Kecepatan Angin (km/jam)</option>
+        </select>
+      </div>
+
+      <div class="kontrol-item" id="wadah-var-grid" hidden>
+        <label for="var-grid"><strong>Variabel Grid:</strong></label>
+        <select id="var-grid">
+          <option value="precipitation">Curah Hujan (mm/jam)</option>
+          <option value="temperature">Suhu Permukaan (°C)</option>
+          <option value="relative_humidity">Kelembapan (%)</option>
+          <option value="cloud_cover">Tutupan Awan (%)</option>
+          <option value="pressure">Tekanan Udara (hPa)</option>
+          <option value="wind_speed">Kecepatan Angin (km/jam)</option>
+        </select>
+      </div>
+
+      <!-- Opsi Tambahan Grid & Angin -->
+      <div class="kontrol-opsi-tambahan">
+        <label class="saklar-opsi" title="Animasi aliran partikel angin">
+          <input type="checkbox" id="saklar-angin" checked>
+          <span>Aliran Angin</span>
+        </label>
+        <label class="saklar-opsi" title="Layer gelombang & arus Laut Jawa">
+          <input type="checkbox" id="saklar-laut" checked>
+          <span>Gelombang Laut</span>
+        </label>
+        <div class="pengatur-transparansi" id="wadah-transparansi" hidden>
+          <label for="slider-transparansi">Opasitas Grid:</label>
+          <input type="range" id="slider-transparansi" min="0.1" max="0.9" step="0.05" value="0.6">
+        </div>
+      </div>
+    </div>
+
+    <!-- Kontrol Waktu Terintegrasi (Hari & Jam Slider) -->
+    <div class="grup-waktu">
+      <div class="baris-waktu-atas">
+        <div id="pemilih-hari" class="pemilih-hari" role="group" aria-label="Pilih hari">
+          <button type="button" data-hari="0" class="aktif">Hari 1</button>
+          <button type="button" data-hari="1">Hari 2</button>
+          <button type="button" data-hari="2">Hari 3</button>
+        </div>
+        <div class="waktu-aktif-teks">
+          <strong id="label-waktu-aktif">Memuat waktu…</strong>
+          <span id="label-slot-bmkg" class="slot-bmkg-info"></span>
+        </div>
+      </div>
+
+      <!-- Penggeser Jam (00 - 23 WIB) -->
+      <div class="slider-jam-wadah">
+        <span class="label-jam-slider">Jam:</span>
+        <input type="range" id="slider-jam" min="0" max="23" step="1" value="20" aria-label="Pilih Jam">
+        <span id="angka-jam-slider" class="badge-jam">20:00 WIB</span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Area Peta & Panel Detail -->
+  <main class="tata-letak">
     <section class="area-peta">
-      <div id="peta" aria-label="Peta prakiraan cuaca"></div>
+      <div id="peta" aria-label="Peta WebGIS Cuaca Kedungsepur"></div>
+      
+      <!-- Panel Detail Samping Desa -->
       <aside id="panel-detail" class="panel-detail">
         <div id="detail-kosong" class="detail-kosong">
-          <p><strong>Klik titik di peta</strong> atau baris tabel untuk melihat ringkasan cuaca harian dan grafik per 3 jam.</p>
+          <p><strong>Klik batas desa/kelurahan di peta</strong> atau baris tabel untuk melihat rincian cuaca, parameter atmosfer, dan grafik per 3 jam.</p>
         </div>
         <div id="detail-isi" hidden>
           <button type="button" id="tutup-detail" class="tutup-detail" aria-label="Tutup panel">×</button>
+          <div class="detail-header-badge">
+            <span id="detail-kab" class="badge-kab"></span>
+            <span id="detail-status-data" class="badge-status"></span>
+          </div>
           <h2 id="detail-nama"></h2>
           <p id="detail-wilayah" class="detail-wilayah"></p>
           <p id="detail-tanggal" class="detail-tanggal"></p>
           <dl id="detail-ringkasan" class="ringkasan"></dl>
-          <h3>Suhu &amp; kelembapan per 3 jam</h3>
+          
+          <h3>Prakiraan Dinamis (Suhu & Kelembapan)</h3>
           <div class="wadah-grafik"><canvas id="grafik"></canvas></div>
-          <p class="catatan-kecil">Kode adm4: <span id="detail-kode"></span> · Analisis BMKG: <span id="detail-analisis"></span></p>
+          <p class="catatan-kecil">Kode Kemendagri: <strong id="detail-kode"></strong> · Analisis BMKG: <span id="detail-analisis"></span></p>
         </div>
       </aside>
     </section>
 
-    <!-- Tabel ringkas -->
-    <section class="area-tabel" aria-label="Tabel ringkasan">
+    <!-- Tabel Ringkas Interaktif -->
+    <section class="area-tabel" aria-label="Tabel Cuaca Kelurahan/Desa">
       <div class="kepala-tabel">
-        <h2>Ringkasan per kelurahan/desa</h2>
-        <label class="filter">Kecamatan:
-          <select id="filter-kecamatan">
-            <option value="">Semua kecamatan</option>
-          </select>
-        </label>
+        <div>
+          <h2>Tabel Pantauan Wilayah Kedungsepur</h2>
+          <p class="sub-tabel">Klik pada baris untuk mengarahkan peta ke desa yang dipilih.</p>
+        </div>
+        <div class="filter-wadah">
+          <label class="filter">Kab/Kota:
+            <select id="filter-kabupaten">
+              <option value="">Semua Kab/Kota</option>
+              <option value="Kota Semarang">Kota Semarang</option>
+              <option value="Demak">Kab. Demak</option>
+              <option value="Kendal">Kab. Kendal</option>
+              <option value="Semarang">Kab. Semarang</option>
+              <option value="Grobogan">Kab. Grobogan</option>
+              <option value="Kota Salatiga">Kota Salatiga</option>
+            </select>
+          </label>
+          <input type="search" id="cari-desa" placeholder="Cari desa / kecamatan…" aria-label="Cari nama desa">
+        </div>
       </div>
       <div class="gulir-tabel">
         <table id="tabel">
           <thead>
             <tr>
-              <th data-kolom="nama" aria-sort="none">Nama</th>
+              <th data-kolom="desa" aria-sort="none">Desa / Kelurahan</th>
               <th data-kolom="kecamatan" aria-sort="none">Kecamatan</th>
-              <th data-kolom="suhu_max" aria-sort="none" class="angka">Suhu maks (°C)</th>
-              <th data-kolom="jumlah_slot_hujan" aria-sort="none" class="angka">Slot hujan</th>
-              <th data-kolom="kelas_tingkat" aria-sort="none">Kelas hujan</th>
+              <th data-kolom="kabupaten" aria-sort="none">Kab/Kota</th>
+              <th data-kolom="t" aria-sort="none" class="angka">Suhu (°C)</th>
+              <th data-kolom="hu" aria-sort="none" class="angka">Kelembapan (%)</th>
+              <th data-kolom="ws" aria-sort="none" class="angka">Angin (km/j)</th>
+              <th data-kolom="cuaca" aria-sort="none">Kondisi Cuaca</th>
+              <th data-kolom="kelas" aria-sort="none">Kelas Hujan</th>
             </tr>
           </thead>
-          <tbody></tbody>
+          <tbody>
+            <tr><td colspan="8" class="kosong">Memuat data 1.250 desa…</td></tr>
+          </tbody>
         </table>
       </div>
-      <p id="pesan-status" class="pesan-status" hidden></p>
+      <div class="footer-tabel">
+        <span id="info-tabel-total">Menampilkan 0 desa</span>
+      </div>
     </section>
   </main>
 
+  <!-- Footer Permanen & Atribusi Legal -->
   <footer class="footer">
-    <span>Sumber data cuaca: BMKG (<a href="https://data.bmkg.go.id" target="_blank" rel="noopener">data.bmkg.go.id</a>)</span>
-    <span class="footer-catatan">KEDUNGSEPUR RESILIENCE · Prakiraan titik per kelurahan/desa, bukan grid · Intensitas hujan diturunkan dari deskripsi cuaca</span>
+    <div class="footer-kiri">
+      <span><strong>KEDUNGSEPUR RESILIENCE</strong> · Sistem Pendukung Keputusan Mitigasi Bencana Hidrometeorologi</span>
+    </div>
+    <div class="footer-kanan">
+      <span>Sumber data: <strong>BMKG</strong> (data.bmkg.go.id)</span>
+      <span>Model Grid: <strong>Open-Meteo</strong> (CC BY 4.0)</span>
+      <span>Peta: &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a></span>
+    </div>
   </footer>
 
   <script src="app.js"></script>

@@ -2,6 +2,7 @@
 
 # Progres sementara skrip penarik data (bisa dilanjutkan secara lokal)
 data/.progres_cuaca.json
+data/.progres_bmkg.json
 *.tmp
 
 # Python

@@ -1,0 +1,7502 @@
+[
+  {
+    "kode_adm4": "33.15.18.2012",
+    "desa": "Karangpasar",
+    "kecamatan": "Tegowanu",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.24.05.2010",
+    "desa": "Kalirejo",
+    "kecamatan": "Singorojo",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.74.12.1016",
+    "desa": "Kandri",
+    "kecamatan": "Gunungpati",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.21.01.2005",
+    "desa": "Kangkung",
+    "kecamatan": "Mranggen",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.74.09.1001",
+    "desa": "Karangrejo",
+    "kecamatan": "Gajahmungkur",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.74.12.1015",
+    "desa": "Kalisegoro",
+    "kecamatan": "Gunungpati",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.15.19.2003",
+    "desa": "Kapung",
+    "kecamatan": "Tanggungharjo",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.22.05.2004",
+    "desa": "Karang Gondang",
+    "kecamatan": "Pabelan",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.74.05.1003",
+    "desa": "Karangroto",
+    "kecamatan": "Genuk",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.22.18.2002",
+    "desa": "Kalisidi",
+    "kecamatan": "Ungaran Barat",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.74.01.1012",
+    "desa": "Karang Kidul",
+    "kecamatan": "Semarang Tengah",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.22.13.1002",
+    "desa": "Karangjati",
+    "kecamatan": "Bergas",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.21.01.2004",
+    "desa": "Kalitengah",
+    "kecamatan": "Mranggen",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.24.12.2012",
+    "desa": "Karanganom",
+    "kecamatan": "Weleri",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.21.01.2011",
+    "desa": "Karangsono",
+    "kecamatan": "Mranggen",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.22.06.2014",
+    "desa": "Karanganyar",
+    "kecamatan": "Tuntang",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.15.01.2001",
+    "desa": "Karanglangu",
+    "kecamatan": "Kedungjati",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.74.03.1010",
+    "desa": "Karangtempel",
+    "kecamatan": "Semarang Timur",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.24.05.2003",
+    "desa": "Kaliputih",
+    "kecamatan": "Singorojo",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.12.2007",
+    "desa": "Kalijambe",
+    "kecamatan": "Bringin",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.24.06.2013",
+    "desa": "Jawisari",
+    "kecamatan": "Limbangan",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.74.13.1006",
+    "desa": "Kalibanteng Kidul",
+    "kecamatan": "Semarang Barat",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.22.05.2010",
+    "desa": "Jembrak",
+    "kecamatan": "Pabelan",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.74.08.1004",
+    "desa": "Jomblang",
+    "kecamatan": "Candisari",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.74.13.1005",
+    "desa": "Kalibanteng Kulon",
+    "kecamatan": "Semarang Barat",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.24.04.2010",
+    "desa": "Kalibareng",
+    "kecamatan": "Patean",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.06.2002",
+    "desa": "Kalibeji",
+    "kecamatan": "Tuntang",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.19.2006",
+    "desa": "Kalikayen",
+    "kecamatan": "Ungaran Timur",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.74.16.1001",
+    "desa": "Jerakah",
+    "kecamatan": "Tugu",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.22.06.2005",
+    "desa": "Jombor",
+    "kecamatan": "Tuntang",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.12.2008",
+    "desa": "Kalikurmo",
+    "kecamatan": "Bringin",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.24.20.2001",
+    "desa": "Jeruk Giling",
+    "kecamatan": "Kaliwungu Selatan",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.21.02.2001",
+    "desa": "Jragung",
+    "kecamatan": "Karangawen",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.73.02.1004",
+    "desa": "Kalibening",
+    "kecamatan": "Tingkir",
+    "kabupaten": "Kota Salatiga"
+  },
+  {
+    "kode_adm4": "33.24.03.2018",
+    "desa": "Kalibogor",
+    "kecamatan": "Sukorejo",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.04.2011",
+    "desa": "Kalilumpang",
+    "kecamatan": "Patean",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.01.2009",
+    "desa": "Jetak",
+    "kecamatan": "Getasan",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.21.04.2003",
+    "desa": "Jetaksari",
+    "kecamatan": "Sayung",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.22.17.2002",
+    "desa": "Jetis",
+    "kecamatan": "Kaliwungu",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.09.2005",
+    "desa": "Jubelan",
+    "kecamatan": "Sumowono",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.15.01.2011",
+    "desa": "Jumo",
+    "kecamatan": "Kedungjati",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.73.04.1004",
+    "desa": "Kalicacing",
+    "kecamatan": "Sidomukti",
+    "kabupaten": "Kota Salatiga"
+  },
+  {
+    "kode_adm4": "33.74.06.1012",
+    "desa": "Kalicari",
+    "kecamatan": "Pedurungan",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.24.04.2012",
+    "desa": "Kalices",
+    "kecamatan": "Patean",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.15.01.2010",
+    "desa": "Kalimaro",
+    "kecamatan": "Kedungjati",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.22.20.2003",
+    "desa": "Jetis",
+    "kecamatan": "Bandungan",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.24.01.2008",
+    "desa": "Jurangagung",
+    "kecamatan": "Plantungan",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.20.2006",
+    "desa": "Jimbaran",
+    "kecamatan": "Bandungan",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.24.07.2009",
+    "desa": "Kaligading",
+    "kecamatan": "Boja",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.74.04.1002",
+    "desa": "Kaligawe",
+    "kecamatan": "Gayamsari",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.24.03.2011",
+    "desa": "Kalipakis",
+    "kecamatan": "Sukorejo",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.05.2015",
+    "desa": "Kadirejo",
+    "kecamatan": "Pabelan",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.74.15.1005",
+    "desa": "Kalipancur",
+    "kecamatan": "Ngaliyan",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.22.16.2003",
+    "desa": "Jlumpang",
+    "kecamatan": "Bancak",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.04.2015",
+    "desa": "Krandon Lor",
+    "kecamatan": "Suruh",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.10.1007",
+    "desa": "Kranggan",
+    "kecamatan": "Ambarawa",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.74.01.1004",
+    "desa": "Kranggan",
+    "kecamatan": "Semarang Tengah",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.74.13.1003",
+    "desa": "Krapyak",
+    "kecamatan": "Semarang Barat",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.73.02.1001",
+    "desa": "Kutowinangun Kidul",
+    "kecamatan": "Tingkir",
+    "kabupaten": "Kota Salatiga"
+  },
+  {
+    "kode_adm4": "33.73.02.1007",
+    "desa": "Kutowinangun Lor",
+    "kecamatan": "Tingkir",
+    "kabupaten": "Kota Salatiga"
+  },
+  {
+    "kode_adm4": "33.22.11.2006",
+    "desa": "Lemahireng",
+    "kecamatan": "Bawen",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.08.2007",
+    "desa": "Kuwarasan",
+    "kecamatan": "Jambu",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.16.2007",
+    "desa": "Lembu",
+    "kecamatan": "Bancak",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.15.2001",
+    "desa": "Klepu",
+    "kecamatan": "Pringapus",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.24.02.2005",
+    "desa": "Krikil",
+    "kecamatan": "Pageruyung",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.15.17.2012",
+    "desa": "Kuwaron",
+    "kecamatan": "Gubug",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.74.09.1006",
+    "desa": "Lempongsari",
+    "kecamatan": "Gajahmungkur",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.22.02.2006",
+    "desa": "Klero",
+    "kecamatan": "Tengaran",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.09.2016",
+    "desa": "Keseneng",
+    "kecamatan": "Sumowono",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.24.07.2005",
+    "desa": "Kliris",
+    "kecamatan": "Boja",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.15.01.2008",
+    "desa": "Klitikan",
+    "kecamatan": "Kedungjati",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.74.13.1013",
+    "desa": "Krobokan",
+    "kecamatan": "Semarang Barat",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.24.11.2006",
+    "desa": "Krompaan",
+    "kecamatan": "Gemuh",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.06.2007",
+    "desa": "Kesongo",
+    "kecamatan": "Tuntang",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.04.2006",
+    "desa": "Ketanggi",
+    "kecamatan": "Suruh",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.74.07.1009",
+    "desa": "Lamper Kidul",
+    "kecamatan": "Semarang Selatan",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.74.07.1008",
+    "desa": "Lamper Lor",
+    "kecamatan": "Semarang Selatan",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.74.07.1010",
+    "desa": "Lamper Tengah",
+    "kecamatan": "Semarang Selatan",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.22.03.2005",
+    "desa": "Ketapang",
+    "kecamatan": "Susukan",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.01.2003",
+    "desa": "Kopeng",
+    "kecamatan": "Getasan",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.74.05.1002",
+    "desa": "Kudu",
+    "kecamatan": "Genuk",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.22.18.1010",
+    "desa": "Langensari",
+    "kecamatan": "Ungaran Barat",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.03.2011",
+    "desa": "Koripan",
+    "kecamatan": "Susukan",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.73.03.1004",
+    "desa": "Kumpulrejo",
+    "kecamatan": "Argomulyo",
+    "kabupaten": "Kota Salatiga"
+  },
+  {
+    "kode_adm4": "33.74.02.1005",
+    "desa": "Kuningan",
+    "kecamatan": "Semarang Utara",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.22.09.2004",
+    "desa": "Lanjan",
+    "kecamatan": "Sumowono",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.17.2004",
+    "desa": "Kradenan",
+    "kecamatan": "Kaliwungu",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.10.1006",
+    "desa": "Kupang",
+    "kecamatan": "Ambarawa",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.21.02.2008",
+    "desa": "Kuripan",
+    "kecamatan": "Karangawen",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.22.12.2010",
+    "desa": "Lebak",
+    "kecamatan": "Bringin",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.74.10.1005",
+    "desa": "Kramas",
+    "kecamatan": "Tembalang",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.24.07.2004",
+    "desa": "Leban",
+    "kecamatan": "Boja",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.73.03.1002",
+    "desa": "Ledok",
+    "kecamatan": "Argomulyo",
+    "kabupaten": "Kota Salatiga"
+  },
+  {
+    "kode_adm4": "33.21.03.2011",
+    "desa": "Krandon",
+    "kecamatan": "Guntur",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.24.05.2013",
+    "desa": "Kertosari",
+    "kecamatan": "Singorojo",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.07.2008",
+    "desa": "Kebondowo",
+    "kecamatan": "Banyubiru",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.24.02.2012",
+    "desa": "Kebongembong",
+    "kecamatan": "Pageruyung",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.04.2010",
+    "desa": "Kedungringin",
+    "kecamatan": "Suruh",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.09.2008",
+    "desa": "Kemitir",
+    "kecamatan": "Sumowono",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.24.05.2006",
+    "desa": "Kedungsari",
+    "kecamatan": "Singorojo",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.04.2001",
+    "desa": "Kebowan",
+    "kecamatan": "Suruh",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.24.20.2002",
+    "desa": "Kedungsuren",
+    "kecamatan": "Kaliwungu Selatan",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.74.01.1010",
+    "desa": "Kauman",
+    "kecamatan": "Semarang Tengah",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.22.07.2002",
+    "desa": "Kebumen",
+    "kecamatan": "Banyubiru",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.73.01.1005",
+    "desa": "Kauman Kidul",
+    "kecamatan": "Sidorejo",
+    "kabupaten": "Kota Salatiga"
+  },
+  {
+    "kode_adm4": "33.22.05.2013",
+    "desa": "Kauman Lor",
+    "kecamatan": "Pabelan",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.19.2005",
+    "desa": "Kawengen",
+    "kecamatan": "Ungaran Timur",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.24.03.2016",
+    "desa": "Kebumen",
+    "kecamatan": "Sukorejo",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.73.04.1001",
+    "desa": "Kecandran",
+    "kecamatan": "Sidomukti",
+    "kabupaten": "Kota Salatiga"
+  },
+  {
+    "kode_adm4": "33.15.18.2013",
+    "desa": "Kedungwungu",
+    "kecamatan": "Tegowanu",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.22.17.2003",
+    "desa": "Kener",
+    "kecamatan": "Kaliwungu",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.15.18.2008",
+    "desa": "Kejawan",
+    "kecamatan": "Tegowanu",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.22.18.2003",
+    "desa": "Keji",
+    "kecamatan": "Ungaran Barat",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.08.2003",
+    "desa": "Kelurahan",
+    "kecamatan": "Jambu",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.03.2012",
+    "desa": "Kenteng",
+    "kecamatan": "Susukan",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.20.2004",
+    "desa": "Kenteng",
+    "kecamatan": "Bandungan",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.24.01.2002",
+    "desa": "Kediten",
+    "kecamatan": "Plantungan",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.18.2002",
+    "desa": "Kedungasri",
+    "kecamatan": "Ringinarum",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.07.2005",
+    "desa": "Kemambang",
+    "kecamatan": "Banyubiru",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.09.2014",
+    "desa": "Kemawi",
+    "kecamatan": "Sumowono",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.15.01.2004",
+    "desa": "Kentengsari",
+    "kecamatan": "Kedungjati",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.18.2001",
+    "desa": "Kebonagung",
+    "kecamatan": "Tegowanu",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.22.09.2001",
+    "desa": "Kebonagung",
+    "kecamatan": "Sumowono",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.74.03.1004",
+    "desa": "Kebonagung",
+    "kecamatan": "Semarang Timur",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.24.06.2001",
+    "desa": "Kedungboto",
+    "kecamatan": "Limbangan",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.18.2003",
+    "desa": "Kedunggading",
+    "kecamatan": "Ringinarum",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.21.01.2010",
+    "desa": "Kembangarum",
+    "kecamatan": "Mranggen",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.74.13.1016",
+    "desa": "Kembangarum",
+    "kecamatan": "Semarang Barat",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.24.19.2008",
+    "desa": "Kebonagung",
+    "kecamatan": "Ngampel",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.15.01.2007",
+    "desa": "Kedungjati",
+    "kecamatan": "Kedungjati",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.74.01.1006",
+    "desa": "Kembangsari",
+    "kecamatan": "Semarang Tengah",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.21.01.2002",
+    "desa": "Kebonbatur",
+    "kecamatan": "Mranggen",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.22.03.2013",
+    "desa": "Kemetul",
+    "kecamatan": "Susukan",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.74.03.1001",
+    "desa": "Kemijen",
+    "kecamatan": "Semarang Timur",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.24.09.2005",
+    "desa": "Kertomulyo",
+    "kecamatan": "Brangsong",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.08.2008",
+    "desa": "Kebondalem",
+    "kecamatan": "Jambu",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.74.10.1009",
+    "desa": "Kedungmundu",
+    "kecamatan": "Tembalang",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.74.14.1010",
+    "desa": "Kedungpane",
+    "kecamatan": "Mijen",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.74.11.1008",
+    "desa": "Ngesrep",
+    "kecamatan": "Banyumanik",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.24.06.2011",
+    "desa": "Ngesrepbalong",
+    "kecamatan": "Limbangan",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.74.12.1007",
+    "desa": "Ngijo",
+    "kecamatan": "Gunungpati",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.22.17.2006",
+    "desa": "Pager",
+    "kecamatan": "Kaliwungu",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.74.06.1011",
+    "desa": "Palebon",
+    "kecamatan": "Pedurungan",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.24.19.2009",
+    "desa": "Ngampel Kulon",
+    "kecamatan": "Ngampel",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.19.2010",
+    "desa": "Ngampel Wetan",
+    "kecamatan": "Ngampel",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.10.1001",
+    "desa": "Ngampin",
+    "kecamatan": "Ambarawa",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.15.01.2005",
+    "desa": "Ngombak",
+    "kecamatan": "Kedungjati",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.21.03.2005",
+    "desa": "Pamongan",
+    "kecamatan": "Guntur",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.24.11.2002",
+    "desa": "Pamriyan",
+    "kecamatan": "Gemuh",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.07.2010",
+    "desa": "Ngrapah",
+    "kecamatan": "Banyubiru",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.24.02.2014",
+    "desa": "Pagergunung",
+    "kecamatan": "Pageruyung",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.05.2007",
+    "desa": "Ngareanak",
+    "kecamatan": "Singorojo",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.01.2012",
+    "desa": "Ngrawan",
+    "kecamatan": "Getasan",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.73.03.1001",
+    "desa": "Noborejo",
+    "kecamatan": "Argomulyo",
+    "kabupaten": "Kota Salatiga"
+  },
+  {
+    "kode_adm4": "33.22.01.2013",
+    "desa": "Nogosaren",
+    "kecamatan": "Getasan",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.24.08.2004",
+    "desa": "Nolokerto",
+    "kecamatan": "Kaliwungu",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.74.12.1005",
+    "desa": "Nongkosawit",
+    "kecamatan": "Gunungpati",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.22.13.2007",
+    "desa": "Pagersari",
+    "kecamatan": "Bergas",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.24.04.2005",
+    "desa": "Pagersari",
+    "kecamatan": "Patean",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.03.2004",
+    "desa": "Ngargosari",
+    "kecamatan": "Sukorejo",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.06.2008",
+    "desa": "Pagertoyo",
+    "kecamatan": "Limbangan",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.02.2007",
+    "desa": "Pageruyung",
+    "kecamatan": "Pageruyung",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.06.2016",
+    "desa": "Pagerwojo",
+    "kecamatan": "Limbangan",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.02.2015",
+    "desa": "Nyamat",
+    "kecamatan": "Tengaran",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.24.12.2008",
+    "desa": "Nawangsari",
+    "kecamatan": "Weleri",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.03.2010",
+    "desa": "Ngasinan",
+    "kecamatan": "Susukan",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.18.2005",
+    "desa": "Nyatnyono",
+    "kecamatan": "Ungaran Barat",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.12.2012",
+    "desa": "Nyemoh",
+    "kecamatan": "Bringin",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.24.07.2007",
+    "desa": "Ngabean",
+    "kecamatan": "Boja",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.12.2006",
+    "desa": "Ngasinan",
+    "kecamatan": "Weleri",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.05.2012",
+    "desa": "Pabelan",
+    "kecamatan": "Pabelan",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.24.18.2005",
+    "desa": "Ngawensari",
+    "kecamatan": "Ringinarum",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.09.2003",
+    "desa": "Ngadikerso",
+    "kecamatan": "Sumowono",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.21.01.2013",
+    "desa": "Ngemplak",
+    "kecamatan": "Mranggen",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.22.05.2017",
+    "desa": "Padaan",
+    "kecamatan": "Pabelan",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.15.19.2009",
+    "desa": "Padang",
+    "kecamatan": "Tanggungharjo",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.74.11.1010",
+    "desa": "Padangsari",
+    "kecamatan": "Banyumanik",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.74.12.1001",
+    "desa": "Pakintelan",
+    "kecamatan": "Gunungpati",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.74.13.1001",
+    "desa": "Ngemplak Simongan",
+    "kecamatan": "Semarang Barat",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.22.12.2003",
+    "desa": "Pakis",
+    "kecamatan": "Bringin",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.24.06.2004",
+    "desa": "Pakis",
+    "kecamatan": "Limbangan",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.04.2001",
+    "desa": "Pakisan",
+    "kecamatan": "Patean",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.74.14.1011",
+    "desa": "Ngadirgo",
+    "kecamatan": "Mijen",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.24.03.2014",
+    "desa": "Ngadiwarno",
+    "kecamatan": "Sukorejo",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.13.1001",
+    "desa": "Ngempon",
+    "kecamatan": "Bergas",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.06.2016",
+    "desa": "Ngajaran",
+    "kecamatan": "Tuntang",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.20.2007",
+    "desa": "Pakopen",
+    "kecamatan": "Bandungan",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.74.15.1007",
+    "desa": "Ngaliyan",
+    "kecamatan": "Ngaliyan",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.24.18.2001",
+    "desa": "Ngerjo",
+    "kecamatan": "Ringinarum",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.74.14.1008",
+    "desa": "Mijen",
+    "kecamatan": "Mijen",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.74.01.1001",
+    "desa": "Miroto",
+    "kecamatan": "Semarang Tengah",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.21.02.2003",
+    "desa": "Margohayu",
+    "kecamatan": "Karangawen",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.74.03.1003",
+    "desa": "Mlatibaru",
+    "kecamatan": "Semarang Timur",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.74.03.1005",
+    "desa": "Mlatiharjo",
+    "kecamatan": "Semarang Timur",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.24.04.2003",
+    "desa": "Mlatiharjo",
+    "kecamatan": "Patean",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.10.2001",
+    "desa": "Margomulyo",
+    "kecamatan": "Pegandon",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.06.2014",
+    "desa": "Margosari",
+    "kecamatan": "Limbangan",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.20.2001",
+    "desa": "Mlilir",
+    "kecamatan": "Bandungan",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.18.2004",
+    "desa": "Lerep",
+    "kecamatan": "Ungaran Barat",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.24.20.2005",
+    "desa": "Magelung",
+    "kecamatan": "Kaliwungu Selatan",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.19.2004",
+    "desa": "Mluweh",
+    "kecamatan": "Ungaran Timur",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.19.2009",
+    "desa": "Leyangan",
+    "kecamatan": "Ungaran Timur",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.15.18.2003",
+    "desa": "Medani",
+    "kecamatan": "Tegowanu",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.24.18.2010",
+    "desa": "Mojo",
+    "kecamatan": "Ringinarum",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.01.2012",
+    "desa": "Mojoagung",
+    "kecamatan": "Plantungan",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.04.2007",
+    "desa": "Medayu",
+    "kecamatan": "Suruh",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.24.06.2007",
+    "desa": "Limbangan",
+    "kecamatan": "Limbangan",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.07.2001",
+    "desa": "Medono",
+    "kecamatan": "Boja",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.12.2016",
+    "desa": "Montongsari",
+    "kecamatan": "Weleri",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.10.1005",
+    "desa": "Lodoyong",
+    "kecamatan": "Ambarawa",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.21.01.2006",
+    "desa": "Mranggen",
+    "kecamatan": "Mranggen",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.22.01.2011",
+    "desa": "Manggihan",
+    "kecamatan": "Getasan",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.24.01.2005",
+    "desa": "Manggungmangu",
+    "kecamatan": "Plantungan",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.12.2004",
+    "desa": "Manggungsari",
+    "kecamatan": "Weleri",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.74.16.1005",
+    "desa": "Mangkang Wetan",
+    "kecamatan": "Tugu",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.22.09.2011",
+    "desa": "Mendongan",
+    "kecamatan": "Sumowono",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.15.19.2004",
+    "desa": "Mrisi",
+    "kecamatan": "Tanggungharjo",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.22.06.2009",
+    "desa": "Lopait",
+    "kecamatan": "Tuntang",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.74.10.1003",
+    "desa": "Mangunharjo",
+    "kecamatan": "Tembalang",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.74.16.1007",
+    "desa": "Mangunharjo",
+    "kecamatan": "Tugu",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.22.09.2013",
+    "desa": "Losari",
+    "kecamatan": "Sumowono",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.21.01.2014",
+    "desa": "Menur",
+    "kecamatan": "Mranggen",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.24.05.2011",
+    "desa": "Merbuh",
+    "kecamatan": "Singorojo",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.74.07.1004",
+    "desa": "Mugasari",
+    "kecamatan": "Semarang Selatan",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.22.17.2005",
+    "desa": "Mukiran",
+    "kecamatan": "Kaliwungu",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.74.06.1005",
+    "desa": "Muktiharjo Kidul",
+    "kecamatan": "Pedurungan",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.74.05.1009",
+    "desa": "Muktiharjo Lor",
+    "kecamatan": "Genuk",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.15.18.2006",
+    "desa": "Mangunsari",
+    "kecamatan": "Tegowanu",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.74.12.1002",
+    "desa": "Mangunsari",
+    "kecamatan": "Gunungpati",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.24.03.2010",
+    "desa": "Mulyosari",
+    "kecamatan": "Sukorejo",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.73.04.1003",
+    "desa": "Mangunsari",
+    "kecamatan": "Sidomukti",
+    "kabupaten": "Kota Salatiga"
+  },
+  {
+    "kode_adm4": "33.22.03.2009",
+    "desa": "Muncar",
+    "kecamatan": "Susukan",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.74.10.1001",
+    "desa": "Meteseh",
+    "kecamatan": "Tembalang",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.24.07.2017",
+    "desa": "Meteseh",
+    "kecamatan": "Boja",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.13.2008",
+    "desa": "Munding",
+    "kecamatan": "Bergas",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.74.13.1002",
+    "desa": "Manyaran",
+    "kecamatan": "Semarang Barat",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.24.02.2006",
+    "desa": "Pucakwangi",
+    "kecamatan": "Pageruyung",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.02.2007",
+    "desa": "Regunung",
+    "kecamatan": "Tengaran",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.74.03.1002",
+    "desa": "Rejomulyo",
+    "kecamatan": "Semarang Timur",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.74.12.1011",
+    "desa": "Sadeng",
+    "kecamatan": "Gunungpati",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.24.10.2007",
+    "desa": "Pucangrejo",
+    "kecamatan": "Pegandon",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.74.01.1011",
+    "desa": "Purwodinatan",
+    "kecamatan": "Semarang Tengah",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.24.07.2010",
+    "desa": "Purwogondo",
+    "kecamatan": "Boja",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.12.2014",
+    "desa": "Pucuksari",
+    "kecamatan": "Weleri",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.16.2008",
+    "desa": "Pucung",
+    "kecamatan": "Bancak",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.21.02.2006",
+    "desa": "Rejosari",
+    "kecamatan": "Karangawen",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.22.08.2009",
+    "desa": "Rejosari",
+    "kecamatan": "Jambu",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.11.2009",
+    "desa": "Poncoruso",
+    "kecamatan": "Bawen",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.04.2005",
+    "desa": "Purworejo",
+    "kecamatan": "Suruh",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.16.2005",
+    "desa": "Rejosari",
+    "kecamatan": "Bancak",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.74.03.1008",
+    "desa": "Rejosari",
+    "kecamatan": "Semarang Timur",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.24.19.2005",
+    "desa": "Rejosari",
+    "kecamatan": "Ngampel",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.74.12.1006",
+    "desa": "Pongangan",
+    "kecamatan": "Gunungpati",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.24.18.2011",
+    "desa": "Purworejo",
+    "kecamatan": "Ringinarum",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.04.2012",
+    "desa": "Reksosari",
+    "kecamatan": "Suruh",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.12.2004",
+    "desa": "Rembes",
+    "kecamatan": "Bringin",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.12.2002",
+    "desa": "Popongan",
+    "kecamatan": "Bringin",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.21.04.2006",
+    "desa": "Prampelan",
+    "kecamatan": "Sayung",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.15.17.2015",
+    "desa": "Pranten",
+    "kecamatan": "Gubug",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.74.11.1001",
+    "desa": "Pudakpayung",
+    "kecamatan": "Banyumanik",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.74.02.1004",
+    "desa": "Purwosari",
+    "kecamatan": "Semarang Utara",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.74.14.1005",
+    "desa": "Purwosari",
+    "kecamatan": "Mijen",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.24.10.2005",
+    "desa": "Puguh",
+    "kecamatan": "Pegandon",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.07.2006",
+    "desa": "Puguh",
+    "kecamatan": "Boja",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.03.2003",
+    "desa": "Purwosari",
+    "kecamatan": "Sukorejo",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.74.15.1004",
+    "desa": "Purwoyoso",
+    "kecamatan": "Ngaliyan",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.24.18.2004",
+    "desa": "Ringinarum",
+    "kecamatan": "Ringinarum",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.15.01.2006",
+    "desa": "Prigi",
+    "kecamatan": "Kedungjati",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.17.2020",
+    "desa": "Ringinharjo",
+    "kecamatan": "Gubug",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.17.2019",
+    "desa": "Ringinkidul",
+    "kecamatan": "Gubug",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.22.15.1004",
+    "desa": "Pringapus",
+    "kecamatan": "Pringapus",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.73.01.1006",
+    "desa": "Pulutan",
+    "kecamatan": "Sidorejo",
+    "kabupaten": "Kota Salatiga"
+  },
+  {
+    "kode_adm4": "33.15.19.2001",
+    "desa": "Ringinpitu",
+    "kecamatan": "Tanggungharjo",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.22.17.2009",
+    "desa": "Rogomulyo",
+    "kecamatan": "Kaliwungu",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.15.2005",
+    "desa": "Pringsari",
+    "kecamatan": "Pringapus",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.21.02.2012",
+    "desa": "Pundenarum",
+    "kecamatan": "Karangawen",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.73.03.1005",
+    "desa": "Randuacir",
+    "kecamatan": "Argomulyo",
+    "kabupaten": "Kota Salatiga"
+  },
+  {
+    "kode_adm4": "33.74.16.1004",
+    "desa": "Randugarut",
+    "kecamatan": "Tugu",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.22.13.2011",
+    "desa": "Randugunting",
+    "kecamatan": "Bergas",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.07.2007",
+    "desa": "Rowoboni",
+    "kecamatan": "Banyubiru",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.24.18.2008",
+    "desa": "Rowobranten",
+    "kecamatan": "Ringinarum",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.74.07.1001",
+    "desa": "Randusari",
+    "kecamatan": "Semarang Selatan",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.15.17.2013",
+    "desa": "Rowosari",
+    "kecamatan": "Gubug",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.74.10.1002",
+    "desa": "Rowosari",
+    "kecamatan": "Tembalang",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.22.06.2003",
+    "desa": "Rowosari",
+    "kecamatan": "Tuntang",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.24.10.2010",
+    "desa": "Penanggulan",
+    "kecamatan": "Pegandon",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.74.01.1014",
+    "desa": "Pindrikan Kidul",
+    "kecamatan": "Semarang Tengah",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.22.01.2010",
+    "desa": "Polobogo",
+    "kecamatan": "Getasan",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.24.12.2010",
+    "desa": "Penaruban",
+    "kecamatan": "Weleri",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.74.01.1015",
+    "desa": "Pindrikan Lor",
+    "kecamatan": "Semarang Tengah",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.22.11.2004",
+    "desa": "Polosiri",
+    "kecamatan": "Bawen",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.24.11.2004",
+    "desa": "Poncorejo",
+    "kecamatan": "Gemuh",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.10.2009",
+    "desa": "Pasekan",
+    "kecamatan": "Ambarawa",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.24.07.2002",
+    "desa": "Pasigitan",
+    "kecamatan": "Boja",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.15.2009",
+    "desa": "Penawangan",
+    "kecamatan": "Pringapus",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.74.06.1001",
+    "desa": "Penggaron Kidul",
+    "kecamatan": "Pedurungan",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.22.09.2015",
+    "desa": "Piyanggang",
+    "kecamatan": "Sumowono",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.02.2011",
+    "desa": "Patemon",
+    "kecamatan": "Tengaran",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.74.05.1008",
+    "desa": "Penggaron Lor",
+    "kecamatan": "Genuk",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.74.12.1003",
+    "desa": "Plalangan",
+    "kecamatan": "Gunungpati",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.74.06.1006",
+    "desa": "Plamongansari",
+    "kecamatan": "Pedurungan",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.74.01.1008",
+    "desa": "Pandansari",
+    "kecamatan": "Semarang Tengah",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.74.12.1008",
+    "desa": "Patemon",
+    "kecamatan": "Gunungpati",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.24.09.2004",
+    "desa": "Penjalin",
+    "kecamatan": "Brangsong",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.20.2006",
+    "desa": "Plantaran",
+    "kecamatan": "Kaliwungu Selatan",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.74.07.1005",
+    "desa": "Pleburan",
+    "kecamatan": "Semarang Selatan",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.74.04.1006",
+    "desa": "Pandean Lamper",
+    "kecamatan": "Gayamsari",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.24.12.2013",
+    "desa": "Payung",
+    "kecamatan": "Weleri",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.17.2008",
+    "desa": "Payungan",
+    "kecamatan": "Kaliwungu",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.74.11.1004",
+    "desa": "Pedalangan",
+    "kecamatan": "Banyumanik",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.24.12.2002",
+    "desa": "Penyangkringan",
+    "kecamatan": "Weleri",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.09.2010",
+    "desa": "Pledokan",
+    "kecamatan": "Sumowono",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.74.06.1008",
+    "desa": "Pedurungan Kidul",
+    "kecamatan": "Pedurungan",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.74.06.1009",
+    "desa": "Pedurungan Lor",
+    "kecamatan": "Pedurungan",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.15.18.2014",
+    "desa": "Pepe",
+    "kecamatan": "Tegowanu",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.74.02.1003",
+    "desa": "Plombokan",
+    "kecamatan": "Semarang Utara",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.74.02.1007",
+    "desa": "Panggung Kidul",
+    "kecamatan": "Semarang Utara",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.74.06.1010",
+    "desa": "Pedurungan Tengah",
+    "kecamatan": "Pedurungan",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.24.10.2009",
+    "desa": "Pegandon",
+    "kecamatan": "Pegandon",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.03.2008",
+    "desa": "Peron",
+    "kecamatan": "Sukorejo",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.06.2002",
+    "desa": "Peron",
+    "kecamatan": "Limbangan",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.04.2002",
+    "desa": "Plososari",
+    "kecamatan": "Patean",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.04.2014",
+    "desa": "Plumbon",
+    "kecamatan": "Suruh",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.10.1008",
+    "desa": "Panjang",
+    "kecamatan": "Ambarawa",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.24.18.2012",
+    "desa": "Pagerdawung",
+    "kecamatan": "Ringinarum",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.74.14.1014",
+    "desa": "Pesantren",
+    "kecamatan": "Mijen",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.22.16.2006",
+    "desa": "Plumutan",
+    "kecamatan": "Bancak",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.24.03.2005",
+    "desa": "Pesaren",
+    "kecamatan": "Sukorejo",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.10.2003",
+    "desa": "Pesawahan",
+    "kecamatan": "Pegandon",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.74.15.1002",
+    "desa": "Podorejo",
+    "kecamatan": "Ngaliyan",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.22.17.2007",
+    "desa": "Papringan",
+    "kecamatan": "Kaliwungu",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.74.07.1007",
+    "desa": "Peterongan",
+    "kecamatan": "Semarang Selatan",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.24.02.2003",
+    "desa": "Parakansebaran",
+    "kecamatan": "Pageruyung",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.74.09.1007",
+    "desa": "Petompon",
+    "kecamatan": "Gajahmungkur",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.24.10.2004",
+    "desa": "Pekuncen",
+    "kecamatan": "Pegandon",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.74.01.1013",
+    "desa": "Pekunden",
+    "kecamatan": "Semarang Tengah",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.24.02.2004",
+    "desa": "Petung",
+    "kecamatan": "Pageruyung",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.10.1002",
+    "desa": "Pojoksari",
+    "kecamatan": "Ambarawa",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.74.14.1004",
+    "desa": "Polaman",
+    "kecamatan": "Mijen",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.24.19.2011",
+    "desa": "Sudipayung",
+    "kecamatan": "Ngampel",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.05.2001",
+    "desa": "Sumberejo",
+    "kecamatan": "Pabelan",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.24.08.2003",
+    "desa": "Sumberejo",
+    "kecamatan": "Kaliwungu",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.21.01.2012",
+    "desa": "Tamansari",
+    "kecamatan": "Mranggen",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.24.02.2008",
+    "desa": "Tambahrejo",
+    "kecamatan": "Pageruyung",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.02.2002",
+    "desa": "Sugihan",
+    "kecamatan": "Tengaran",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.24.19.2006",
+    "desa": "Sumbersari",
+    "kecamatan": "Ngampel",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.06.2006",
+    "desa": "Tambahsari",
+    "kecamatan": "Limbangan",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.74.15.1008",
+    "desa": "Tambakaji",
+    "kecamatan": "Ngaliyan",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.15.19.2006",
+    "desa": "Sugihmanik",
+    "kecamatan": "Tanggungharjo",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.22.01.2007",
+    "desa": "Sumogawe",
+    "kecamatan": "Getasan",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.09.2006",
+    "desa": "Sumowono",
+    "kecamatan": "Sumowono",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.15.17.2018",
+    "desa": "Tambakan",
+    "kecamatan": "Gubug",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.22.10.1004",
+    "desa": "Tambakboyo",
+    "kecamatan": "Ambarawa",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.24.05.2002",
+    "desa": "Sukodadi",
+    "kecamatan": "Singorojo",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.05.2003",
+    "desa": "Sukoharjo",
+    "kecamatan": "Pabelan",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.24.04.2009",
+    "desa": "Sukomangli",
+    "kecamatan": "Patean",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.20.2007",
+    "desa": "Sukomulyo",
+    "kecamatan": "Kaliwungu Selatan",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.09.2002",
+    "desa": "Sumur",
+    "kecamatan": "Brangsong",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.74.11.1011",
+    "desa": "Sumurboto",
+    "kecamatan": "Banyumanik",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.74.12.1014",
+    "desa": "Sumurrejo",
+    "kecamatan": "Gunungpati",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.22.17.2010",
+    "desa": "Siwal",
+    "kecamatan": "Kaliwungu",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.74.04.1005",
+    "desa": "Siwalan",
+    "kecamatan": "Gayamsari",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.22.06.2004",
+    "desa": "Sraten",
+    "kecamatan": "Tuntang",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.15.18.2004",
+    "desa": "Sukorejo",
+    "kecamatan": "Tegowanu",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.21.03.2008",
+    "desa": "Sukorejo",
+    "kecamatan": "Guntur",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.24.11.2013",
+    "desa": "Sojomerto",
+    "kecamatan": "Gemuh",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.04.2009",
+    "desa": "Sukorejo",
+    "kecamatan": "Suruh",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.74.12.1010",
+    "desa": "Sukorejo",
+    "kecamatan": "Gunungpati",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.24.02.2013",
+    "desa": "Surokonto Kulon",
+    "kecamatan": "Pageruyung",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.02.2010",
+    "desa": "Surokonto Wetan",
+    "kecamatan": "Pageruyung",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.03.2017",
+    "desa": "Sukorejo",
+    "kecamatan": "Sukorejo",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.04.2013",
+    "desa": "Suruh",
+    "kecamatan": "Suruh",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.24.06.2009",
+    "desa": "Sriwulan",
+    "kecamatan": "Limbangan",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.74.11.1006",
+    "desa": "Srondol Kulon",
+    "kecamatan": "Banyumanik",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.74.11.1007",
+    "desa": "Srondol Wetan",
+    "kecamatan": "Banyumanik",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.22.03.2006",
+    "desa": "Susukan",
+    "kecamatan": "Susukan",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.19.1003",
+    "desa": "Susukan",
+    "kecamatan": "Ungaran Timur",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.24.12.2005",
+    "desa": "Sumberagung",
+    "kecamatan": "Weleri",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.06.2010",
+    "desa": "Tabet",
+    "kecamatan": "Limbangan",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.15.18.2011",
+    "desa": "Tajemsari",
+    "kecamatan": "Tegowanu",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.22.01.2001",
+    "desa": "Tajuk",
+    "kecamatan": "Getasan",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.02.2003",
+    "desa": "Sruwen",
+    "kecamatan": "Tengaran",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.24.06.2005",
+    "desa": "Sumberahayu",
+    "kecamatan": "Limbangan",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.21.01.2003",
+    "desa": "Sumberejo",
+    "kecamatan": "Mranggen",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.24.03.2006",
+    "desa": "Tamanrejo",
+    "kecamatan": "Sukorejo",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.06.2015",
+    "desa": "Tamanrejo",
+    "kecamatan": "Limbangan",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.74.05.1001",
+    "desa": "Sembungharjo",
+    "kecamatan": "Genuk",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.21.03.2009",
+    "desa": "Sidokumpul",
+    "kecamatan": "Guntur",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.24.04.2013",
+    "desa": "Sidokumpul",
+    "kecamatan": "Patean",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.05.2008",
+    "desa": "Semowo",
+    "kecamatan": "Pabelan",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.24.20.2008",
+    "desa": "Sidomakmur",
+    "kecamatan": "Kaliwungu Selatan",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.05.2008",
+    "desa": "Singorojo",
+    "kecamatan": "Singorojo",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.12.2014",
+    "desa": "Sendang",
+    "kecamatan": "Bringin",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.74.10.1010",
+    "desa": "Sendangguwo",
+    "kecamatan": "Tembalang",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.22.20.2008",
+    "desa": "Sidomukti",
+    "kecamatan": "Bandungan",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.74.10.1011",
+    "desa": "Sendangmulyo",
+    "kecamatan": "Tembalang",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.24.12.2001",
+    "desa": "Sidomukti",
+    "kecamatan": "Weleri",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.74.13.1010",
+    "desa": "Salamanmloyo",
+    "kecamatan": "Semarang Barat",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.24.07.2012",
+    "desa": "Salamsari",
+    "kecamatan": "Boja",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.73.01.1003",
+    "desa": "Salatiga",
+    "kecamatan": "Sidorejo",
+    "kabupaten": "Kota Salatiga"
+  },
+  {
+    "kode_adm4": "33.22.07.2003",
+    "desa": "Sepakung",
+    "kecamatan": "Banyubiru",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.19.1001",
+    "desa": "Sidomulyo",
+    "kecamatan": "Ungaran Timur",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.11.2008",
+    "desa": "Samban",
+    "kecamatan": "Bawen",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.12.2006",
+    "desa": "Sambirejo",
+    "kecamatan": "Bringin",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.24.11.2001",
+    "desa": "Sedayu",
+    "kecamatan": "Gemuh",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.05.2005",
+    "desa": "Segiri",
+    "kecamatan": "Pabelan",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.21.02.2011",
+    "desa": "Sidorejo",
+    "kecamatan": "Karangawen",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.74.04.1004",
+    "desa": "Sambirejo",
+    "kecamatan": "Gayamsari",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.74.10.1012",
+    "desa": "Sambiroto",
+    "kecamatan": "Tembalang",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.74.12.1009",
+    "desa": "Sekaran",
+    "kecamatan": "Gunungpati",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.73.02.1003",
+    "desa": "Sidorejo Kidul",
+    "kecamatan": "Tingkir",
+    "kabupaten": "Kota Salatiga"
+  },
+  {
+    "kode_adm4": "33.73.01.1002",
+    "desa": "Sidorejo Lor",
+    "kecamatan": "Sidorejo",
+    "kabupaten": "Kota Salatiga"
+  },
+  {
+    "kode_adm4": "33.24.12.2011",
+    "desa": "Sambongsari",
+    "kecamatan": "Weleri",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.74.01.1007",
+    "desa": "Sekayu",
+    "kecamatan": "Semarang Tengah",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.22.01.2008",
+    "desa": "Samirono",
+    "kecamatan": "Getasan",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.24.04.2006",
+    "desa": "Selo",
+    "kecamatan": "Patean",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.74.09.1004",
+    "desa": "Sampangan",
+    "kecamatan": "Gajahmungkur",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.24.03.2013",
+    "desa": "Selokaton",
+    "kecamatan": "Sukorejo",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.21.03.2004",
+    "desa": "Sarirejo",
+    "kecamatan": "Guntur",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.74.03.1007",
+    "desa": "Sarirejo",
+    "kecamatan": "Semarang Timur",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.15.19.2008",
+    "desa": "Brabo",
+    "kecamatan": "Tanggungharjo",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.22.09.2012",
+    "desa": "Bumen",
+    "kecamatan": "Sumowono",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.06.2006",
+    "desa": "Candirejo",
+    "kecamatan": "Tuntang",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.15.2008",
+    "desa": "Candirejo",
+    "kecamatan": "Pringapus",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.21.02.2010",
+    "desa": "Brambang",
+    "kecamatan": "Karangawen",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.22.18.2001",
+    "desa": "Branjang",
+    "kecamatan": "Ungaran Barat",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.24.12.2003",
+    "desa": "Bumiayu",
+    "kecamatan": "Weleri",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.18.1006",
+    "desa": "Candirejo",
+    "kecamatan": "Ungaran Barat",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.21.03.2016",
+    "desa": "Bumiharjo",
+    "kecamatan": "Guntur",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.01.2019",
+    "desa": "Candisari",
+    "kecamatan": "Mranggen",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.22.12.2001",
+    "desa": "Bringin",
+    "kecamatan": "Bringin",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.19.1008",
+    "desa": "Beji",
+    "kecamatan": "Ungaran Timur",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.21.03.2001",
+    "desa": "Blerong",
+    "kecamatan": "Guntur",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.24.03.2002",
+    "desa": "Bringinsari",
+    "kecamatan": "Sukorejo",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.04.2002",
+    "desa": "Beji Lor",
+    "kecamatan": "Suruh",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.24.07.2011",
+    "desa": "Blimbing",
+    "kecamatan": "Boja",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.21.02.2009",
+    "desa": "Bumirejo",
+    "kecamatan": "Karangawen",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.24.09.2003",
+    "desa": "Blorok",
+    "kecamatan": "Brangsong",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.73.01.1001",
+    "desa": "Blotongan",
+    "kecamatan": "Sidorejo",
+    "kabupaten": "Kota Salatiga"
+  },
+  {
+    "kode_adm4": "33.24.01.2001",
+    "desa": "Blumah",
+    "kecamatan": "Plantungan",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.08.2004",
+    "desa": "Brongkol",
+    "kecamatan": "Jambu",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.21.03.2007",
+    "desa": "Bogosari",
+    "kecamatan": "Guntur",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.24.07.2015",
+    "desa": "Boja",
+    "kecamatan": "Boja",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.21.01.2009",
+    "desa": "Brumbung",
+    "kecamatan": "Mranggen",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.74.01.1002",
+    "desa": "Brumbungan",
+    "kecamatan": "Semarang Tengah",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.74.09.1002",
+    "desa": "Bendan Dhuwur",
+    "kecamatan": "Gajahmungkur",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.74.14.1002",
+    "desa": "Bubakan",
+    "kecamatan": "Mijen",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.74.03.1006",
+    "desa": "Bugangan",
+    "kecamatan": "Semarang Timur",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.22.02.2010",
+    "desa": "Butuh",
+    "kecamatan": "Tengaran",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.74.09.1003",
+    "desa": "Bendan Ngisor",
+    "kecamatan": "Gajahmungkur",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.24.01.2011",
+    "desa": "Bendosari",
+    "kecamatan": "Plantungan",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.74.13.1009",
+    "desa": "Bojongsalaman",
+    "kecamatan": "Semarang Barat",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.73.01.1004",
+    "desa": "Bugel",
+    "kecamatan": "Sidorejo",
+    "kabupaten": "Kota Salatiga"
+  },
+  {
+    "kode_adm4": "33.74.13.1011",
+    "desa": "Cabean",
+    "kecamatan": "Semarang Barat",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.22.05.2009",
+    "desa": "Bendungan",
+    "kecamatan": "Pabelan",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.74.09.1008",
+    "desa": "Bendungan",
+    "kecamatan": "Gajahmungkur",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.74.13.1008",
+    "desa": "Bongsari",
+    "kecamatan": "Semarang Barat",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.24.05.2009",
+    "desa": "Cacaban",
+    "kecamatan": "Singorojo",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.02.2012",
+    "desa": "Bener",
+    "kecamatan": "Tengaran",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.24.07.2014",
+    "desa": "Campurejo",
+    "kecamatan": "Boja",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.13.2010",
+    "desa": "Bergas Kidul",
+    "kecamatan": "Bergas",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.04.2008",
+    "desa": "Bonomerto",
+    "kecamatan": "Suruh",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.74.02.1002",
+    "desa": "Bulu Lor",
+    "kecamatan": "Semarang Utara",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.74.08.1001",
+    "desa": "Candi",
+    "kecamatan": "Candisari",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.22.13.1009",
+    "desa": "Bergas Lor",
+    "kecamatan": "Bergas",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.74.15.1003",
+    "desa": "Bringin",
+    "kecamatan": "Ngaliyan",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.74.10.1004",
+    "desa": "Bulusan",
+    "kecamatan": "Tembalang",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.22.20.2005",
+    "desa": "Candi",
+    "kecamatan": "Bandungan",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.16.2009",
+    "desa": "Boto",
+    "kecamatan": "Bancak",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.21.04.2001",
+    "desa": "Bulusari",
+    "kecamatan": "Sayung",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.74.07.1002",
+    "desa": "Bulustalan",
+    "kecamatan": "Semarang Selatan",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.22.09.2002",
+    "desa": "Candigaron",
+    "kecamatan": "Sumowono",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.21.03.2002",
+    "desa": "Banjarejo",
+    "kecamatan": "Guntur",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.22.05.2014",
+    "desa": "Bejaten",
+    "kecamatan": "Pabelan",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.21.03.2014",
+    "desa": "Bakalrejo",
+    "kecamatan": "Guntur",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.24.07.2003",
+    "desa": "Banjarejo",
+    "kecamatan": "Boja",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.03.2004",
+    "desa": "Bakalrejo",
+    "kecamatan": "Susukan",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.24.19.2012",
+    "desa": "Banyuurip",
+    "kecamatan": "Ngampel",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.10.1010",
+    "desa": "Baran",
+    "kecamatan": "Ambarawa",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.02.2014",
+    "desa": "Barukan",
+    "kecamatan": "Tengaran",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.74.15.1006",
+    "desa": "Bambankerep",
+    "kecamatan": "Ngaliyan",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.74.07.1003",
+    "desa": "Barusari",
+    "kecamatan": "Semarang Selatan",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.22.16.2001",
+    "desa": "Bancak",
+    "kecamatan": "Bancak",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.01.2002",
+    "desa": "Batur",
+    "kecamatan": "Getasan",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.18.1009",
+    "desa": "Bandarjo",
+    "kecamatan": "Ungaran Barat",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.12.2016",
+    "desa": "Banding",
+    "kecamatan": "Bringin",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.16.2004",
+    "desa": "Bantal",
+    "kecamatan": "Bancak",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.21.01.2007",
+    "desa": "Batursari",
+    "kecamatan": "Mranggen",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.22.20.1011",
+    "desa": "Bandungan",
+    "kecamatan": "Bandungan",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.11.1002",
+    "desa": "Bawen",
+    "kecamatan": "Bawen",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.11.2003",
+    "desa": "Asinan",
+    "kecamatan": "Bawen",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.21.01.2008",
+    "desa": "Bandungrejo",
+    "kecamatan": "Mranggen",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.22.07.2009",
+    "desa": "Banyubiru",
+    "kecamatan": "Banyubiru",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.24.07.2016",
+    "desa": "Bebengan",
+    "kecamatan": "Boja",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.74.05.1010",
+    "desa": "Bangetayu Kulon",
+    "kecamatan": "Genuk",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.74.05.1011",
+    "desa": "Bangetayu Wetan",
+    "kecamatan": "Genuk",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.22.20.2009",
+    "desa": "Banyukuning",
+    "kecamatan": "Bandungan",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.74.11.1005",
+    "desa": "Banyumanik",
+    "kecamatan": "Banyumanik",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.22.08.2002",
+    "desa": "Bedono",
+    "kecamatan": "Jambu",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.74.01.1009",
+    "desa": "Bangunharjo",
+    "kecamatan": "Semarang Tengah",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.24.02.2011",
+    "desa": "Bangunsari",
+    "kecamatan": "Pageruyung",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.21.01.2001",
+    "desa": "Banyumeneng",
+    "kecamatan": "Mranggen",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.22.03.2001",
+    "desa": "Badran",
+    "kecamatan": "Susukan",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.24.05.2005",
+    "desa": "Banyuringin",
+    "kecamatan": "Singorojo",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.10.2003",
+    "desa": "Bejalen",
+    "kecamatan": "Ambarawa",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.04.2003",
+    "desa": "Jatirejo",
+    "kecamatan": "Suruh",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.74.12.1013",
+    "desa": "Jatirejo",
+    "kecamatan": "Gunungpati",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.15.17.2014",
+    "desa": "Gubug",
+    "kecamatan": "Gubug",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.24.10.2008",
+    "desa": "Gubugsari",
+    "kecamatan": "Pegandon",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.19.2003",
+    "desa": "Jatirejo",
+    "kecamatan": "Ngampel",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.03.2007",
+    "desa": "Harjodowo",
+    "kecamatan": "Sukorejo",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.15.2003",
+    "desa": "Jatirunggo",
+    "kecamatan": "Pringapus",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.74.14.1013",
+    "desa": "Jatisari",
+    "kecamatan": "Mijen",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.22.11.1007",
+    "desa": "Harjosari",
+    "kecamatan": "Bawen",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.74.13.1007",
+    "desa": "Gisikdrono",
+    "kecamatan": "Semarang Barat",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.24.11.2007",
+    "desa": "Gemuhblanten",
+    "kecamatan": "Gemuh",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.73.02.1002",
+    "desa": "Gendongan",
+    "kecamatan": "Tingkir",
+    "kabupaten": "Kota Salatiga"
+  },
+  {
+    "kode_adm4": "33.74.11.1003",
+    "desa": "Jabungan",
+    "kecamatan": "Banyumanik",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.74.01.1003",
+    "desa": "Jagalan",
+    "kecamatan": "Semarang Tengah",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.22.05.2011",
+    "desa": "Glawan",
+    "kecamatan": "Pabelan",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.21.03.2015",
+    "desa": "Guntur",
+    "kecamatan": "Guntur",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.22.08.2005",
+    "desa": "Jambu",
+    "kecamatan": "Jambu",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.03.2008",
+    "desa": "Gentan",
+    "kecamatan": "Susukan",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.21.01.2015",
+    "desa": "Jamus",
+    "kecamatan": "Mranggen",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.22.08.2010",
+    "desa": "Genting",
+    "kecamatan": "Jambu",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.24.03.2001",
+    "desa": "Gentinggunung",
+    "kecamatan": "Sukorejo",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.18.2011",
+    "desa": "Gogik",
+    "kecamatan": "Ungaran Barat",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.12.2009",
+    "desa": "Gogodalem",
+    "kecamatan": "Bringin",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.04.2011",
+    "desa": "Gunung Tumpeng",
+    "kecamatan": "Suruh",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.74.10.1007",
+    "desa": "Jangli",
+    "kecamatan": "Tembalang",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.22.18.1007",
+    "desa": "Genuk",
+    "kecamatan": "Ungaran Barat",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.74.05.1004",
+    "desa": "Genuksari",
+    "kecamatan": "Genuk",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.24.06.2003",
+    "desa": "Gondang",
+    "kecamatan": "Limbangan",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.01.2009",
+    "desa": "Jati",
+    "kecamatan": "Plantungan",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.02.2015",
+    "desa": "Gondoharum",
+    "kecamatan": "Pageruyung",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.08.1006",
+    "desa": "Gondoriyo",
+    "kecamatan": "Jambu",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.74.14.1009",
+    "desa": "Jatibarang",
+    "kecamatan": "Mijen",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.22.13.2012",
+    "desa": "Jatijajar",
+    "kecamatan": "Bergas",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.24.05.2004",
+    "desa": "Getas",
+    "kecamatan": "Singorojo",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.13.2004",
+    "desa": "Gondoriyo",
+    "kecamatan": "Bergas",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.74.15.1001",
+    "desa": "Gondoriyo",
+    "kecamatan": "Ngaliyan",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.22.01.2006",
+    "desa": "Getasan",
+    "kecamatan": "Getasan",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.24.02.2002",
+    "desa": "Getasblawong",
+    "kecamatan": "Pageruyung",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.05.2016",
+    "desa": "Giling",
+    "kecamatan": "Pabelan",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.24.06.2012",
+    "desa": "Gonoharjo",
+    "kecamatan": "Limbangan",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.74.12.1004",
+    "desa": "Gunungpati",
+    "kecamatan": "Gunungpati",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.74.08.1002",
+    "desa": "Jatingaleh",
+    "kecamatan": "Candisari",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.15.17.2017",
+    "desa": "Jatipecaron",
+    "kecamatan": "Gubug",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.22.08.2001",
+    "desa": "Gemawang",
+    "kecamatan": "Jambu",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.15.2002",
+    "desa": "Derekan",
+    "kecamatan": "Pringapus",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.02.2001",
+    "desa": "Duren",
+    "kecamatan": "Tengaran",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.09.2009",
+    "desa": "Duren",
+    "kecamatan": "Sumowono",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.04.2004",
+    "desa": "Dersansari",
+    "kecamatan": "Suruh",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.20.2002",
+    "desa": "Duren",
+    "kecamatan": "Bandungan",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.74.01.1005",
+    "desa": "Gabahan",
+    "kecamatan": "Semarang Tengah",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.74.09.1005",
+    "desa": "Gajahmungkur",
+    "kecamatan": "Gajahmungkur",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.22.13.2013",
+    "desa": "Diwak",
+    "kecamatan": "Bergas",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.15.18.2017",
+    "desa": "Gaji",
+    "kecamatan": "Tegowanu",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.21.03.2010",
+    "desa": "Gaji",
+    "kecamatan": "Guntur",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.74.14.1001",
+    "desa": "Cangkiran",
+    "kecamatan": "Mijen",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.21.04.2002",
+    "desa": "Dombo",
+    "kecamatan": "Sayung",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.24.11.2016",
+    "desa": "Galih",
+    "kecamatan": "Gemuh",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.15.18.2016",
+    "desa": "Cangkring",
+    "kecamatan": "Tegowanu",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.22.02.2008",
+    "desa": "Cukil",
+    "kecamatan": "Tengaran",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.04.2016",
+    "desa": "Cukilan",
+    "kecamatan": "Suruh",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.15.18.2015",
+    "desa": "Curug",
+    "kecamatan": "Tegowanu",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.24.18.2009",
+    "desa": "Caruban",
+    "kecamatan": "Ringinarum",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.04.2007",
+    "desa": "Curugsewu",
+    "kecamatan": "Patean",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.04.2017",
+    "desa": "Dadap Ayam",
+    "kecamatan": "Suruh",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.74.02.1009",
+    "desa": "Dadapsari",
+    "kecamatan": "Semarang Utara",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.74.04.1007",
+    "desa": "Gayamsari",
+    "kecamatan": "Gayamsari",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.24.03.2009",
+    "desa": "Damarjati",
+    "kecamatan": "Sukorejo",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.11.2005",
+    "desa": "Gebang",
+    "kecamatan": "Gemuh",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.15.18.2007",
+    "desa": "Gebangan",
+    "kecamatan": "Tegowanu",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.24.02.2009",
+    "desa": "Gebangan",
+    "kecamatan": "Pageruyung",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.73.03.1006",
+    "desa": "Cebongan",
+    "kecamatan": "Argomulyo",
+    "kabupaten": "Kota Salatiga"
+  },
+  {
+    "kode_adm4": "33.22.11.2001",
+    "desa": "Doplang",
+    "kecamatan": "Bawen",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.74.05.1006",
+    "desa": "Gebangsari",
+    "kecamatan": "Genuk",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.22.13.2006",
+    "desa": "Gebugan",
+    "kecamatan": "Bergas",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.06.2001",
+    "desa": "Gedangan",
+    "kecamatan": "Tuntang",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.24.05.2001",
+    "desa": "Cening",
+    "kecamatan": "Singorojo",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.20.2003",
+    "desa": "Darupono",
+    "kecamatan": "Kaliwungu Selatan",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.19.1007",
+    "desa": "Gedanganak",
+    "kecamatan": "Ungaran Timur",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.74.12.1012",
+    "desa": "Cepoko",
+    "kecamatan": "Gunungpati",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.24.11.2015",
+    "desa": "Cepokomulyo",
+    "kecamatan": "Gemuh",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.73.04.1002",
+    "desa": "Dukuh",
+    "kecamatan": "Sidomukti",
+    "kabupaten": "Kota Salatiga"
+  },
+  {
+    "kode_adm4": "33.74.11.1002",
+    "desa": "Gedawang",
+    "kecamatan": "Banyumanik",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.22.07.2001",
+    "desa": "Gedong",
+    "kecamatan": "Banyubiru",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.24.04.2008",
+    "desa": "Gedong",
+    "kecamatan": "Patean",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.10.2006",
+    "desa": "Dawungsari",
+    "kecamatan": "Pegandon",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.06.2011",
+    "desa": "Delik",
+    "kecamatan": "Tuntang",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.74.06.1007",
+    "desa": "Gemah",
+    "kecamatan": "Pedurungan",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.24.19.2001",
+    "desa": "Dempelrejo",
+    "kecamatan": "Ngampel",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.74.16.1003",
+    "desa": "Karanganyar",
+    "kecamatan": "Tugu",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.24.01.2007",
+    "desa": "Karanganyar",
+    "kecamatan": "Plantungan",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.74.14.1003",
+    "desa": "Karangmalang",
+    "kecamatan": "Mijen",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.24.07.2008",
+    "desa": "Karangmanggis",
+    "kecamatan": "Boja",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.06.2013",
+    "desa": "Karangtengah",
+    "kecamatan": "Tuntang",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.15.19.2005",
+    "desa": "Kaliwenang",
+    "kecamatan": "Tanggungharjo",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.74.08.1005",
+    "desa": "Karanganyar Gunung",
+    "kecamatan": "Candisari",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.74.03.1009",
+    "desa": "Karangturi",
+    "kecamatan": "Semarang Timur",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.74.08.1003",
+    "desa": "Kaliwiru",
+    "kecamatan": "Candisari",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.22.17.2001",
+    "desa": "Kaliwungu",
+    "kecamatan": "Kaliwungu",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.21.04.2005",
+    "desa": "Karangasem",
+    "kecamatan": "Sayung",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.02.2007",
+    "desa": "Karangawen",
+    "kecamatan": "Karangawen",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.74.13.1012",
+    "desa": "Karangayu",
+    "kecamatan": "Semarang Barat",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.22.19.2010",
+    "desa": "Kalongan",
+    "kecamatan": "Ungaran Timur",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.24.10.2012",
+    "desa": "Karangmulyo",
+    "kecamatan": "Pegandon",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.12.2009",
+    "desa": "Karangdowo",
+    "kecamatan": "Weleri",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.02.2009",
+    "desa": "Karangduren",
+    "kecamatan": "Tengaran",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.19.1002",
+    "desa": "Kalirejo",
+    "kecamatan": "Ungaran Timur",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.11.2005",
+    "desa": "Kandangan",
+    "kecamatan": "Bawen",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.15.04.2004",
+    "desa": "Bandungharjo",
+    "kecamatan": "Toroh",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.09.2007",
+    "desa": "Bandungsari",
+    "kecamatan": "Ngaringan",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.05.2006",
+    "desa": "Bangsri",
+    "kecamatan": "Geyer",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.24.04.2014",
+    "desa": "Sidodadi",
+    "kecamatan": "Patean",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.15.07.2003",
+    "desa": "Banjardowo",
+    "kecamatan": "Kradenan",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.08.2014",
+    "desa": "Banjarejo",
+    "kecamatan": "Gabus",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.07.2010",
+    "desa": "Banjarsari",
+    "kecamatan": "Kradenan",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.03.2003",
+    "desa": "Bologarang",
+    "kecamatan": "Penawangan",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.04.2015",
+    "desa": "Boloh",
+    "kecamatan": "Toroh",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.21.07.2004",
+    "desa": "Botosengon",
+    "kecamatan": "Dempet",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.07.2007",
+    "desa": "Brakas",
+    "kecamatan": "Dempet",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.15.16.2004",
+    "desa": "Anggaswangi",
+    "kecamatan": "Godong",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.16.2024",
+    "desa": "Bringin",
+    "kecamatan": "Godong",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.05.2008",
+    "desa": "Asemrudung",
+    "kecamatan": "Geyer",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.04.2002",
+    "desa": "Kenteng",
+    "kecamatan": "Toroh",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.14.2008",
+    "desa": "Katekan",
+    "kecamatan": "Brati",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.14.2007",
+    "desa": "Kronggen",
+    "kecamatan": "Brati",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.10.2002",
+    "desa": "Kropak",
+    "kecamatan": "Wirosari",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.04.2008",
+    "desa": "Katong",
+    "kecamatan": "Toroh",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.16.2005",
+    "desa": "Ketangirejo",
+    "kecamatan": "Godong",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.10.1007",
+    "desa": "Kunden",
+    "kecamatan": "Wirosari",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.21.14.2002",
+    "desa": "Kebonagung",
+    "kecamatan": "Kebonagung",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.15.16.2027",
+    "desa": "Ketitang",
+    "kecamatan": "Godong",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.02.2011",
+    "desa": "Ketro",
+    "kecamatan": "Karangrayung",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.08.2001",
+    "desa": "Keyongan",
+    "kecamatan": "Gabus",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.21.07.2006",
+    "desa": "Kunir",
+    "kecamatan": "Dempet",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.15.13.1013",
+    "desa": "Kuripan",
+    "kecamatan": "Purwodadi",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.03.2015",
+    "desa": "Karangpahing",
+    "kecamatan": "Penawangan",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.15.2005",
+    "desa": "Klambu",
+    "kecamatan": "Klambu",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.16.2025",
+    "desa": "Klampok",
+    "kecamatan": "Godong",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.08.2013",
+    "desa": "Karangrejo",
+    "kecamatan": "Gabus",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.12.2007",
+    "desa": "Karangrejo",
+    "kecamatan": "Grobogan",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.21.14.2003",
+    "desa": "Klampok Lor",
+    "kecamatan": "Kebonagung",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.15.07.2012",
+    "desa": "Kuwu",
+    "kecamatan": "Kradenan",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.21.07.2002",
+    "desa": "Karangrejo",
+    "kecamatan": "Dempet",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.15.14.2006",
+    "desa": "Karangsari",
+    "kecamatan": "Brati",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.03.2001",
+    "desa": "Lajer",
+    "kecamatan": "Penawangan",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.02.2002",
+    "desa": "Karangsono",
+    "kecamatan": "Karangrayung",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.16.2008",
+    "desa": "Latak",
+    "kecamatan": "Godong",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.13.2010",
+    "desa": "Kedungrejo",
+    "kecamatan": "Purwodadi",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.03.2014",
+    "desa": "Kluwan",
+    "kecamatan": "Penawangan",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.16.2019",
+    "desa": "Kopek",
+    "kecamatan": "Godong",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.12.2009",
+    "desa": "Lebak",
+    "kecamatan": "Grobogan",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.03.2004",
+    "desa": "Karangwader",
+    "kecamatan": "Penawangan",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.12.2010",
+    "desa": "Lebengjumuk",
+    "kecamatan": "Grobogan",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.05.2011",
+    "desa": "Ledokdawan",
+    "kecamatan": "Geyer",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.14.2004",
+    "desa": "Lemahputih",
+    "kecamatan": "Brati",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.07.2004",
+    "desa": "Kradenan",
+    "kecamatan": "Kradenan",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.11.2010",
+    "desa": "Kemadohbatur",
+    "kecamatan": "Tawangharjo",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.16.2020",
+    "desa": "Kemloko",
+    "kecamatan": "Godong",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.03.2011",
+    "desa": "Kramat",
+    "kecamatan": "Penawangan",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.04.2011",
+    "desa": "Krangganharjo",
+    "kecamatan": "Toroh",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.03.2007",
+    "desa": "Leyangan",
+    "kecamatan": "Penawangan",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.21.07.2005",
+    "desa": "Jerukgulung",
+    "kecamatan": "Dempet",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.15.06.2009",
+    "desa": "Jetaksari",
+    "kecamatan": "Pulokulon",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.05.2002",
+    "desa": "Kalangbancar",
+    "kecamatan": "Geyer",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.16.2012",
+    "desa": "Karanggeneng",
+    "kecamatan": "Godong",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.06.2012",
+    "desa": "Karangharjo",
+    "kecamatan": "Pulokulon",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.09.2003",
+    "desa": "Kalangdosari",
+    "kecamatan": "Ngaringan",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.09.2004",
+    "desa": "Kalanglundo",
+    "kecamatan": "Ngaringan",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.06.2004",
+    "desa": "Jatiharjo",
+    "kecamatan": "Pulokulon",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.02.2003",
+    "desa": "Jetis",
+    "kecamatan": "Karangrayung",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.07.2013",
+    "desa": "Grabagan",
+    "kecamatan": "Kradenan",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.16.2023",
+    "desa": "Jatilor",
+    "kecamatan": "Godong",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.12.1001",
+    "desa": "Grobogan",
+    "kecamatan": "Grobogan",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.08.2012",
+    "desa": "Kalipang",
+    "kecamatan": "Gabus",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.10.2003",
+    "desa": "Kalirejo",
+    "kecamatan": "Wirosari",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.16.2003",
+    "desa": "Guci",
+    "kecamatan": "Godong",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.03.2010",
+    "desa": "Jipang",
+    "kecamatan": "Penawangan",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.07.2011",
+    "desa": "Kalisari",
+    "kecamatan": "Kradenan",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.13.1004",
+    "desa": "Kalongan",
+    "kecamatan": "Purwodadi",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.16.2022",
+    "desa": "Gundi",
+    "kecamatan": "Godong",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.13.2006",
+    "desa": "Kandangan",
+    "kecamatan": "Purwodadi",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.15.2001",
+    "desa": "Kandangrejo",
+    "kecamatan": "Klambu",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.02.2012",
+    "desa": "Gunungtumpeng",
+    "kecamatan": "Karangrayung",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.11.2003",
+    "desa": "Jono",
+    "kecamatan": "Tawangharjo",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.16.2001",
+    "desa": "Guyangan",
+    "kecamatan": "Godong",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.02.2007",
+    "desa": "Karanganyar",
+    "kecamatan": "Karangrayung",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.05.2007",
+    "desa": "Karanganyar",
+    "kecamatan": "Geyer",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.16.2016",
+    "desa": "Harjowinangun",
+    "kecamatan": "Godong",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.13.2011",
+    "desa": "Karanganyar",
+    "kecamatan": "Purwodadi",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.05.2003",
+    "desa": "Juworo",
+    "kecamatan": "Geyer",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.10.2012",
+    "desa": "Karangasem",
+    "kecamatan": "Wirosari",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.05.2009",
+    "desa": "Jambangan",
+    "kecamatan": "Geyer",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.06.2011",
+    "desa": "Jambon",
+    "kecamatan": "Pulokulon",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.17.2006",
+    "desa": "Jeketro",
+    "kecamatan": "Gubug",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.14.2002",
+    "desa": "Jangkungharjo",
+    "kecamatan": "Brati",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.15.2008",
+    "desa": "Jenengan",
+    "kecamatan": "Klambu",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.09.2002",
+    "desa": "Sarirejo",
+    "kecamatan": "Ngaringan",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.02.2017",
+    "desa": "Rawoh",
+    "kecamatan": "Karangrayung",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.03.2002",
+    "desa": "Sedadi",
+    "kecamatan": "Penawangan",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.07.2005",
+    "desa": "Rejosari",
+    "kecamatan": "Kradenan",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.12.2003",
+    "desa": "Rejosari",
+    "kecamatan": "Grobogan",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.12.2011",
+    "desa": "Sedayu",
+    "kecamatan": "Grobogan",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.11.2004",
+    "desa": "Selo",
+    "kecamatan": "Tawangharjo",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.17.2007",
+    "desa": "Saban",
+    "kecamatan": "Gubug",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.15.2002",
+    "desa": "Selojari",
+    "kecamatan": "Klambu",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.04.2014",
+    "desa": "Plosoharjo",
+    "kecamatan": "Toroh",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.06.2010",
+    "desa": "Pulokulon",
+    "kecamatan": "Pulokulon",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.11.2008",
+    "desa": "Plosorejo",
+    "kecamatan": "Tawangharjo",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.11.2002",
+    "desa": "Pulongrambe",
+    "kecamatan": "Tawangharjo",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.13.2016",
+    "desa": "Pulorejo",
+    "kecamatan": "Purwodadi",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.10.2009",
+    "desa": "Sambirejo",
+    "kecamatan": "Wirosari",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.06.2013",
+    "desa": "Sembungharjo",
+    "kecamatan": "Pulokulon",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.03.2016",
+    "desa": "Pulutan",
+    "kecamatan": "Penawangan",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.07.2002",
+    "desa": "Sambongbangi",
+    "kecamatan": "Kradenan",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.16.2006",
+    "desa": "Sambung",
+    "kecamatan": "Godong",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.02.2008",
+    "desa": "Sendangharjo",
+    "kecamatan": "Karangrayung",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.11.2007",
+    "desa": "Pojok",
+    "kecamatan": "Tawangharjo",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.06.2003",
+    "desa": "Pojok",
+    "kecamatan": "Pulokulon",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.09.2001",
+    "desa": "Sendangrejo",
+    "kecamatan": "Ngaringan",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.13.1012",
+    "desa": "Purwodadi",
+    "kecamatan": "Purwodadi",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.07.2001",
+    "desa": "Sengonwetan",
+    "kecamatan": "Kradenan",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.13.2017",
+    "desa": "Putat",
+    "kecamatan": "Purwodadi",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.02.2014",
+    "desa": "Putatnganten",
+    "kecamatan": "Karangrayung",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.12.2008",
+    "desa": "Putatsari",
+    "kecamatan": "Grobogan",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.16.2017",
+    "desa": "Rajek",
+    "kecamatan": "Godong",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.05.2001",
+    "desa": "Rambat",
+    "kecamatan": "Geyer",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.06.2001",
+    "desa": "Randurejo",
+    "kecamatan": "Pulokulon",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.16.2010",
+    "desa": "Pahesan",
+    "kecamatan": "Godong",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.04.2009",
+    "desa": "Pilangpayung",
+    "kecamatan": "Toroh",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.09.2008",
+    "desa": "Ngaringan",
+    "kecamatan": "Ngaringan",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.10.2005",
+    "desa": "Mojorebo",
+    "kecamatan": "Wirosari",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.07.2008",
+    "desa": "Pakis",
+    "kecamatan": "Kradenan",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.16.2015",
+    "desa": "Manggarmas",
+    "kecamatan": "Godong",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.05.2004",
+    "desa": "Monggot",
+    "kecamatan": "Geyer",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.16.2013",
+    "desa": "Manggarwetan",
+    "kecamatan": "Godong",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.02.2009",
+    "desa": "Mangin",
+    "kecamatan": "Karangrayung",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.21.14.2008",
+    "desa": "Mangunanlor",
+    "kecamatan": "Kebonagung",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.15.03.2019",
+    "desa": "Ngeluk",
+    "kecamatan": "Penawangan",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.13.2014",
+    "desa": "Ngembak",
+    "kecamatan": "Purwodadi",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.08.2008",
+    "desa": "Pandanharum",
+    "kecamatan": "Gabus",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.21.14.2006",
+    "desa": "Mangunrejo",
+    "kecamatan": "Kebonagung",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.15.06.2008",
+    "desa": "Mangunrejo",
+    "kecamatan": "Pulokulon",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.02.2018",
+    "desa": "Pangkalan",
+    "kecamatan": "Karangrayung",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.11.2001",
+    "desa": "Mayahan",
+    "kecamatan": "Tawangharjo",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.13.2007",
+    "desa": "Nambuhan",
+    "kecamatan": "Purwodadi",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.02.2001",
+    "desa": "Nampu",
+    "kecamatan": "Karangrayung",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.08.2003",
+    "desa": "Nglinduk",
+    "kecamatan": "Gabus",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.13.2009",
+    "desa": "Nglobar",
+    "kecamatan": "Purwodadi",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.06.2007",
+    "desa": "Panunggalan",
+    "kecamatan": "Pulokulon",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.02.2004",
+    "desa": "Parakan",
+    "kecamatan": "Karangrayung",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.21.14.2014",
+    "desa": "Megonten",
+    "kecamatan": "Kebonagung",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.15.15.2006",
+    "desa": "Menawan",
+    "kecamatan": "Klambu",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.14.2001",
+    "desa": "Menduran",
+    "kecamatan": "Brati",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.12.2006",
+    "desa": "Ngabenrejo",
+    "kecamatan": "Grobogan",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.13.2005",
+    "desa": "Ngraji",
+    "kecamatan": "Purwodadi",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.04.2001",
+    "desa": "Ngrandah",
+    "kecamatan": "Toroh",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.05.2005",
+    "desa": "Ngrandu",
+    "kecamatan": "Geyer",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.08.2004",
+    "desa": "Pelem",
+    "kecamatan": "Gabus",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.21.07.2001",
+    "desa": "Merak",
+    "kecamatan": "Dempet",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.14.2004",
+    "desa": "Mijen",
+    "kecamatan": "Kebonagung",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.15.03.2020",
+    "desa": "Penawangan",
+    "kecamatan": "Penawangan",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.09.2006",
+    "desa": "Pendem",
+    "kecamatan": "Ngaringan",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.15.2004",
+    "desa": "Penganten",
+    "kecamatan": "Klambu",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.17.2008",
+    "desa": "Mlilir",
+    "kecamatan": "Gubug",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.03.2006",
+    "desa": "Pengkol",
+    "kecamatan": "Penawangan",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.09.2009",
+    "desa": "Ngarap-arap",
+    "kecamatan": "Ngaringan",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.06.2002",
+    "desa": "Mlowokarangtalun",
+    "kecamatan": "Pulokulon",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.02.2019",
+    "desa": "Mojoagung",
+    "kecamatan": "Karangrayung",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.17.2009",
+    "desa": "Kemiri",
+    "kecamatan": "Gubug",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.17.2011",
+    "desa": "Kunjeng",
+    "kecamatan": "Gubug",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.19.2002",
+    "desa": "Ngambakrejo",
+    "kecamatan": "Tanggungharjo",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.13.2008",
+    "desa": "Warukaranganyar",
+    "kecamatan": "Purwodadi",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.17.2005",
+    "desa": "Ngroto",
+    "kecamatan": "Gubug",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.01.2009",
+    "desa": "Padas",
+    "kecamatan": "Kedungjati",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.01.2002",
+    "desa": "Panimbo",
+    "kecamatan": "Kedungjati",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.17.2010",
+    "desa": "Papanrejo",
+    "kecamatan": "Gubug",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.17.2001",
+    "desa": "Penadaran",
+    "kecamatan": "Gubug",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.21.14.2001",
+    "desa": "Pilangwetan",
+    "kecamatan": "Kebonagung",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.15.03.2008",
+    "desa": "Watupawon",
+    "kecamatan": "Penawangan",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.21.14.2010",
+    "desa": "Prigi",
+    "kecamatan": "Kebonagung",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.15.03.2013",
+    "desa": "Wedoro",
+    "kecamatan": "Penawangan",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.16.2002",
+    "desa": "Werdoyo",
+    "kecamatan": "Godong",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.21.14.2011",
+    "desa": "Sarimulyo",
+    "kecamatan": "Kebonagung",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.14.2005",
+    "desa": "Werdoyo",
+    "kecamatan": "Kebonagung",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.15.17.2016",
+    "desa": "Baturagung",
+    "kecamatan": "Gubug",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.03.2017",
+    "desa": "Winong",
+    "kecamatan": "Penawangan",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.21.14.2012",
+    "desa": "Solowire",
+    "kecamatan": "Kebonagung",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.15.10.1006",
+    "desa": "Wirosari",
+    "kecamatan": "Wirosari",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.01.2003",
+    "desa": "Deras",
+    "kecamatan": "Kedungjati",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.21.06.2001",
+    "desa": "Doreng",
+    "kecamatan": "Wonosalam",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.15.03.2018",
+    "desa": "Wolo",
+    "kecamatan": "Penawangan",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.16.2014",
+    "desa": "Tinanding",
+    "kecamatan": "Godong",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.17.2004",
+    "desa": "Trisari",
+    "kecamatan": "Gubug",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.01.2012",
+    "desa": "Wates",
+    "kecamatan": "Kedungjati",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.12.2004",
+    "desa": "Tanggungharjo",
+    "kecamatan": "Grobogan",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.03.2009",
+    "desa": "Tunggu",
+    "kecamatan": "Penawangan",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.08.2009",
+    "desa": "Tunggulrejo",
+    "kecamatan": "Gabus",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.16.2009",
+    "desa": "Tungu",
+    "kecamatan": "Godong",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.02.2013",
+    "desa": "Temurejo",
+    "kecamatan": "Karangrayung",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.16.2011",
+    "desa": "Wanutunggal",
+    "kecamatan": "Godong",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.09.2011",
+    "desa": "Tanjungharjo",
+    "kecamatan": "Ngaringan",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.04.2010",
+    "desa": "Sugihan",
+    "kecamatan": "Toroh",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.10.2008",
+    "desa": "Tanjungrejo",
+    "kecamatan": "Wirosari",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.07.2014",
+    "desa": "Tanjungsari",
+    "kecamatan": "Kradenan",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.15.2007",
+    "desa": "Terkesi",
+    "kecamatan": "Klambu",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.06.2005",
+    "desa": "Sidorejo",
+    "kecamatan": "Pulokulon",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.02.2015",
+    "desa": "Termas",
+    "kecamatan": "Karangrayung",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.11.2006",
+    "desa": "Tarub",
+    "kecamatan": "Tawangharjo",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.15.2003",
+    "desa": "Taruman",
+    "kecamatan": "Klambu",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.14.2005",
+    "desa": "Tirem",
+    "kecamatan": "Brati",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.07.2007",
+    "desa": "Simo",
+    "kecamatan": "Kradenan",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.08.2005",
+    "desa": "Sulursari",
+    "kecamatan": "Gabus",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.11.2005",
+    "desa": "Tawangharjo",
+    "kecamatan": "Tawangharjo",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.04.2005",
+    "desa": "Sindurejo",
+    "kecamatan": "Toroh",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.09.2012",
+    "desa": "Sumberagung",
+    "kecamatan": "Ngaringan",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.16.2021",
+    "desa": "Sumberagung",
+    "kecamatan": "Godong",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.21.14.2009",
+    "desa": "Tlogosih",
+    "kecamatan": "Kebonagung",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.15.08.2006",
+    "desa": "Tlogotirto",
+    "kecamatan": "Gabus",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.03.2005",
+    "desa": "Toko",
+    "kecamatan": "Penawangan",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.14.2009",
+    "desa": "Tegalsumur",
+    "kecamatan": "Brati",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.12.2012",
+    "desa": "Sumberjatipohon",
+    "kecamatan": "Grobogan",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.02.2010",
+    "desa": "Sumberjosari",
+    "kecamatan": "Karangrayung",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.12.2005",
+    "desa": "Teguhan",
+    "kecamatan": "Grobogan",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.05.2012",
+    "desa": "Sobo",
+    "kecamatan": "Geyer",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.16.2007",
+    "desa": "Sumurgede",
+    "kecamatan": "Godong",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.05.2013",
+    "desa": "Suru",
+    "kecamatan": "Geyer",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.02.2005",
+    "desa": "Telawah",
+    "kecamatan": "Karangrayung",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.08.2002",
+    "desa": "Suwatu",
+    "kecamatan": "Gabus",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.08.2010",
+    "desa": "Tahunan",
+    "kecamatan": "Gabus",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.14.2003",
+    "desa": "Temon",
+    "kecamatan": "Brati",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.10.2001",
+    "desa": "Tambahrejo",
+    "kecamatan": "Wirosari",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.09.2005",
+    "desa": "Truwolu",
+    "kecamatan": "Ngaringan",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.06.2006",
+    "desa": "Tuko",
+    "kecamatan": "Pulokulon",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.21.14.2013",
+    "desa": "Sokokidul",
+    "kecamatan": "Kebonagung",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.15.10.2011",
+    "desa": "Tambakselo",
+    "kecamatan": "Wirosari",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.04.2016",
+    "desa": "Tunggak",
+    "kecamatan": "Toroh",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.04.2013",
+    "desa": "Tambirejo",
+    "kecamatan": "Toroh",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.22.03.2007",
+    "desa": "Sidoharjo",
+    "kecamatan": "Susukan",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.74.04.1003",
+    "desa": "Sawah Besar",
+    "kecamatan": "Gayamsari",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.24.10.2011",
+    "desa": "Wonosari",
+    "kecamatan": "Pegandon",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.74.15.1009",
+    "desa": "Wonosari",
+    "kecamatan": "Ngaliyan",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.21.02.2002",
+    "desa": "Wonosekar",
+    "kecamatan": "Karangawen",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.24.19.2004",
+    "desa": "Winong",
+    "kecamatan": "Ngampel",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.74.08.1007",
+    "desa": "Wonotingal",
+    "kecamatan": "Candisari",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.24.09.2001",
+    "desa": "Tunggulsari",
+    "kecamatan": "Brangsong",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.15.18.2018",
+    "desa": "Tunjungharjo",
+    "kecamatan": "Tegowanu",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.22.07.2004",
+    "desa": "Wirogomo",
+    "kecamatan": "Banyubiru",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.06.2010",
+    "desa": "Tuntang",
+    "kecamatan": "Tuntang",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.21.01.2017",
+    "desa": "Waru",
+    "kecamatan": "Mranggen",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.24.04.2004",
+    "desa": "Wirosari",
+    "kecamatan": "Patean",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.12.2011",
+    "desa": "Wiru",
+    "kecamatan": "Bringin",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.15.2007",
+    "desa": "Wonoyoso",
+    "kecamatan": "Pringapus",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.01.2005",
+    "desa": "Wates",
+    "kecamatan": "Getasan",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.74.15.1010",
+    "desa": "Wates",
+    "kecamatan": "Ngaliyan",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.22.17.2011",
+    "desa": "Udanwuh",
+    "kecamatan": "Kaliwungu",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.05.2002",
+    "desa": "Ujung-ujung",
+    "kecamatan": "Pabelan",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.06.2008",
+    "desa": "Watuagung",
+    "kecamatan": "Tuntang",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.24.01.2004",
+    "desa": "Wonodadi",
+    "kecamatan": "Plantungan",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.74.07.1006",
+    "desa": "Wonodri",
+    "kecamatan": "Semarang Selatan",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.21.01.2016",
+    "desa": "Wringinjajar",
+    "kecamatan": "Mranggen",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.22.13.2003",
+    "desa": "Wringinputih",
+    "kecamatan": "Bergas",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.13.1005",
+    "desa": "Wujil",
+    "kecamatan": "Bergas",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.18.1008",
+    "desa": "Ungaran",
+    "kecamatan": "Ungaran Barat",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.24.18.2007",
+    "desa": "Wungurejo",
+    "kecamatan": "Ringinarum",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.01.2010",
+    "desa": "Wadas",
+    "kecamatan": "Plantungan",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.12.2007",
+    "desa": "Weleri",
+    "kecamatan": "Weleri",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.16.2002",
+    "desa": "Wonokerto",
+    "kecamatan": "Bancak",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.74.14.1007",
+    "desa": "Wonolopo",
+    "kecamatan": "Mijen",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.74.14.1012",
+    "desa": "Wonoplumbon",
+    "kecamatan": "Mijen",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.21.03.2003",
+    "desa": "Wonorejo",
+    "kecamatan": "Guntur",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.22.15.2006",
+    "desa": "Wonorejo",
+    "kecamatan": "Pringapus",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.74.10.1006",
+    "desa": "Tembalang",
+    "kecamatan": "Tembalang",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.15.18.2002",
+    "desa": "Tlogorejo",
+    "kecamatan": "Tegowanu",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.21.02.2005",
+    "desa": "Tlogorejo",
+    "kecamatan": "Karangawen",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.03.2017",
+    "desa": "Tlogorejo",
+    "kecamatan": "Guntur",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.22.12.2013",
+    "desa": "Tempuran",
+    "kecamatan": "Bringin",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.74.06.1004",
+    "desa": "Tlogosari Kulon",
+    "kecamatan": "Pedurungan",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.22.03.2003",
+    "desa": "Tawang",
+    "kecamatan": "Susukan",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.74.13.1015",
+    "desa": "Tawangmas",
+    "kecamatan": "Semarang Barat",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.21.03.2013",
+    "desa": "Temuroso",
+    "kecamatan": "Guntur",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.22.02.2005",
+    "desa": "Tengaran",
+    "kecamatan": "Tengaran",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.74.06.1003",
+    "desa": "Tlogosari Wetan",
+    "kecamatan": "Pedurungan",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.21.03.2006",
+    "desa": "Tlogoweru",
+    "kecamatan": "Guntur",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.74.14.1006",
+    "desa": "Tambangan",
+    "kecamatan": "Mijen",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.22.06.2015",
+    "desa": "Tlompakan",
+    "kecamatan": "Tuntang",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.01.2004",
+    "desa": "Tolokan",
+    "kecamatan": "Getasan",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.24.07.2013",
+    "desa": "Tampingan",
+    "kecamatan": "Boja",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.03.2015",
+    "desa": "Tampingwinarno",
+    "kecamatan": "Sukorejo",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.74.10.1008",
+    "desa": "Tandang",
+    "kecamatan": "Tembalang",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.21.01.2018",
+    "desa": "Tegalarum",
+    "kecamatan": "Mranggen",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.22.05.2006",
+    "desa": "Terban",
+    "kecamatan": "Pabelan",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.15.18.2005",
+    "desa": "Tanggirejo",
+    "kecamatan": "Tegowanu",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.22.03.2002",
+    "desa": "Timpik",
+    "kecamatan": "Susukan",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.09.2007",
+    "desa": "Trayu",
+    "kecamatan": "Sumowono",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.24.05.2012",
+    "desa": "Trayu",
+    "kecamatan": "Singorojo",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.15.19.2007",
+    "desa": "Tanggungharjo",
+    "kecamatan": "Tanggungharjo",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.21.03.2012",
+    "desa": "Tangkis",
+    "kecamatan": "Guntur",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.22.02.2004",
+    "desa": "Tegalrejo",
+    "kecamatan": "Tengaran",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.73.02.1005",
+    "desa": "Tingkir Lor",
+    "kecamatan": "Tingkir",
+    "kabupaten": "Kota Salatiga"
+  },
+  {
+    "kode_adm4": "33.73.02.1006",
+    "desa": "Tingkir Tengah",
+    "kecamatan": "Tingkir",
+    "kabupaten": "Kota Salatiga"
+  },
+  {
+    "kode_adm4": "33.74.11.1009",
+    "desa": "Tinjomoyo",
+    "kecamatan": "Banyumanik",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.73.03.1003",
+    "desa": "Tegalrejo",
+    "kecamatan": "Argomulyo",
+    "kabupaten": "Kota Salatiga"
+  },
+  {
+    "kode_adm4": "33.74.08.1006",
+    "desa": "Tegalsari",
+    "kecamatan": "Candisari",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.24.01.2006",
+    "desa": "Tirtomulyo",
+    "kecamatan": "Plantungan",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.11.2014",
+    "desa": "Triharjo",
+    "kecamatan": "Gemuh",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.03.2012",
+    "desa": "Trimulyo",
+    "kecamatan": "Sukorejo",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.07.2018",
+    "desa": "Trisobo",
+    "kecamatan": "Boja",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.12.2005",
+    "desa": "Tanjung",
+    "kecamatan": "Bringin",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.02.2013",
+    "desa": "Tegalwaton",
+    "kecamatan": "Tengaran",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.07.2006",
+    "desa": "Tegaron",
+    "kecamatan": "Banyubiru",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.24.10.2002",
+    "desa": "Tegorejo",
+    "kecamatan": "Pegandon",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.15.18.2010",
+    "desa": "Tegowanukulon",
+    "kecamatan": "Tegowanu",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.18.2009",
+    "desa": "Tegowanuwetan",
+    "kecamatan": "Tegowanu",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.24.18.2006",
+    "desa": "Tejorejo",
+    "kecamatan": "Ringinarum",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.22.06.2012",
+    "desa": "Tlogo",
+    "kecamatan": "Tuntang",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.22.12.2015",
+    "desa": "Truko",
+    "kecamatan": "Bringin",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.15.17.2021",
+    "desa": "Tlogomulyo",
+    "kecamatan": "Gubug",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.21.02.2004",
+    "desa": "Teluk",
+    "kecamatan": "Karangawen",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.74.06.1002",
+    "desa": "Tlogomulyo",
+    "kecamatan": "Pedurungan",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.24.01.2003",
+    "desa": "Tlogopayung",
+    "kecamatan": "Plantungan",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.74.16.1002",
+    "desa": "Tugurejo",
+    "kecamatan": "Tugu",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.22.05.2007",
+    "desa": "Tukang",
+    "kecamatan": "Pabelan",
+    "kabupaten": "Semarang"
+  },
+  {
+    "kode_adm4": "33.15.04.2007",
+    "desa": "Dimoro",
+    "kecamatan": "Toroh",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.16.2026",
+    "desa": "Godong",
+    "kecamatan": "Godong",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.02.2006",
+    "desa": "Cekel",
+    "kecamatan": "Karangrayung",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.10.2013",
+    "desa": "Dokoro",
+    "kecamatan": "Wirosari",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.04.2006",
+    "desa": "Genengadal",
+    "kecamatan": "Toroh",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.16.2018",
+    "desa": "Dorolegi",
+    "kecamatan": "Godong",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.04.2003",
+    "desa": "Genengsari",
+    "kecamatan": "Toroh",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.13.2015",
+    "desa": "Cingkrong",
+    "kecamatan": "Purwodadi",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.07.2009",
+    "desa": "Crewek",
+    "kecamatan": "Kradenan",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.13.2002",
+    "desa": "Genuksuran",
+    "kecamatan": "Purwodadi",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.03.2012",
+    "desa": "Curut",
+    "kecamatan": "Penawangan",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.08.2007",
+    "desa": "Gabus",
+    "kecamatan": "Gabus",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.12.2002",
+    "desa": "Getasrejo",
+    "kecamatan": "Grobogan",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.05.2010",
+    "desa": "Geyer",
+    "kecamatan": "Geyer",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.13.1003",
+    "desa": "Danyang",
+    "kecamatan": "Purwodadi",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.10.2004",
+    "desa": "Dapurno",
+    "kecamatan": "Wirosari",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.17.2002",
+    "desa": "Ginggangtani",
+    "kecamatan": "Gubug",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.13.2001",
+    "desa": "Candisari",
+    "kecamatan": "Purwodadi",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.02.2016",
+    "desa": "Dempel",
+    "kecamatan": "Karangrayung",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.10.2010",
+    "desa": "Gedangan",
+    "kecamatan": "Wirosari",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.17.2003",
+    "desa": "Glapan",
+    "kecamatan": "Gubug",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.04.2012",
+    "desa": "Depok",
+    "kecamatan": "Toroh",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.11.2009",
+    "desa": "Godan",
+    "kecamatan": "Tawangharjo",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.21.14.2007",
+    "desa": "Babat",
+    "kecamatan": "Kebonagung",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.15.07.2006",
+    "desa": "Bago",
+    "kecamatan": "Kradenan",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.09.2010",
+    "desa": "Belor",
+    "kecamatan": "Ngaringan",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.08.2011",
+    "desa": "Bendoharjo",
+    "kecamatan": "Gabus",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.16.2028",
+    "desa": "Bugel",
+    "kecamatan": "Godong",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.24.13.2003",
+    "desa": "Botomulyo",
+    "kecamatan": "Cepiring",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.13.2008",
+    "desa": "Gondang",
+    "kecamatan": "Cepiring",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.21.05.2002",
+    "desa": "Grogol",
+    "kecamatan": "Karangtengah",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.24.15.1003",
+    "desa": "Jotang",
+    "kecamatan": "Kendal",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.17.2003",
+    "desa": "Kadilangu",
+    "kecamatan": "Kangkung",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.16.2004",
+    "desa": "Karangsari",
+    "kecamatan": "Rowosari",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.13.2007",
+    "desa": "Karangsuno",
+    "kecamatan": "Cepiring",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.14.2006",
+    "desa": "Kebonharjo",
+    "kecamatan": "Patebon",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.15.1005",
+    "desa": "Ketapang",
+    "kecamatan": "Kendal",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.21.06.2005",
+    "desa": "Lempuyang",
+    "kecamatan": "Wonosalam",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.07.2013",
+    "desa": "Gempoldenok",
+    "kecamatan": "Dempet",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.05.2001",
+    "desa": "Ploso",
+    "kecamatan": "Karangtengah",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.24.16.2002",
+    "desa": "Pojoksari",
+    "kecamatan": "Rowosari",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.21.04.2013",
+    "desa": "Purwosari",
+    "kecamatan": "Sayung",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.24.16.2003",
+    "desa": "Randusari",
+    "kecamatan": "Rowosari",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.16.2011",
+    "desa": "Sendangdawuhan",
+    "kecamatan": "Rowosari",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.15.1008",
+    "desa": "Sijeruk",
+    "kecamatan": "Kendal",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.21.04.2011",
+    "desa": "Sriwulan",
+    "kecamatan": "Sayung",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.24.17.2006",
+    "desa": "Sukodadi",
+    "kecamatan": "Kangkung",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.14.2005",
+    "desa": "Tambakrejo",
+    "kecamatan": "Patebon",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.16.2010",
+    "desa": "Tanjunganom",
+    "kecamatan": "Rowosari",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.16.2009",
+    "desa": "Tanjungsari",
+    "kecamatan": "Rowosari",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.11.2011",
+    "desa": "Tlahab",
+    "kecamatan": "Gemuh",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.15.1004",
+    "desa": "Trompo",
+    "kecamatan": "Kendal",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.17.2001",
+    "desa": "Truko",
+    "kecamatan": "Kangkung",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.15.1009",
+    "desa": "Tunggulrejo",
+    "kecamatan": "Kendal",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.21.05.2015",
+    "desa": "Rejosari",
+    "kecamatan": "Karangtengah",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.24.17.2014",
+    "desa": "Rejosari",
+    "kecamatan": "Kangkung",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.13.2013",
+    "desa": "Korowelangkulon",
+    "kecamatan": "Cepiring",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.21.12.2002",
+    "desa": "Krajanbogo",
+    "kecamatan": "Bonang",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.13.2003",
+    "desa": "Ruwit",
+    "kecamatan": "Wedung",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.24.17.2013",
+    "desa": "Tanjungmojo",
+    "kecamatan": "Kangkung",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.21.13.2017",
+    "desa": "Tedunan",
+    "kecamatan": "Wedung",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.24.15.1014",
+    "desa": "Patukangan",
+    "kecamatan": "Kendal",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.21.12.2013",
+    "desa": "Serangan",
+    "kecamatan": "Bonang",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.24.14.2012",
+    "desa": "Kumpulrejo",
+    "kecamatan": "Patebon",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.21.05.2011",
+    "desa": "Karangtowo",
+    "kecamatan": "Karangtengah",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.24.14.2018",
+    "desa": "Kartika Jaya",
+    "kecamatan": "Patebon",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.21.11.2011",
+    "desa": "Katonsari",
+    "kecamatan": "Demak",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.24.17.2009",
+    "desa": "Laban",
+    "kecamatan": "Kangkung",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.15.1013",
+    "desa": "Pekauman",
+    "kecamatan": "Kendal",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.21.06.2011",
+    "desa": "Sidomulyo",
+    "kecamatan": "Wonosalam",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.24.13.2009",
+    "desa": "Sidomulyo",
+    "kecamatan": "Cepiring",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.21.13.2020",
+    "desa": "Kedungkarang",
+    "kecamatan": "Wedung",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.24.14.2013",
+    "desa": "Magersari",
+    "kecamatan": "Patebon",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.21.13.2006",
+    "desa": "Mandung",
+    "kecamatan": "Wedung",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.24.14.2016",
+    "desa": "Pidodo Kulon",
+    "kecamatan": "Patebon",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.21.04.2019",
+    "desa": "Sidorejo",
+    "kecamatan": "Sayung",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.13.2019",
+    "desa": "Kedungmutih",
+    "kecamatan": "Wedung",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.11.1014",
+    "desa": "Mangunjiwan",
+    "kecamatan": "Demak",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.12.2009",
+    "desa": "Margolinduk",
+    "kecamatan": "Bonang",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.24.14.2015",
+    "desa": "Pidodo Wetan",
+    "kecamatan": "Patebon",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.21.11.1016",
+    "desa": "Singorejo",
+    "kecamatan": "Demak",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.12.2005",
+    "desa": "Kembangan",
+    "kecamatan": "Bonang",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.24.13.2015",
+    "desa": "Margorejo",
+    "kecamatan": "Cepiring",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.21.12.2018",
+    "desa": "Poncoharjo",
+    "kecamatan": "Bonang",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.12.2003",
+    "desa": "Sukodono",
+    "kecamatan": "Bonang",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.24.14.2010",
+    "desa": "Sukolilan",
+    "kecamatan": "Patebon",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.21.12.2004",
+    "desa": "Sumberejo",
+    "kecamatan": "Bonang",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.13.2018",
+    "desa": "Kendalasem",
+    "kecamatan": "Wedung",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.13.2004",
+    "desa": "Kenduren",
+    "kecamatan": "Wedung",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.12.2010",
+    "desa": "Morodemak",
+    "kecamatan": "Bonang",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.06.2021",
+    "desa": "Mranak",
+    "kecamatan": "Wonosalam",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.04.2017",
+    "desa": "Surodadi",
+    "kecamatan": "Sayung",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.13.2016",
+    "desa": "Mutihkulon",
+    "kecamatan": "Wedung",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.12.2011",
+    "desa": "Purworejo",
+    "kecamatan": "Bonang",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.13.2014",
+    "desa": "Mutihwetan",
+    "kecamatan": "Wedung",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.13.2002",
+    "desa": "Ngawen",
+    "kecamatan": "Wedung",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.24.15.1018",
+    "desa": "Ngilir",
+    "kecamatan": "Kendal",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.13.2014",
+    "desa": "Korowelanganyar",
+    "kecamatan": "Cepiring",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.21.05.2017",
+    "desa": "Tambakbulusan",
+    "kecamatan": "Karangtengah",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.12.2012",
+    "desa": "Betahwalang",
+    "kecamatan": "Bonang",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.11.1017",
+    "desa": "Betokan",
+    "kecamatan": "Demak",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.12.2008",
+    "desa": "Gebang",
+    "kecamatan": "Bonang",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.24.17.2010",
+    "desa": "Karangmalang Wetan",
+    "kecamatan": "Kangkung",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.21.11.2010",
+    "desa": "Karangmlati",
+    "kecamatan": "Demak",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.11.1018",
+    "desa": "Bintoro",
+    "kecamatan": "Demak",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.12.2007",
+    "desa": "Gebangarum",
+    "kecamatan": "Bonang",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.12.2006",
+    "desa": "Karangrejo",
+    "kecamatan": "Bonang",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.12.2020",
+    "desa": "Jali",
+    "kecamatan": "Bonang",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.12.2017",
+    "desa": "Bonangrejo",
+    "kecamatan": "Bonang",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.06.2010",
+    "desa": "Botorejo",
+    "kecamatan": "Wonosalam",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.12.2001",
+    "desa": "Jatimulyo",
+    "kecamatan": "Bonang",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.12.2016",
+    "desa": "Jatirogo",
+    "kecamatan": "Bonang",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.13.2011",
+    "desa": "Jetak",
+    "kecamatan": "Wedung",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.06.2009",
+    "desa": "Jogoloyo",
+    "kecamatan": "Wonosalam",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.24.15.1011",
+    "desa": "Bugangin",
+    "kecamatan": "Kendal",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.21.13.2005",
+    "desa": "Buko",
+    "kecamatan": "Wedung",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.13.2013",
+    "desa": "Jungpasir",
+    "kecamatan": "Wedung",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.13.2012",
+    "desa": "Jungsemi",
+    "kecamatan": "Wedung",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.24.17.2011",
+    "desa": "Jungsemi",
+    "kecamatan": "Kangkung",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.13.2010",
+    "desa": "Juwiring",
+    "kecamatan": "Cepiring",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.21.11.1019",
+    "desa": "Kadilangu",
+    "kecamatan": "Demak",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.13.2009",
+    "desa": "Bungo",
+    "kecamatan": "Wedung",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.11.2008",
+    "desa": "Cabean",
+    "kecamatan": "Demak",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.24.13.2011",
+    "desa": "Kaliayu",
+    "kecamatan": "Cepiring",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.13.2005",
+    "desa": "Damarsari",
+    "kecamatan": "Cepiring",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.21.11.1015",
+    "desa": "Kalicilik",
+    "kecamatan": "Demak",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.11.2012",
+    "desa": "Kalikondang",
+    "kecamatan": "Demak",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.13.2015",
+    "desa": "Babalan",
+    "kecamatan": "Wedung",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.24.15.1020",
+    "desa": "Balok",
+    "kecamatan": "Kendal",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.13.2012",
+    "desa": "Kalirandugede",
+    "kecamatan": "Cepiring",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.15.1019",
+    "desa": "Bandengan",
+    "kecamatan": "Kendal",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.17.2015",
+    "desa": "Kalirejo",
+    "kecamatan": "Kangkung",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.14.2011",
+    "desa": "Bangunrejo",
+    "kecamatan": "Patebon",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.14.2017",
+    "desa": "Bangunsari",
+    "kecamatan": "Patebon",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.17.2012",
+    "desa": "Kangkung",
+    "kecamatan": "Kangkung",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.21.04.2020",
+    "desa": "Banjarsari",
+    "kecamatan": "Sayung",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.11.2013",
+    "desa": "Donorojo",
+    "kecamatan": "Demak",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.13.2007",
+    "desa": "Berahan Kulon",
+    "kecamatan": "Wedung",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.13.2008",
+    "desa": "Berahan Wetan",
+    "kecamatan": "Wedung",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.08.2003",
+    "desa": "Kedondong",
+    "kecamatan": "Gajah",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.08.2013",
+    "desa": "Gajah",
+    "kecamatan": "Gajah",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.08.2004",
+    "desa": "Gedangalas",
+    "kecamatan": "Gajah",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.09.2012",
+    "desa": "Karanganyar",
+    "kecamatan": "Karanganyar",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.09.2005",
+    "desa": "Cangkring",
+    "kecamatan": "Karanganyar",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.09.2004",
+    "desa": "Cangkringrembang",
+    "kecamatan": "Karanganyar",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.09.2001",
+    "desa": "Jatirejo",
+    "kecamatan": "Karanganyar",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.10.2015",
+    "desa": "Gempolsongo",
+    "kecamatan": "Mijen",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.10.2001",
+    "desa": "Geneng",
+    "kecamatan": "Mijen",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.10.2009",
+    "desa": "Jleper",
+    "kecamatan": "Mijen",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.10.2012",
+    "desa": "Bakung",
+    "kecamatan": "Mijen",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.09.2015",
+    "desa": "Bandungrejo",
+    "kecamatan": "Karanganyar",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.13.2010",
+    "desa": "Tempel",
+    "kecamatan": "Wedung",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.11.2009",
+    "desa": "Tempuran",
+    "kecamatan": "Demak",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.08.2011",
+    "desa": "Banjarsari",
+    "kecamatan": "Gajah",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.04.2016",
+    "desa": "Timbulsloko",
+    "kecamatan": "Sayung",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.12.2015",
+    "desa": "Tlogoboyo",
+    "kecamatan": "Bonang",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.12.2014",
+    "desa": "Tridonorejo",
+    "kecamatan": "Bonang",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.04.2018",
+    "desa": "Tugu",
+    "kecamatan": "Sayung",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.12.2021",
+    "desa": "Weding",
+    "kecamatan": "Bonang",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.13.2001",
+    "desa": "Wedung",
+    "kecamatan": "Wedung",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.05.2016",
+    "desa": "Wonoagung",
+    "kecamatan": "Karangtengah",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.24.14.2014",
+    "desa": "Wonosari",
+    "kecamatan": "Patebon",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.21.12.2019",
+    "desa": "Wonosari",
+    "kecamatan": "Bonang",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.05.2012",
+    "desa": "Wonowoso",
+    "kecamatan": "Karangtengah",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.08.2012",
+    "desa": "Boyolali",
+    "kecamatan": "Gajah",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.10.2013",
+    "desa": "Bermi",
+    "kecamatan": "Mijen",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.08.2014",
+    "desa": "Sari",
+    "kecamatan": "Gajah",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.11.2004",
+    "desa": "Sedo",
+    "kecamatan": "Demak",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.10.2010",
+    "desa": "Pecuk",
+    "kecamatan": "Mijen",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.08.2005",
+    "desa": "Sambiroto",
+    "kecamatan": "Gajah",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.08.2016",
+    "desa": "Sambung",
+    "kecamatan": "Gajah",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.06.2018",
+    "desa": "Kuncir",
+    "kecamatan": "Wonosalam",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.09.2002",
+    "desa": "Ngaluran",
+    "kecamatan": "Karanganyar",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.09.2013",
+    "desa": "Kedungwaru Kidul",
+    "kecamatan": "Karanganyar",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.09.2014",
+    "desa": "Kedungwaru Lor",
+    "kecamatan": "Karanganyar",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.08.2008",
+    "desa": "Medini",
+    "kecamatan": "Gajah",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.10.2008",
+    "desa": "Ngegot",
+    "kecamatan": "Mijen",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.10.2002",
+    "desa": "Ngelowetan",
+    "kecamatan": "Mijen",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.10.2014",
+    "desa": "Mijen",
+    "kecamatan": "Mijen",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.09.2010",
+    "desa": "Ngemplikwetan",
+    "kecamatan": "Karanganyar",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.10.2003",
+    "desa": "Mlaten",
+    "kecamatan": "Mijen",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.09.2009",
+    "desa": "Ketanjung",
+    "kecamatan": "Karanganyar",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.08.2009",
+    "desa": "Mlatiharjo",
+    "kecamatan": "Gajah",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.08.2015",
+    "desa": "Mlekang",
+    "kecamatan": "Gajah",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.09.2017",
+    "desa": "Kotakan",
+    "kecamatan": "Karanganyar",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.08.2017",
+    "desa": "Mojosimo",
+    "kecamatan": "Gajah",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.04.2014",
+    "desa": "Sidogemah",
+    "kecamatan": "Sayung",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.24.15.1006",
+    "desa": "Kebondalem",
+    "kecamatan": "Kendal",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.16.2012",
+    "desa": "Kebonsari",
+    "kecamatan": "Rowosari",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.21.06.2006",
+    "desa": "Kendaldoyong",
+    "kecamatan": "Wonosalam",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.06.2014",
+    "desa": "Kerangkulon",
+    "kecamatan": "Wonosalam",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.06.2013",
+    "desa": "Tlogorejo",
+    "kecamatan": "Wonosalam",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.24.09.2009",
+    "desa": "Turunrejo",
+    "kecamatan": "Brangsong",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.13.2004",
+    "desa": "Cepiring",
+    "kecamatan": "Cepiring",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.21.05.2013",
+    "desa": "Wonokerto",
+    "kecamatan": "Karangtengah",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.24.08.2014",
+    "desa": "Wonorejo",
+    "kecamatan": "Kaliwungu",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.15.1012",
+    "desa": "Langenharjo",
+    "kecamatan": "Kendal",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.21.06.2007",
+    "desa": "Wonosalam",
+    "kecamatan": "Wonosalam",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.05.2009",
+    "desa": "Dukun",
+    "kecamatan": "Karangtengah",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.24.16.2014",
+    "desa": "Gebanganom",
+    "kecamatan": "Rowosari",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.17.2002",
+    "desa": "Lebosari",
+    "kecamatan": "Kangkung",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.17.2004",
+    "desa": "Gebanganomwetan",
+    "kecamatan": "Kangkung",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.16.2015",
+    "desa": "Gempolsewu",
+    "kecamatan": "Rowosari",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.21.04.2015",
+    "desa": "Gemulak",
+    "kecamatan": "Sayung",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.06.2016",
+    "desa": "Getas",
+    "kecamatan": "Wonosalam",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.24.14.2008",
+    "desa": "Jambearum",
+    "kecamatan": "Patebon",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.21.06.2017",
+    "desa": "Mojodemak",
+    "kecamatan": "Wonosalam",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.07.2015",
+    "desa": "Harjowinangun",
+    "kecamatan": "Dempet",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.08.2002",
+    "desa": "Jatisono",
+    "kecamatan": "Gajah",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.24.16.2007",
+    "desa": "Jatipurwo",
+    "kecamatan": "Rowosari",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.15.1010",
+    "desa": "Jetis",
+    "kecamatan": "Kendal",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.15.1015",
+    "desa": "Pegulon",
+    "kecamatan": "Kendal",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.15.1007",
+    "desa": "Kalibuntuwetan",
+    "kecamatan": "Kendal",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.21.07.2016",
+    "desa": "Kramat",
+    "kecamatan": "Dempet",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.07.2011",
+    "desa": "Kuwu",
+    "kecamatan": "Dempet",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.24.17.2005",
+    "desa": "Kaliyoso",
+    "kecamatan": "Kangkung",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.21.06.2012",
+    "desa": "Pilangrejo",
+    "kecamatan": "Wonosalam",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.05.2003",
+    "desa": "Pulosari",
+    "kecamatan": "Karangtengah",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.24.13.2006",
+    "desa": "Karangayu",
+    "kecamatan": "Cepiring",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.14.2007",
+    "desa": "Purwokerto",
+    "kecamatan": "Patebon",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.21.06.2008",
+    "desa": "Karangrejo",
+    "kecamatan": "Wonosalam",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.24.09.2010",
+    "desa": "Purwokerto",
+    "kecamatan": "Brangsong",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.14.2009",
+    "desa": "Purwosari",
+    "kecamatan": "Patebon",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.21.08.2001",
+    "desa": "Surodadi",
+    "kecamatan": "Gajah",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.08.2007",
+    "desa": "Wilalung",
+    "kecamatan": "Gajah",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.05.2010",
+    "desa": "Karangsari",
+    "kecamatan": "Karangtengah",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.24.15.1017",
+    "desa": "Karangsari",
+    "kecamatan": "Kendal",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.16.2008",
+    "desa": "Rowosari",
+    "kecamatan": "Rowosari",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.17.2008",
+    "desa": "Sendang Dawung",
+    "kecamatan": "Kangkung",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.17.2007",
+    "desa": "Sendang Kulon",
+    "kecamatan": "Kangkung",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.16.2016",
+    "desa": "Sendangsikucing",
+    "kecamatan": "Rowosari",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.21.05.2014",
+    "desa": "Batu",
+    "kecamatan": "Karangtengah",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.04.2012",
+    "desa": "Bedono",
+    "kecamatan": "Sayung",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.24.16.2013",
+    "desa": "Bulak",
+    "kecamatan": "Rowosari",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.21.08.2010",
+    "desa": "Tambirejo",
+    "kecamatan": "Gajah",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.08.2018",
+    "desa": "Tlogopandogan",
+    "kecamatan": "Gajah",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.10.2011",
+    "desa": "Tanggul",
+    "kecamatan": "Mijen",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.08.2006",
+    "desa": "Tanjunganyar",
+    "kecamatan": "Gajah",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.09.2016",
+    "desa": "Tugu Lor",
+    "kecamatan": "Karanganyar",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.09.2006",
+    "desa": "Tuwang",
+    "kecamatan": "Karanganyar",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.09.2007",
+    "desa": "Undaan Kidul",
+    "kecamatan": "Karanganyar",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.09.2008",
+    "desa": "Undaan Lor",
+    "kecamatan": "Karanganyar",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.24.15.1016",
+    "desa": "Banyutowo",
+    "kecamatan": "Kendal",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.21.09.2003",
+    "desa": "Wonoketingal",
+    "kecamatan": "Karanganyar",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.09.2011",
+    "desa": "Wonorejo",
+    "kecamatan": "Karanganyar",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.11.2002",
+    "desa": "Bango",
+    "kecamatan": "Demak",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.10.2004",
+    "desa": "Bantengmati",
+    "kecamatan": "Mijen",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.11.2001",
+    "desa": "Bolo",
+    "kecamatan": "Demak",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.11.2003",
+    "desa": "Kedondong",
+    "kecamatan": "Demak",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.06.2020",
+    "desa": "Mrisen",
+    "kecamatan": "Wonosalam",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.11.2005",
+    "desa": "Mulyorejo",
+    "kecamatan": "Demak",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.10.2005",
+    "desa": "Ngelokulon",
+    "kecamatan": "Mijen",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.10.2006",
+    "desa": "Pasir",
+    "kecamatan": "Mijen",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.11.2007",
+    "desa": "Raji",
+    "kecamatan": "Demak",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.10.2007",
+    "desa": "Rejosari",
+    "kecamatan": "Mijen",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.06.2019",
+    "desa": "Trengguli",
+    "kecamatan": "Wonosalam",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.11.2006",
+    "desa": "Turirejo",
+    "kecamatan": "Demak",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.07.2003",
+    "desa": "Sidomulyo",
+    "kecamatan": "Dempet",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.15.10.2014",
+    "desa": "Tegalrejo",
+    "kecamatan": "Wirosari",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.15.15.2009",
+    "desa": "Wandan Kemiri",
+    "kecamatan": "Klambu",
+    "kabupaten": "Grobogan"
+  },
+  {
+    "kode_adm4": "33.21.06.2002",
+    "desa": "Kalianyar",
+    "kecamatan": "Wonosalam",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.24.08.2015",
+    "desa": "Mororejo",
+    "kecamatan": "Kaliwungu",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.09.2008",
+    "desa": "Rejosari",
+    "kecamatan": "Brangsong",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.74.04.1001",
+    "desa": "Tambakrejo",
+    "kecamatan": "Gayamsari",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.21.04.2008",
+    "desa": "Tambakroto",
+    "kecamatan": "Sayung",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.74.02.1001",
+    "desa": "Bandarharjo",
+    "kecamatan": "Semarang Utara",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.74.05.1005",
+    "desa": "Banjardowo",
+    "kecamatan": "Genuk",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.24.19.2007",
+    "desa": "Bojong Gede",
+    "kecamatan": "Ngampel",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.09.2011",
+    "desa": "Brangsong",
+    "kecamatan": "Brangsong",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.08.2013",
+    "desa": "Kutoharjo",
+    "kecamatan": "Kaliwungu",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.14.2004",
+    "desa": "Lanji",
+    "kecamatan": "Patebon",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.21.04.2009",
+    "desa": "Loireng",
+    "kecamatan": "Sayung",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.24.11.2009",
+    "desa": "Lumansari",
+    "kecamatan": "Gemuh",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.14.2001",
+    "desa": "Bulugede",
+    "kecamatan": "Patebon",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.74.16.1006",
+    "desa": "Mangkang Kulon",
+    "kecamatan": "Tugu",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.24.14.2002",
+    "desa": "Margosari",
+    "kecamatan": "Patebon",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.15.1001",
+    "desa": "Candiroto",
+    "kecamatan": "Kendal",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.21.05.2004",
+    "desa": "Donorejo",
+    "kecamatan": "Karangtengah",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.24.13.2001",
+    "desa": "Pandes",
+    "kecamatan": "Cepiring",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.14.2003",
+    "desa": "Donosari",
+    "kecamatan": "Patebon",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.74.02.1006",
+    "desa": "Panggung Lor",
+    "kecamatan": "Semarang Utara",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.24.16.2005",
+    "desa": "Parakan",
+    "kecamatan": "Rowosari",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.21.05.2005",
+    "desa": "Pidodo",
+    "kecamatan": "Karangtengah",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.24.11.2003",
+    "desa": "Jenarsari",
+    "kecamatan": "Gemuh",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.11.2010",
+    "desa": "Johorejo",
+    "kecamatan": "Gemuh",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.21.04.2007",
+    "desa": "Pilangsari",
+    "kecamatan": "Sayung",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.24.13.2002",
+    "desa": "Podosari",
+    "kecamatan": "Cepiring",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.20.2004",
+    "desa": "Protomulyo",
+    "kecamatan": "Kaliwungu Selatan",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.21.04.2004",
+    "desa": "Kalisari",
+    "kecamatan": "Sayung",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.06.2004",
+    "desa": "Karangrowo",
+    "kecamatan": "Wonosalam",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.24.11.2012",
+    "desa": "Pucangrejo",
+    "kecamatan": "Gemuh",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.19.2002",
+    "desa": "Putatgede",
+    "kecamatan": "Ngampel",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.08.2010",
+    "desa": "Karangtengah",
+    "kecamatan": "Kaliwungu",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.09.2012",
+    "desa": "Kebonadem",
+    "kecamatan": "Brangsong",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.21.05.2007",
+    "desa": "Sampang",
+    "kecamatan": "Karangtengah",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.24.08.2011",
+    "desa": "Sarirejo",
+    "kecamatan": "Kaliwungu",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.21.04.2010",
+    "desa": "Sayung",
+    "kecamatan": "Sayung",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.05.2008",
+    "desa": "Kedunguter",
+    "kecamatan": "Karangtengah",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.03.2019",
+    "desa": "Sidoharjo",
+    "kecamatan": "Guntur",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.24.09.2006",
+    "desa": "Sidorejo",
+    "kecamatan": "Brangsong",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.21.05.2006",
+    "desa": "Klitih",
+    "kecamatan": "Karangtengah",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.24.08.2012",
+    "desa": "Krajankulon",
+    "kecamatan": "Kaliwungu",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.15.1002",
+    "desa": "Sukodono",
+    "kecamatan": "Kendal",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.08.2009",
+    "desa": "Kumpulrejo",
+    "kecamatan": "Kaliwungu",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.11.2008",
+    "desa": "Tamangede",
+    "kecamatan": "Gemuh",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.74.13.1004",
+    "desa": "Tambakharjo",
+    "kecamatan": "Semarang Barat",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.24.16.2006",
+    "desa": "Tambaksari",
+    "kecamatan": "Rowosari",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.74.02.1008",
+    "desa": "Tanjung Mas",
+    "kecamatan": "Semarang Utara",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.74.13.1014",
+    "desa": "Tawangsari",
+    "kecamatan": "Semarang Barat",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.74.05.1012",
+    "desa": "Terboyo Kulon",
+    "kecamatan": "Genuk",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.74.05.1013",
+    "desa": "Terboyo Wetan",
+    "kecamatan": "Genuk",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.21.06.2003",
+    "desa": "Tlogodowo",
+    "kecamatan": "Wonosalam",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.07.2008",
+    "desa": "Balerejo",
+    "kecamatan": "Dempet",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.07.2009",
+    "desa": "Baleromo",
+    "kecamatan": "Dempet",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.24.09.2007",
+    "desa": "Tosari",
+    "kecamatan": "Brangsong",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.24.12.2015",
+    "desa": "Tratemulyo",
+    "kecamatan": "Weleri",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.21.03.2018",
+    "desa": "Trimulyo",
+    "kecamatan": "Guntur",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.06.2015",
+    "desa": "Bunderan",
+    "kecamatan": "Wonosalam",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.74.05.1007",
+    "desa": "Trimulyo",
+    "kecamatan": "Genuk",
+    "kabupaten": "Kota Semarang"
+  },
+  {
+    "kode_adm4": "33.21.03.2020",
+    "desa": "Turitempel",
+    "kecamatan": "Guntur",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.07.2017",
+    "desa": "Dempet",
+    "kecamatan": "Dempet",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.24.16.2001",
+    "desa": "Wonotenggang",
+    "kecamatan": "Rowosari",
+    "kabupaten": "Kendal"
+  },
+  {
+    "kode_adm4": "33.21.07.2012",
+    "desa": "Kebonsari",
+    "kecamatan": "Dempet",
+    "kabupaten": "Demak"
+  },
+  {
+    "kode_adm4": "33.21.07.2010",
+    "desa": "Kedungori",
+    "kecamatan": "Dempet",
+    "kabupaten": "Demak"
+  }
+]

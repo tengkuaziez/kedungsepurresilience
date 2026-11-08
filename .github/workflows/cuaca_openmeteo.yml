@@ -1,0 +1,46 @@
+name: Perbarui Model Grid Open-Meteo
+
+on:
+  schedule:
+    # 4x sehari: 00:00 WIB (17:00 UTC), 06:00 WIB (23:00 UTC), 12:00 WIB (05:00 UTC), 18:00 WIB (11:00 UTC)
+    - cron: "0 17 * * *"
+    - cron: "0 23 * * *"
+    - cron: "0 5 * * *"
+    - cron: "0 11 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cuaca-openmeteo-pipeline
+  cancel-in-progress: false
+
+jobs:
+  tarik-openmeteo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout repositori
+        uses: actions/checkout@v4
+
+      - name: Siapkan Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Tarik model grid darat dan laut
+        run: python scripts/fetch_openmeteo.py
+
+      - name: Commit dan Push data grid jika berubah
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -z "$(git status --porcelain data/openmeteo_grid.json data/marine_grid.json)" ]; then
+            echo "Data Open-Meteo tidak berubah, tidak ada commit."
+            exit 0
+          fi
+          git add data/openmeteo_grid.json data/marine_grid.json
+          git commit -m "Update grid Open-Meteo $(TZ=Asia/Jakarta date '+%Y-%m-%d %H:%M WIB')"
+          git pull --rebase origin main
+          git push origin HEAD:main

@@ -1,0 +1,44 @@
+name: Perbarui Cuaca BMKG (1.250 Desa)
+
+on:
+  schedule:
+    # 06:30 WIB = 23:30 UTC (hari sebelumnya), 18:30 WIB = 11:30 UTC
+    - cron: "30 23 * * *"
+    - cron: "30 11 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cuaca-bmkg-pipeline
+  cancel-in-progress: false
+
+jobs:
+  tarik-bmkg:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Checkout repositori
+        uses: actions/checkout@v4
+
+      - name: Siapkan Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Tarik data BMKG se-Kedungsepur
+        run: python scripts/fetch_bmkg_full.py
+
+      - name: Commit dan Push data baru jika berubah
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -z "$(git status --porcelain data/bmkg_latest.json)" ]; then
+            echo "Data BMKG tidak berubah, tidak ada commit."
+            exit 0
+          fi
+          git add data/bmkg_latest.json data/gagal_bmkg.log
+          git commit -m "Update cuaca BMKG 1.250 desa $(TZ=Asia/Jakarta date '+%Y-%m-%d %H:%M WIB')"
+          git pull --rebase origin main
+          git push origin HEAD:main
