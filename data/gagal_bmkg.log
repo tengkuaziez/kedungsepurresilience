@@ -1,2 +1,5 @@
-# Log Gagal BMKG - 2026-11-08T21:47:42+07:00
-# Total: 1250, Berhasil: 1250, Gagal: 0, Durasi: 1810.8s
+# Log Gagal BMKG - 2026-11-09T10:14:59+07:00
+# Total: 1250, Berhasil: 1247, Gagal: 3, Durasi: 1667.3s
+33.15.10.2010	Gedangan	HTTP 500 (setelah 3x retry)
+33.21.14.2007	Babat	HTTP 500 (setelah 3x retry)
+33.15.07.2006	Bago	HTTP 500 (setelah 3x retry)
