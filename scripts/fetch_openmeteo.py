@@ -10,6 +10,7 @@ import math
 import os
 import sys
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 from datetime import datetime, timedelta, timezone
@@ -18,6 +19,42 @@ from pathlib import Path
 AKAR = Path(__file__).resolve().parent.parent
 FILE_OUT = AKAR / "data" / "kedungsepur_windy_grid.json"
 USER_AGENT = "KEDUNGSEPUR-RESILIENCE/3.0 (+https://tengkuaziez.github.io/kedungsepurresilience/)"
+
+
+def fetch_batch_with_retry(batch, batch_no, total_batches):
+    """Ambil data prakiraan cuaca untuk sekelompok koordinat dengan retry cerdas & penanganan HTTP 429."""
+    lat_str = ",".join(str(c[0]) for c in batch)
+    lon_str = ",".join(str(c[1]) for c in batch)
+    q = {
+        "latitude": lat_str,
+        "longitude": lon_str,
+        "hourly": "temperature_2m,relative_humidity_2m,precipitation,cloud_cover,wind_speed_10m,wind_direction_10m",
+        "past_days": 1,
+        "forecast_days": 3,
+        "timezone": "Asia/Jakarta",
+    }
+    url = f"https://api.open-meteo.com/v1/forecast?{urllib.parse.urlencode(q)}"
+    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+
+    for attempt in range(4):
+        try:
+            with urllib.request.urlopen(req, timeout=25) as res:
+                data = json.loads(res.read().decode("utf-8"))
+                if isinstance(data, list):
+                    return data
+                return [data]
+        except urllib.error.HTTPError as e:
+            print(f"  [Batch {batch_no}/{total_batches}] HTTP {e.code} ({e.reason}) pada percobaan {attempt + 1}/4")
+            if e.code == 429:
+                sleep_sec = 20 * (attempt + 1)
+                print(f"  Pemberitahuan rate limit 429 dari Open-Meteo, jeda {sleep_sec} detik...")
+                time.sleep(sleep_sec)
+            else:
+                time.sleep(4 * (attempt + 1))
+        except Exception as e:
+            print(f"  [Batch {batch_no}/{total_batches}] Gangguan koneksi ({e}) pada percobaan {attempt + 1}/4")
+            time.sleep(3 * (attempt + 1))
+    return None
 
 
 def main():
@@ -33,47 +70,32 @@ def main():
     nx = len(lons)
     total_pts = ny * nx
 
-    coords = []
-    for lat in lats:
-        for lon in lons:
-            coords.append((lat, lon))
-
+    coords = [(lat, lon) for lat in lats for lon in lons]
     print(f"Menyiapkan {total_pts} titik grid ({ny} baris x {nx} kolom)...")
 
+    # Ambil dalam 4 batch (50 titik per batch, sangat cepat ~10 detik dan stabil)
     batch_size = 50
+    batches = [coords[i : i + batch_size] for i in range(0, len(coords), batch_size)]
     results = []
-    for i in range(0, len(coords), batch_size):
-        batch = coords[i : i + batch_size]
-        lat_str = ",".join(str(c[0]) for c in batch)
-        lon_str = ",".join(str(c[1]) for c in batch)
-        q = {
-            "latitude": lat_str,
-            "longitude": lon_str,
-            "hourly": "temperature_2m,relative_humidity_2m,precipitation,cloud_cover,wind_speed_10m,wind_direction_10m",
-            "past_days": 1,
-            "forecast_days": 3,
-            "timezone": "Asia/Jakarta",
-        }
-        url = f"https://api.open-meteo.com/v1/forecast?{urllib.parse.urlencode(q)}"
-        req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
 
-        for attempt in range(3):
-            try:
-                with urllib.request.urlopen(req, timeout=20) as res:
-                    data = json.loads(res.read().decode("utf-8"))
-                    if isinstance(data, list):
-                        results.extend(data)
-                    else:
-                        results.append(data)
-                break
-            except Exception as e:
-                print(f"  Retry batch {i//batch_size + 1}: {e}")
-                time.sleep(1.5 * (attempt + 1))
-        time.sleep(0.3)
+    for b_idx, batch in enumerate(batches, 1):
+        batch_res = fetch_batch_with_retry(batch, b_idx, len(batches))
+        if not batch_res:
+            print(f"Batch {b_idx} gagal diambil setelah seluruh percobaan retry.")
+            break
+        results.extend(batch_res)
+        time.sleep(1.0)  # Jeda sopan antar batch
 
+    # Jika terjadi kendala jaringan Open-Meteo
     if len(results) != total_pts:
-        print(f"Error: Jumlah hasil ({len(results)}) tidak sesuai target ({total_pts})")
-        sys.exit(1)
+        found_pts = len(results)
+        print(f"Peringatan: Gagal menarik data lengkap ({found_pts}/{total_pts} titik).")
+        if FILE_OUT.exists():
+            print(f"Mempertahankan data grid yang sudah ada ({FILE_OUT.name}) agar WebGIS tetap berjalan normal dan workflow tidak gagal.")
+            sys.exit(0)
+        else:
+            print("File grid lokal tidak ditemukan, proses dihentikan.")
+            sys.exit(1)
 
     times = results[0]["hourly"]["time"]
     n_hours = len(times)

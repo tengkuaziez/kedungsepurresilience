@@ -29,18 +29,18 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Tarik model grid darat dan laut
+      - name: Tarik model grid cuaca kontinu (Windy)
         run: python scripts/fetch_openmeteo.py
 
       - name: Commit dan Push data grid jika berubah
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if [ -z "$(git status --porcelain data/openmeteo_grid.json data/marine_grid.json)" ]; then
-            echo "Data Open-Meteo tidak berubah, tidak ada commit."
+          if [ -z "$(git status --porcelain data/kedungsepur_windy_grid.json)" ]; then
+            echo "Data grid Open-Meteo tidak berubah, tidak ada commit."
             exit 0
           fi
-          git add data/openmeteo_grid.json data/marine_grid.json
-          git commit -m "Update grid Open-Meteo $(TZ=Asia/Jakarta date '+%Y-%m-%d %H:%M WIB')"
+          git add data/kedungsepur_windy_grid.json
+          git commit -m "Update grid Open-Meteo Windy $(TZ=Asia/Jakarta date '+%Y-%m-%d %H:%M WIB')"
           git pull --rebase origin main
           git push origin HEAD:main

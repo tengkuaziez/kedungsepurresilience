@@ -18,7 +18,7 @@ Prototipe WebGIS dinamis berbasis data cuaca terbuka BMKG (1.250 kelurahan/desa 
 ```
 GitHub Actions / Lokal Scheduler:
   scripts/fetch_bmkg_full.py   ──► data/bmkg_latest.json (1.250 desa)
-  scripts/fetch_openmeteo.py   ──► data/openmeteo_grid.json & data/marine_grid.json
+  scripts/fetch_openmeteo.py   ──► data/kedungsepur_windy_grid.json (Grid Windy 96 Jam)
                                         │
                                         ▼ (File Statis di GitHub Pages)
   Browser Pengunjung:
@@ -76,8 +76,7 @@ Browser pengunjung **tidak pernah memanggil API BMKG**. Seluruh data diproses se
 │   ├── batas_keldes.geojson           # Batas 1.250 desa teroptimasi (1.28 MB)
 │   ├── adm4_list.json                 # Metadata daftar kode adm4 1.250 desa
 │   ├── bmkg_latest.json               # Data cuaca BMKG 1.250 desa
-│   ├── openmeteo_grid.json            # Model grid atmosfer (600 titik)
-│   ├── marine_grid.json               # Model kelautan Laut Jawa (180 titik)
+│   ├── kedungsepur_windy_grid.json    # Model grid cuaca kontinu 96 jam (ala Windy)
 │   └── gagal_bmkg.log                 # Log penanganan kode gagal
 ├── dataspasial/
 │   └── KelDesKedungsepur.*            # Data spasial sumber asli (Master)
